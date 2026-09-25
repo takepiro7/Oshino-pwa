@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#6e51ff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="OshiNow" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="./icons/icon-180.png" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>OshiNow</title>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <main id="screen" class="screen" aria-live="polite"></main>
+    <nav class="tabbar" aria-label="メインメニュー">
+      <button class="tab active" data-tab="home" aria-label="ホーム"><span>⌂</span><small>ホーム</small></button>
+      <button class="tab" data-tab="inbox" aria-label="通知"><span>●</span><small>通知</small><b id="badge" class="badge">3</b></button>
+      <button class="tab" data-tab="calendar" aria-label="カレンダー"><span>▦</span><small>カレンダー</small></button>
+      <button class="tab" data-tab="settings" aria-label="推し設定"><span>♥</span><small>推し設定</small></button>
+    </nav>
+  </div>
+
+  <dialog id="detailDialog" class="detail-dialog"></dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
