@@ -86,16 +86,23 @@ def main():
 
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
-    if not STATE_PATH.exists():
+    if STATE_PATH.exists():
+        state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+    else:
+        state = {"seen": []}
+
+    seen = set(state.get("seen", []))
+
+    # First successful crawl establishes the baseline. Do not notify for
+    # announcements that already existed before OshiNow monitoring started.
+    if not seen:
         STATE_PATH.write_text(
             json.dumps({"seen": [x["url"] for x in current]}, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
-        print(f"Initialized with {len(current)} existing NEWS items. No push sent.")
+        print(f"Initialized baseline with {len(current)} existing NEWS items. No push sent.")
         return 0
 
-    state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    seen = set(state.get("seen", []))
     new_items = [x for x in current if x["url"] not in seen]
 
     if not new_items:
