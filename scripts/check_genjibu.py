@@ -68,9 +68,16 @@ def send_push(api_key, item):
     if r.status_code >= 300:
         raise RuntimeError(f"OneSignal error {r.status_code}: {r.text[:500]}")
     data = r.json() if r.text else {}
-    if not data.get("id"):
-        raise RuntimeError(f"OneSignal accepted request but returned no message id: {data}")
-    print(f"Sent: {item['title']} -> {data['id']}")
+    if data.get("id"):
+        print(f"Sent: {item['title']} -> {data['id']}")
+        return True
+
+    errors = data.get("errors") or []
+    if any("not subscribed" in str(e).lower() for e in errors):
+        print("No active OneSignal push subscribers. Leaving NEWS item pending for retry.")
+        return False
+
+    raise RuntimeError(f"OneSignal accepted request but returned no message id: {data}")
 
 
 def main():
@@ -111,8 +118,16 @@ def main():
 
     # Send oldest first so multiple new notices arrive in natural order.
     to_send = list(reversed(new_items[:MAX_PUSH_PER_RUN]))
+    all_sent = True
     for item in to_send:
-        send_push(api_key, item)
+        if not send_push(api_key, item):
+            all_sent = False
+            break
+
+    if not all_sent:
+        # Keep new items unseen so they are retried when a device subscribes again.
+        print("Push audience is currently empty; workflow exits successfully and will retry later.")
+        return 0
 
     all_seen = [x["url"] for x in current]
     # Keep older state too, in case an item drops off the homepage temporarily.
