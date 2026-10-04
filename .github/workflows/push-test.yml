@@ -7,19 +7,42 @@ jobs:
   send-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Validate secrets
+        env:
+          ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
+        run: |
+          test -n "$ONESIGNAL_REST_API_KEY" || (echo "::error::Missing ONESIGNAL_REST_API_KEY" && exit 1)
+          test -n "$ONESIGNAL_SUBSCRIPTION_ID" || (echo "::error::Missing ONESIGNAL_SUBSCRIPTION_ID" && exit 1)
+
       - name: Send urgent test push
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
         run: |
-          curl --fail-with-body -X POST "https://api.onesignal.com/notifications" \
-            -H "Authorization: Key $ONESIGNAL_REST_API_KEY" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "app_id":"d40f1748-dbb5-472a-aaa1-5178eb3ed064",
-              "target_channel":"push",
-              "included_segments":["Subscribed Users"],
-              "headings":{"ja":"OshiNow 🔴 配信予兆","en":"OshiNow"},
-              "contents":{"ja":"何？ 配信が始まる可能性\nいつ？ まもなく\nすること：Instagram / YouTubeを確認","en":"Livestream may start soon"},
-              "url":"https://takepiro7.github.io/Oshino-pwa/?notice=urgent-test&title=OshiNow%20%E2%9A%AB%20%E9%85%8D%E4%BF%A1%E4%BA%88%E5%85%86&what=%E9%85%8D%E4%BF%A1%E3%81%8C%E5%A7%8B%E3%81%BE%E3%82%8B%E5%8F%AF%E8%83%BD%E6%80%A7&when=%E3%81%BE%E3%82%82%E3%81%AA%E3%81%8F&action=Instagram%20%2F%20YouTube%E3%82%92%E7%A2%BA%E8%AA%8D&source=OshiNow",
-              "data":{"source":"oshinow_test","prediction":"urgent"}
-            }'
+          python - <<'PY'
+          import json, os, urllib.request
+          payload = {
+              "app_id": "d40f1748-dbb5-472a-aaa1-5178eb3ed064",
+              "target_channel": "push",
+              "include_subscription_ids": [os.environ["ONESIGNAL_SUBSCRIPTION_ID"]],
+              "headings": {"ja": "OshiNow 🔴 配信予兆", "en": "OshiNow"},
+              "contents": {
+                  "ja": "何？ 配信が始まる可能性\nいつ？ まもなく\nすること：Instagram / YouTubeを確認",
+                  "en": "Livestream may start soon",
+              },
+              "url": "https://takepiro7.github.io/Oshino-pwa/?notice=urgent-test",
+              "data": {"source": "oshinow_test", "prediction": "urgent"},
+          }
+          req = urllib.request.Request(
+              "https://api.onesignal.com/notifications",
+              data=json.dumps(payload).encode(),
+              headers={
+                  "Authorization": "Key " + os.environ["ONESIGNAL_REST_API_KEY"],
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          with urllib.request.urlopen(req, timeout=20) as r:
+              print(r.read().decode())
+          PY
