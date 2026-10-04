@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -13,6 +14,8 @@ import xml.etree.ElementTree as ET
 SITE_URL = "https://genjibu.jp/"
 ONESIGNAL_APP_ID = "d40f1748-dbb5-472a-aaa1-5178eb3ed064"
 STATE_PATH = Path("data/news_seen.json")
+EVENTS_PATH = Path("data/events.json")
+JST = timezone(timedelta(hours=9))
 MAX_PUSH_PER_RUN = 6
 UA = "OshiNow/0.2 (+https://takepiro7.github.io/Oshino-pwa/)"
 
@@ -135,6 +138,7 @@ def fetch_youtube(category, config):
             "title": title,
             "category": category,
             "heading": config["heading"],
+            "text": combined,
         }
         items.append(apply_prediction(item, combined))
 
@@ -197,6 +201,7 @@ def fetch_x_public(category, config):
                 "title": title,
                 "category": category,
                 "heading": config["heading"],
+                "text": raw,
             }
             items.append(apply_prediction(item, raw))
             seen.add(url)
@@ -243,11 +248,109 @@ def fetch_category(category, config):
             "title": title,
             "category": category,
             "heading": config["heading"],
+            "text": raw,
         }
         items.append(apply_prediction(item, raw))
         seen.add(url)
 
     return items
+
+
+def infer_event_type(item):
+    text = item.get("text", item.get("title", ""))
+    category = item.get("category")
+    if re.search(r"締切|申込|申し込み|受付終了|応募締切|販売終了", text):
+        return "締切", "⏰", "important", "期限までに確認・申込"
+    if category == "LIVE":
+        return "ライブ", "🎤", "normal", "会場・開演時刻を確認"
+    if category == "MEDIA":
+        return "出演", "📺", "normal", "放送・配信時間を確認"
+    if category == "YOUTUBE":
+        return "配信", "▶️", "normal", "YouTubeを確認"
+    if item.get("prediction") in ("urgent", "stream"):
+        return "配信予兆", "🔴", "urgent", "Instagram / YouTubeを確認"
+    return "予定", "📌", "normal", "詳細を確認"
+
+
+def extract_event(item):
+    text = re.sub(r"\s+", " ", item.get("text", item.get("title", ""))).strip()
+    now = datetime.now(JST)
+    year = now.year
+    month = day = None
+    hour = minute = 0
+
+    m = re.search(r"(?:(20\d{2})[./年-])?(\d{1,2})[./月-](\d{1,2})日?", text)
+    if m:
+        if m.group(1):
+            year = int(m.group(1))
+        month = int(m.group(2))
+        day = int(m.group(3))
+    else:
+        return None
+
+    tm = re.search(r"(\d{1,2})[:：](\d{2})", text)
+    if tm:
+        hour = int(tm.group(1))
+        minute = int(tm.group(2))
+
+    try:
+        dt = datetime(year, month, day, hour, minute, tzinfo=JST)
+    except ValueError:
+        return None
+
+    # If year omitted and date is clearly behind us, treat it as next year.
+    if not m.group(1) and dt < now - timedelta(days=30):
+        try:
+            dt = dt.replace(year=year + 1)
+        except ValueError:
+            pass
+
+    event_type, icon, urgency, action = infer_event_type(item)
+    title = item.get("title", "")[:120]
+    event_id = re.sub(r"[^a-zA-Z0-9]+", "-", item.get("url", ""))[-80:] or f"event-{int(dt.timestamp())}"
+
+    return {
+        "id": event_id,
+        "type": event_type,
+        "icon": icon,
+        "title": title,
+        "date": dt.strftime("%Y-%m-%d"),
+        "time": dt.strftime("%H:%M") if tm else "終日",
+        "urgency": urgency,
+        "action": action,
+        "who": "原因は自分にある。",
+        "what": title,
+        "when": dt.strftime("%-m/%-d %H:%M") if tm else dt.strftime("%-m/%-d"),
+        "todo": action,
+        "source": item.get("category", "公式"),
+        "url": item.get("url", ""),
+    }
+
+
+def save_calendar_events(current_by_category):
+    existing = []
+    if EVENTS_PATH.exists():
+        try:
+            existing = json.loads(EVENTS_PATH.read_text(encoding="utf-8")).get("events", [])
+        except Exception:
+            existing = []
+
+    by_url = {e.get("url"): e for e in existing if e.get("url")}
+
+    for items in current_by_category.values():
+        for item in items:
+            event = extract_event(item)
+            if event:
+                by_url[event["url"]] = event
+
+    events = list(by_url.values())
+    events.sort(key=lambda e: (e.get("date", ""), e.get("time", "")))
+    EVENTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    EVENTS_PATH.write_text(
+        json.dumps({"updated_at": datetime.now(JST).isoformat(), "events": events[-200:]}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Calendar events: {len(events)}")
 
 
 def load_state():
@@ -441,6 +544,8 @@ def main():
             # existing announcements as "new".
             seen_by_category[category] = [x["url"] for x in items]
             baselined.append((category, len(items)))
+
+    save_calendar_events(current_by_category)
 
     if baselined:
         save_state(state)
