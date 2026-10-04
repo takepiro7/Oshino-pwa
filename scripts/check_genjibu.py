@@ -338,9 +338,11 @@ def summarize_for_push(item):
 
 
 def load_subscription_ids():
-    raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip()
-    if not raw:
-        raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
+    raw_parts = [
+        os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip(),
+        os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip(),
+    ]
+    raw = "\n".join(x for x in raw_parts if x)
 
     if not raw:
         return []
