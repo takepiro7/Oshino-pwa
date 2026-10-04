@@ -21,7 +21,7 @@ jobs:
           ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
         run: |
           python - <<'PY'
-          import json, os, urllib.request
+          import json, os, urllib.request, urllib.error
           payload = {
               "app_id": "d40f1748-dbb5-472a-aaa1-5178eb3ed064",
               "target_channel": "push",
@@ -43,6 +43,11 @@ jobs:
               },
               method="POST",
           )
-          with urllib.request.urlopen(req, timeout=20) as r:
-              print(r.read().decode())
+          try:
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  print(r.read().decode())
+          except urllib.error.HTTPError as e:
+              body = e.read().decode()
+              print(f"HTTP {e.code}: {body}")
+              raise
           PY
