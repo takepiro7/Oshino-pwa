@@ -337,12 +337,12 @@ def summarize_for_push(item):
     return concise, "\n".join(lines)
 
 
-def send_push(api_key, item):
+def send_push(api_key, subscription_id, item):
     concise, summary = summarize_for_push(item)
     payload = {
         "app_id": ONESIGNAL_APP_ID,
         "target_channel": "push",
-        "included_segments": ["Subscribed Users"],
+        "include_subscription_ids": [subscription_id],
         "headings": {
             "ja": item["heading"],
             "en": "OshiNow",
@@ -388,8 +388,12 @@ def send_push(api_key, item):
 
 def main():
     api_key = os.environ.get("ONESIGNAL_REST_API_KEY", "").strip()
+    subscription_id = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
     if not api_key:
         print("ONESIGNAL_REST_API_KEY is not configured.", file=sys.stderr)
+        return 2
+    if not subscription_id:
+        print("ONESIGNAL_SUBSCRIPTION_ID is not configured.", file=sys.stderr)
         return 2
 
     state = load_state()
@@ -446,7 +450,7 @@ def main():
 
     sent_count = 0
     for item in pending[:MAX_PUSH_PER_RUN]:
-        if not send_push(api_key, item):
+        if not send_push(api_key, subscription_id, item):
             print("Push audience is currently empty; workflow exits successfully and will retry later.")
             save_state(state)
             return 0
