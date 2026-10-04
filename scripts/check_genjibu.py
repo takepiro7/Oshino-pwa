@@ -279,7 +279,66 @@ def save_state(state):
     )
 
 
+def summarize_for_push(item):
+    text = re.sub(r"\s+", " ", item.get("title", "")).strip()
+    who = "原因は自分にある。"
+    when = None
+    action = None
+
+    # Basic date/time extraction from Japanese text.
+    m = re.search(r"(\d{1,2}/\d{1,2}(?:\([^)]*\))?(?:\s*\d{1,2}:\d{2})?)", text)
+    if not m:
+        m = re.search(r"(\d{1,2}月\d{1,2}日(?:\([^)]*\))?(?:\s*\d{1,2}:\d{2})?)", text)
+    if not m:
+        m = re.search(r"(\d{1,2}:\d{2})", text)
+    if m:
+        when = m.group(1)
+
+    pred = item.get("prediction")
+    category = item.get("category")
+
+    if pred == "urgent":
+        what = "配信が始まる可能性"
+        action = "Instagram / YouTubeを確認"
+        if not when:
+            when = "まもなく"
+    elif pred == "stream":
+        what = "配信情報"
+        action = "配信先を確認"
+    elif category == "LIVE":
+        what = "ライブ・イベント情報"
+        action = "会場・開演時刻を確認"
+    elif category == "MEDIA":
+        what = "出演情報"
+        action = "放送・配信時間を確認"
+    elif category == "YOUTUBE":
+        what = "YouTube更新"
+        action = "動画・配信を確認"
+    elif category == "X":
+        what = "公式Xの新着"
+        action = "投稿内容を確認"
+    else:
+        what = "公式お知らせ"
+        action = "詳細を確認"
+
+    # Shorten raw title to avoid unreadable notifications.
+    concise = text
+    concise = re.sub(r"【[^】]{0,60}】", "", concise).strip()
+    concise = re.sub(r"\[[^\]]{0,60}\]", "", concise).strip()
+    if len(concise) > 90:
+        concise = concise[:87] + "…"
+
+    lines = [
+        f"何？ {what}",
+    ]
+    if when:
+        lines.append(f"いつ？ {when}")
+    lines.append(f"すること：{action}")
+    return concise, "\n".join(lines)
+
+
 def send_push(api_key, item):
+    concise, summary = summarize_for_push(item)
     payload = {
         "app_id": ONESIGNAL_APP_ID,
         "target_channel": "push",
@@ -289,8 +348,8 @@ def send_push(api_key, item):
             "en": "OshiNow",
         },
         "contents": {
-            "ja": item["title"],
-            "en": item["title"],
+            "ja": summary,
+            "en": concise,
         },
         "url": item["url"],
         "data": {
@@ -316,7 +375,7 @@ def send_push(api_key, item):
 
     data = r.json() if r.text else {}
     if data.get("id"):
-        print(f"Sent [{item['category']}]: {item['title']} -> {data['id']}")
+        print(f"Sent [{item['category']}]: {concise} -> {data['id']}")
         return True
 
     errors = data.get("errors") or []
