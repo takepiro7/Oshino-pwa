@@ -1,4 +1,4 @@
-name: OshiNow official news watch
+name: OshiNow official feed watch
 
 on:
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
             exit 1
           fi
 
-      - name: Check official NEWS and notify
+      - name: Check official NEWS LIVE MEDIA and notify
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
         run: python scripts/check_genjibu.py
