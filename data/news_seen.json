@@ -1,19 +1,43 @@
 {
-  "seen": [
-    "https://genjibu.jp/news/detail/2494",
-    "https://genjibu.jp/news/detail/2492",
-    "https://genjibu.jp/news/detail/2489",
-    "https://genjibu.jp/news/detail/2490",
-    "https://genjibu.jp/news/detail/2488",
-    "https://genjibu.jp/news/detail/2462",
-    "https://genjibu.jp/news/detail/2463",
-    "https://genjibu.jp/news/detail/2464",
-    "https://genjibu.jp/news/detail/2471",
-    "https://genjibu.jp/news/detail/2474",
-    "https://genjibu.jp/news/detail/2447",
-    "https://genjibu.jp/news/detail/2491",
-    "https://genjibu.jp/news/detail/2477",
-    "https://genjibu.jp/news/detail/2478",
-    "https://genjibu.jp/news/detail/2476"
-  ]
+  "schema": 2,
+  "seen_by_category": {
+    "NEWS": [
+      "https://genjibu.jp/news/detail/2494",
+      "https://genjibu.jp/news/detail/2492",
+      "https://genjibu.jp/news/detail/2489",
+      "https://genjibu.jp/news/detail/2490",
+      "https://genjibu.jp/news/detail/2488",
+      "https://genjibu.jp/news/detail/2462",
+      "https://genjibu.jp/news/detail/2463",
+      "https://genjibu.jp/news/detail/2464",
+      "https://genjibu.jp/news/detail/2471",
+      "https://genjibu.jp/news/detail/2474",
+      "https://genjibu.jp/news/detail/2447",
+      "https://genjibu.jp/news/detail/2491",
+      "https://genjibu.jp/news/detail/2477",
+      "https://genjibu.jp/news/detail/2478",
+      "https://genjibu.jp/news/detail/2476"
+    ],
+    "LIVE": [
+      "https://genjibu.jp/news/detail/2462",
+      "https://genjibu.jp/news/detail/2463",
+      "https://genjibu.jp/news/detail/2464",
+      "https://genjibu.jp/news/detail/2465",
+      "https://genjibu.jp/news/detail/2466"
+    ],
+    "MEDIA": [
+      "https://genjibu.jp/news/detail/2506",
+      "https://genjibu.jp/news/detail/2479",
+      "https://genjibu.jp/news/detail/2370",
+      "https://genjibu.jp/news/detail/2485",
+      "https://genjibu.jp/news/detail/2447",
+      "https://genjibu.jp/news/detail/2474",
+      "https://genjibu.jp/news/detail/2471",
+      "https://genjibu.jp/news/detail/2483",
+      "https://genjibu.jp/news/detail/2469",
+      "https://genjibu.jp/news/detail/2470",
+      "https://genjibu.jp/news/detail/2423",
+      "https://genjibu.jp/news/detail/2377"
+    ]
+  }
 }
