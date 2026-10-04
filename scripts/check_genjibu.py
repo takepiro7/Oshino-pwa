@@ -33,6 +33,10 @@ SOURCES = {
         "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCz3x9qQNFcbc37R3ND0B8kw",
         "heading": "OshiNow YOUTUBE",
     },
+    "X": {
+        "url": "https://syndication.twitter.com/srv/timeline-profile/screen-name/genjibu_sdr",
+        "heading": "OshiNow X",
+    },
 }
 
 
@@ -135,6 +139,78 @@ def fetch_youtube(category, config):
         items.append(apply_prediction(item, combined))
 
     return items
+
+
+def fetch_x_public(category, config):
+    """
+    Best-effort reader for X's public profile syndication page.
+    This endpoint is not a guaranteed public API, so failures must never stop
+    the rest of OshiNow monitoring.
+    """
+    try:
+        r = requests.get(
+            config["url"],
+            headers={
+                "User-Agent": "Mozilla/5.0 OshiNow/0.3",
+                "Accept-Language": "ja,en;q=0.8",
+            },
+            timeout=20,
+        )
+        if r.status_code != 200:
+            print(f"X watcher unavailable: HTTP {r.status_code}. Skipping this run.")
+            return []
+
+        soup = BeautifulSoup(r.text, "html.parser")
+        items = []
+        seen = set()
+
+        # Public syndication pages usually expose links containing /status/<id>.
+        for a in soup.find_all("a", href=True):
+            href = a.get("href", "")
+            m = re.search(r"(?:https?://(?:www\.)?(?:x|twitter)\.com)?/genjibu_sdr/status/(\d+)", href)
+            if not m:
+                continue
+
+            status_id = m.group(1)
+            url = f"https://x.com/genjibu_sdr/status/{status_id}"
+            if url in seen:
+                continue
+
+            container = a
+            for _ in range(5):
+                if container.parent is None:
+                    break
+                container = container.parent
+                text = " ".join(container.stripped_strings)
+                if len(text) >= 20:
+                    break
+            raw = re.sub(r"\s+", " ", " ".join(container.stripped_strings)).strip()
+            if not raw:
+                raw = f"公式Xの新着ポスト {status_id}"
+
+            # Remove common UI fragments where possible.
+            raw = re.sub(r"^(原因は自分にある。\s*)?@genjibu_sdr\s*", "", raw, flags=re.IGNORECASE)
+            title = normalize_title(category, raw)
+
+            item = {
+                "url": url,
+                "title": title,
+                "category": category,
+                "heading": config["heading"],
+            }
+            items.append(apply_prediction(item, raw))
+            seen.add(url)
+
+        if not items:
+            print("X watcher returned no readable posts. Skipping X for this run.")
+        else:
+            print(f"X watcher found {len(items)} public post(s).")
+
+        return items[:30]
+
+    except Exception as e:
+        print(f"X watcher error: {type(e).__name__}: {e}. Skipping X for this run.")
+        return []
 
 
 def fetch_category(category, config):
@@ -266,9 +342,15 @@ def main():
     for category, config in SOURCES.items():
         if category == "YOUTUBE":
             items = fetch_youtube(category, config)
+        elif category == "X":
+            items = fetch_x_public(category, config)
         else:
             items = fetch_category(category, config)
         current_by_category[category] = items
+
+        # X is best-effort. Do not create an empty baseline when X blocks access.
+        if category == "X" and not items:
+            continue
 
         if category not in seen_by_category:
             # First time adding a source: establish a baseline and do not spam
@@ -290,12 +372,12 @@ def main():
                 pending.append(item)
 
     if not pending:
-        print("No new NEWS / LIVE / MEDIA / YOUTUBE items.")
+        print("No new NEWS / LIVE / MEDIA / YOUTUBE / X items.")
         save_state(state)
         return 0
 
     # Keep category order predictable and limit bursts.
-    category_rank = {"LIVE": 0, "YOUTUBE": 1, "MEDIA": 2, "NEWS": 3}
+    category_rank = {"X": 0, "LIVE": 1, "YOUTUBE": 2, "MEDIA": 3, "NEWS": 4}
     prediction_rank = {"urgent": 0, "stream": 1, None: 2}
     pending.sort(key=lambda x: (
         prediction_rank.get(x.get("prediction"), 9),
