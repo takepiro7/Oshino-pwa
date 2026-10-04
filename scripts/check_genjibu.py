@@ -28,6 +28,10 @@ SOURCES = {
         "url": "https://genjibu.jp/news/7/?range=all_event_start_time",
         "heading": "OshiNow MEDIA",
     },
+    "YOUTUBE": {
+        "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCz3x9qQNFcbc37R3ND0B8kw",
+        "heading": "OshiNow YOUTUBE",
+    },
 }
 
 
@@ -36,6 +40,89 @@ def normalize_title(category, text):
     if category == "NEWS":
         text = re.sub(r"^\d{4}\.\d{2}\.\d{2}\s+posted\s+", "", text).strip()
     return text[:180]
+
+
+STRONG_PREDICTION_PATTERNS = [
+    r"今から",
+    r"このあと",
+    r"この後",
+    r"まもなく",
+    r"急遽",
+    r"突然",
+    r"インスタライブ",
+    r"インライ",
+    r"instagram\s*live",
+]
+
+STREAM_PATTERNS = [
+    r"生配信",
+    r"ライブ配信",
+    r"配信開始",
+    r"youtube\s*live",
+    r"instagram",
+    r"インスタ",
+]
+
+
+def prediction_level(text):
+    lowered = text.lower()
+    if any(re.search(p, lowered, re.IGNORECASE) for p in STRONG_PREDICTION_PATTERNS):
+        return "urgent"
+    if any(re.search(p, lowered, re.IGNORECASE) for p in STREAM_PATTERNS):
+        return "stream"
+    return None
+
+
+def apply_prediction(item, text):
+    level = prediction_level(text)
+    if level == "urgent":
+        item["heading"] = "OshiNow 🔴 配信予兆"
+        item["prediction"] = "urgent"
+    elif level == "stream":
+        item["heading"] = "OshiNow 配信情報"
+        item["prediction"] = "stream"
+    else:
+        item["prediction"] = None
+    return item
+
+
+def fetch_youtube(category, config):
+    r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "xml")
+    items = []
+
+    for entry in soup.find_all("entry"):
+        title_node = entry.find("title")
+        link_node = entry.find("link")
+        video_id_node = entry.find("yt:videoId")
+        if not title_node:
+            continue
+
+        title = normalize_title(category, title_node.get_text(" ", strip=True))
+        if not title:
+            continue
+
+        if link_node and link_node.get("href"):
+            url = link_node.get("href")
+        elif video_id_node:
+            url = f"https://www.youtube.com/watch?v={video_id_node.get_text(strip=True)}"
+        else:
+            continue
+
+        desc_node = entry.find("media:description")
+        description = desc_node.get_text(" ", strip=True) if desc_node else ""
+        combined = f"{title} {description}"
+
+        item = {
+            "url": url,
+            "title": title,
+            "category": category,
+            "heading": config["heading"],
+        }
+        items.append(apply_prediction(item, combined))
+
+    return items
 
 
 def fetch_category(category, config):
@@ -63,12 +150,13 @@ def fetch_category(category, config):
         if not title:
             continue
 
-        items.append({
+        item = {
             "url": url,
             "title": title,
             "category": category,
             "heading": config["heading"],
-        })
+        }
+        items.append(apply_prediction(item, raw))
         seen.add(url)
 
     return items
@@ -120,6 +208,7 @@ def send_push(api_key, item):
         "data": {
             "source": "genjibu_official",
             "category": item["category"],
+            "prediction": item.get("prediction"),
             "url": item["url"],
         },
     }
@@ -163,7 +252,10 @@ def main():
     baselined = []
 
     for category, config in SOURCES.items():
-        items = fetch_category(category, config)
+        if category == "YOUTUBE":
+            items = fetch_youtube(category, config)
+        else:
+            items = fetch_category(category, config)
         current_by_category[category] = items
 
         if category not in seen_by_category:
@@ -186,13 +278,18 @@ def main():
                 pending.append(item)
 
     if not pending:
-        print("No new NEWS / LIVE / MEDIA items.")
+        print("No new NEWS / LIVE / MEDIA / YOUTUBE items.")
         save_state(state)
         return 0
 
     # Keep category order predictable and limit bursts.
-    category_rank = {"LIVE": 0, "MEDIA": 1, "NEWS": 2}
-    pending.sort(key=lambda x: (category_rank.get(x["category"], 9), x["url"]))
+    category_rank = {"LIVE": 0, "YOUTUBE": 1, "MEDIA": 2, "NEWS": 3}
+    prediction_rank = {"urgent": 0, "stream": 1, None: 2}
+    pending.sort(key=lambda x: (
+        prediction_rank.get(x.get("prediction"), 9),
+        category_rank.get(x["category"], 9),
+        x["url"],
+    ))
 
     sent_count = 0
     for item in pending[:MAX_PUSH_PER_RUN]:
