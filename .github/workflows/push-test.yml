@@ -28,9 +28,12 @@ jobs:
           python - <<'PY'
           import json, os, re, urllib.request, urllib.error
 
-          raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip()
-          if not raw:
-              raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
+          raw = "\n".join(
+              x for x in [
+                  os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip(),
+                  os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip(),
+              ] if x
+          )
 
           uuid_re = re.compile(r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}")
           ids = []
