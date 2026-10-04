@@ -8,6 +8,7 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
 
 SITE_URL = "https://genjibu.jp/"
 ONESIGNAL_APP_ID = "d40f1748-dbb5-472a-aaa1-5178eb3ed064"
@@ -89,29 +90,40 @@ def apply_prediction(item, text):
 def fetch_youtube(category, config):
     r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
     r.raise_for_status()
-    soup = BeautifulSoup(r.text, "xml")
-    items = []
 
-    for entry in soup.find_all("entry"):
-        title_node = entry.find("title")
-        link_node = entry.find("link")
-        video_id_node = entry.find("yt:videoId")
-        if not title_node:
+    root = ET.fromstring(r.content)
+    ns = {
+        "atom": "http://www.w3.org/2005/Atom",
+        "yt": "http://www.youtube.com/xml/schemas/2015",
+        "media": "http://search.yahoo.com/mrss/",
+    }
+
+    items = []
+    for entry in root.findall("atom:entry", ns):
+        title_node = entry.find("atom:title", ns)
+        link_node = entry.find("atom:link", ns)
+        video_id_node = entry.find("yt:videoId", ns)
+
+        if title_node is None or not (title_node.text or "").strip():
             continue
 
-        title = normalize_title(category, title_node.get_text(" ", strip=True))
+        title = normalize_title(category, title_node.text.strip())
         if not title:
             continue
 
-        if link_node and link_node.get("href"):
-            url = link_node.get("href")
-        elif video_id_node:
-            url = f"https://www.youtube.com/watch?v={video_id_node.get_text(strip=True)}"
-        else:
+        url = None
+        if link_node is not None:
+            url = link_node.attrib.get("href")
+        if not url and video_id_node is not None and (video_id_node.text or "").strip():
+            url = f"https://www.youtube.com/watch?v={video_id_node.text.strip()}"
+        if not url:
             continue
 
-        desc_node = entry.find("media:description")
-        description = desc_node.get_text(" ", strip=True) if desc_node else ""
+        description = ""
+        desc_node = entry.find("media:group/media:description", ns)
+        if desc_node is not None and desc_node.text:
+            description = desc_node.text.strip()
+
         combined = f"{title} {description}"
 
         item = {
