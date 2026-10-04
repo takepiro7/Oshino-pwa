@@ -31,9 +31,14 @@ jobs:
       - name: Check required secret
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
         run: |
           if [ -z "$ONESIGNAL_REST_API_KEY" ]; then
             echo "::error::GitHub secret ONESIGNAL_REST_API_KEY is not configured."
+            exit 1
+          fi
+          if [ -z "$ONESIGNAL_SUBSCRIPTION_ID" ]; then
+            echo "::error::GitHub secret ONESIGNAL_SUBSCRIPTION_ID is not configured."
             exit 1
           fi
 
