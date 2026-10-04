@@ -275,6 +275,11 @@ def infer_event_type(item):
 def extract_event(item):
     text = re.sub(r"\s+", " ", item.get("text", item.get("title", ""))).strip()
     now = datetime.now(JST)
+
+    # YouTube is useful for breaking/stream signals, but ordinary uploads
+    # often duplicate information already published on official feeds.
+    if item.get("category") == "YOUTUBE" and item.get("prediction") not in ("urgent", "stream"):
+        return None
     year = now.year
     month = day = None
     hour = minute = 0
@@ -335,22 +340,58 @@ def save_calendar_events(current_by_category):
         except Exception:
             existing = []
 
-    by_url = {e.get("url"): e for e in existing if e.get("url")}
+    today = datetime.now(JST).date()
 
+    # Build fresh events from current official feeds.
+    fresh = []
     for items in current_by_category.values():
         for item in items:
             event = extract_event(item)
-            if event:
-                by_url[event["url"]] = event
+            if not event:
+                continue
+            try:
+                event_date = datetime.strptime(event["date"], "%Y-%m-%d").date()
+            except Exception:
+                continue
 
-    events = list(by_url.values())
-    events.sort(key=lambda e: (e.get("date", ""), e.get("time", "")))
+            # Finished information is not useful in the fan calendar.
+            if event_date < today:
+                continue
+
+            fresh.append(event)
+
+    # Prefer official site categories over X/YouTube when the same date/title
+    # appears more than once.
+    priority = {"LIVE": 0, "MEDIA": 1, "NEWS": 2, "X": 3, "YOUTUBE": 4}
+    fresh.sort(key=lambda e: (
+        e.get("date", ""),
+        e.get("time", ""),
+        priority.get(e.get("source"), 9),
+    ))
+
+    deduped = []
+    seen_keys = set()
+    for event in fresh:
+        title_key = re.sub(r"\W+", "", event.get("title", "")).lower()[:60]
+        key = (event.get("date"), event.get("time"), event.get("type"), title_key)
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        deduped.append(event)
+
     EVENTS_PATH.parent.mkdir(parents=True, exist_ok=True)
     EVENTS_PATH.write_text(
-        json.dumps({"updated_at": datetime.now(JST).isoformat(), "events": events[-200:]}, ensure_ascii=False, indent=2) + "\n",
+        json.dumps(
+            {
+                "updated_at": datetime.now(JST).isoformat(),
+                "events": deduped[:200],
+            },
+            ensure_ascii=False,
+            indent=2,
+        ) + "\n",
         encoding="utf-8",
     )
-    print(f"Calendar events: {len(events)}")
+    print(f"Calendar events: {len(deduped)} upcoming item(s)")
 
 
 def load_state():
