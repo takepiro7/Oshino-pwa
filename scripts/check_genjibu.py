@@ -337,12 +337,37 @@ def summarize_for_push(item):
     return concise, "\n".join(lines)
 
 
-def send_push(api_key, subscription_id, item):
+def load_subscription_ids():
+    raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip()
+    if not raw:
+        raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
+
+    if not raw:
+        return []
+
+    parts = re.split(r"[\s,;]+", raw)
+    ids = []
+    uuid_pattern = re.compile(
+        r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+    )
+    for value in parts:
+        value = value.strip()
+        if not value:
+            continue
+        if not uuid_pattern.match(value):
+            print(f"Ignoring invalid OneSignal subscription ID: {value[:8]}…", file=sys.stderr)
+            continue
+        if value not in ids:
+            ids.append(value)
+    return ids
+
+
+def send_push(api_key, subscription_ids, item):
     concise, summary = summarize_for_push(item)
     payload = {
         "app_id": ONESIGNAL_APP_ID,
         "target_channel": "push",
-        "include_subscription_ids": [subscription_id],
+        "include_subscription_ids": subscription_ids,
         "headings": {
             "ja": item["heading"],
             "en": "OshiNow",
@@ -388,13 +413,14 @@ def send_push(api_key, subscription_id, item):
 
 def main():
     api_key = os.environ.get("ONESIGNAL_REST_API_KEY", "").strip()
-    subscription_id = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
+    subscription_ids = load_subscription_ids()
     if not api_key:
         print("ONESIGNAL_REST_API_KEY is not configured.", file=sys.stderr)
         return 2
-    if not subscription_id:
-        print("ONESIGNAL_SUBSCRIPTION_ID is not configured.", file=sys.stderr)
+    if not subscription_ids:
+        print("No valid OneSignal subscription IDs are configured.", file=sys.stderr)
         return 2
+    print(f"Push targets: {len(subscription_ids)} subscription(s).")
 
     state = load_state()
     seen_by_category = state["seen_by_category"]
@@ -450,7 +476,7 @@ def main():
 
     sent_count = 0
     for item in pending[:MAX_PUSH_PER_RUN]:
-        if not send_push(api_key, subscription_id, item):
+        if not send_push(api_key, subscription_ids, item):
             print("Push audience is currently empty; workflow exits successfully and will retry later.")
             save_state(state)
             return 0
