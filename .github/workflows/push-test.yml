@@ -1,0 +1,25 @@
+name: OshiNow urgent push test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send urgent test push
+        env:
+          ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+        run: |
+          curl --fail-with-body -X POST "https://api.onesignal.com/notifications" \
+            -H "Authorization: Key $ONESIGNAL_REST_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "app_id":"d40f1748-dbb5-472a-aaa1-5178eb3ed064",
+              "target_channel":"push",
+              "included_segments":["Subscribed Users"],
+              "headings":{"ja":"OshiNow 🔴 配信予兆","en":"OshiNow"},
+              "contents":{"ja":"テスト：このあと配信が始まる可能性があります。","en":"Test livestream alert"},
+              "url":"https://takepiro7.github.io/Oshino-pwa/",
+              "data":{"source":"oshinow_test","prediction":"urgent"}
+            }'
