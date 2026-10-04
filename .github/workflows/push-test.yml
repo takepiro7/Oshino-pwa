@@ -44,32 +44,39 @@ jobs:
 
           print(f"Testing push to {len(ids)} subscription(s).")
 
-          payload = {
-              "app_id": "d40f1748-dbb5-472a-aaa1-5178eb3ed064",
-              "target_channel": "push",
-              "include_subscription_ids": ids,
-              "headings": {"ja": "OshiNow 🔴 配信予兆", "en": "OshiNow"},
-              "contents": {
-                  "ja": "何？ 配信が始まる可能性\nいつ？ まもなく\nすること：Instagram / YouTubeを確認",
-                  "en": "Livestream may start soon",
-              },
-              "url": "https://takepiro7.github.io/Oshino-pwa/?notice=urgent-test",
-              "data": {"source": "oshinow_test", "prediction": "urgent"},
-          }
-          req = urllib.request.Request(
-              "https://api.onesignal.com/notifications",
-              data=json.dumps(payload).encode(),
-              headers={
-                  "Authorization": "Key " + os.environ["ONESIGNAL_REST_API_KEY"],
-                  "Content-Type": "application/json",
-              },
-              method="POST",
-          )
-          try:
-              with urllib.request.urlopen(req, timeout=20) as r:
-                  print(r.read().decode())
-          except urllib.error.HTTPError as e:
-              body = e.read().decode()
-              print(f"HTTP {e.code}: {body}")
-              raise
+          any_success = False
+          for i, subscription_id in enumerate(ids, start=1):
+              payload = {
+                  "app_id": "d40f1748-dbb5-472a-aaa1-5178eb3ed064",
+                  "target_channel": "push",
+                  "include_subscription_ids": [subscription_id],
+                  "headings": {"ja": f"OshiNow 🔴 配信予兆 テスト{i}", "en": "OshiNow"},
+                  "contents": {
+                      "ja": f"端末{i}への個別Pushテストです",
+                      "en": f"Push test for device {i}",
+                  },
+                  "url": "https://takepiro7.github.io/Oshino-pwa/?notice=urgent-test",
+                  "data": {"source": "oshinow_test", "prediction": "urgent", "target_index": i},
+              }
+              req = urllib.request.Request(
+                  "https://api.onesignal.com/notifications",
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      "Authorization": "Key " + os.environ["ONESIGNAL_REST_API_KEY"],
+                      "Content-Type": "application/json",
+                  },
+                  method="POST",
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      body = r.read().decode()
+                      print(f"Target {i}: {body}")
+                      if '"id":""' not in body:
+                          any_success = True
+              except urllib.error.HTTPError as e:
+                  body = e.read().decode()
+                  print(f"Target {i} HTTP {e.code}: {body}")
+
+          if not any_success:
+              raise SystemExit(3)
           PY
