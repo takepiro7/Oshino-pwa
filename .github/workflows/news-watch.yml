@@ -32,19 +32,22 @@ jobs:
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
           ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
+          ONESIGNAL_SUBSCRIPTION_IDS: ${{ secrets.ONESIGNAL_SUBSCRIPTION_IDS }}
         run: |
           if [ -z "$ONESIGNAL_REST_API_KEY" ]; then
             echo "::error::GitHub secret ONESIGNAL_REST_API_KEY is not configured."
             exit 1
           fi
-          if [ -z "$ONESIGNAL_SUBSCRIPTION_ID" ]; then
-            echo "::error::GitHub secret ONESIGNAL_SUBSCRIPTION_ID is not configured."
+          if [ -z "$ONESIGNAL_SUBSCRIPTION_ID" ] && [ -z "$ONESIGNAL_SUBSCRIPTION_IDS" ]; then
+            echo "::error::Configure ONESIGNAL_SUBSCRIPTION_ID or ONESIGNAL_SUBSCRIPTION_IDS."
             exit 1
           fi
 
-      - name: Check official NEWS LIVE MEDIA and notify
+      - name: Check official feeds and notify
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
+          ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
+          ONESIGNAL_SUBSCRIPTION_IDS: ${{ secrets.ONESIGNAL_SUBSCRIPTION_IDS }}
         run: python scripts/check_genjibu.py
 
       - name: Save watcher state
