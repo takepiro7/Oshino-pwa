@@ -19,7 +19,7 @@ jobs:
               "target_channel":"push",
               "included_segments":["Subscribed Users"],
               "headings":{"ja":"OshiNow 🔴 配信予兆","en":"OshiNow"},
-              "contents":{"ja":"テスト：このあと配信が始まる可能性があります。","en":"Test livestream alert"},
-              "url":"https://takepiro7.github.io/Oshino-pwa/",
+              "contents":{"ja":"何？ 配信が始まる可能性\nいつ？ まもなく\nすること：Instagram / YouTubeを確認","en":"Livestream may start soon"},
+              "url":"https://takepiro7.github.io/Oshino-pwa/?notice=urgent-test&title=OshiNow%20%E2%9A%AB%20%E9%85%8D%E4%BF%A1%E4%BA%88%E5%85%86&what=%E9%85%8D%E4%BF%A1%E3%81%8C%E5%A7%8B%E3%81%BE%E3%82%8B%E5%8F%AF%E8%83%BD%E6%80%A7&when=%E3%81%BE%E3%82%82%E3%81%AA%E3%81%8F&action=Instagram%20%2F%20YouTube%E3%82%92%E7%A2%BA%E8%AA%8D&source=OshiNow",
               "data":{"source":"oshinow_test","prediction":"urgent"}
             }'
