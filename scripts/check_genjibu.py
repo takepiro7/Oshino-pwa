@@ -345,18 +345,11 @@ def load_subscription_ids():
     if not raw:
         return []
 
-    parts = re.split(r"[\s,;]+", raw)
-    ids = []
     uuid_pattern = re.compile(
-        r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+        r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
     )
-    for value in parts:
-        value = value.strip()
-        if not value:
-            continue
-        if not uuid_pattern.match(value):
-            print(f"Ignoring invalid OneSignal subscription ID: {value[:8]}…", file=sys.stderr)
-            continue
+    ids = []
+    for value in uuid_pattern.findall(raw):
         if value not in ids:
             ids.append(value)
     return ids
