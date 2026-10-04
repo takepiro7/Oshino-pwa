@@ -11,21 +11,39 @@ jobs:
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
           ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
+          ONESIGNAL_SUBSCRIPTION_IDS: ${{ secrets.ONESIGNAL_SUBSCRIPTION_IDS }}
         run: |
           test -n "$ONESIGNAL_REST_API_KEY" || (echo "::error::Missing ONESIGNAL_REST_API_KEY" && exit 1)
-          test -n "$ONESIGNAL_SUBSCRIPTION_ID" || (echo "::error::Missing ONESIGNAL_SUBSCRIPTION_ID" && exit 1)
+          if [ -z "$ONESIGNAL_SUBSCRIPTION_ID" ] && [ -z "$ONESIGNAL_SUBSCRIPTION_IDS" ]; then
+            echo "::error::Missing OneSignal subscription IDs"
+            exit 1
+          fi
 
       - name: Send urgent test push
         env:
           ONESIGNAL_REST_API_KEY: ${{ secrets.ONESIGNAL_REST_API_KEY }}
           ONESIGNAL_SUBSCRIPTION_ID: ${{ secrets.ONESIGNAL_SUBSCRIPTION_ID }}
+          ONESIGNAL_SUBSCRIPTION_IDS: ${{ secrets.ONESIGNAL_SUBSCRIPTION_IDS }}
         run: |
           python - <<'PY'
-          import json, os, urllib.request, urllib.error
+          import json, os, re, urllib.request, urllib.error
+
+          raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_IDS", "").strip()
+          if not raw:
+              raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
+
+          ids = []
+          for value in re.split(r"[\s,;]+", raw):
+              value = value.strip()
+              if value and value not in ids:
+                  ids.append(value)
+
+          print(f"Testing push to {len(ids)} subscription(s).")
+
           payload = {
               "app_id": "d40f1748-dbb5-472a-aaa1-5178eb3ed064",
               "target_channel": "push",
-              "include_subscription_ids": [os.environ["ONESIGNAL_SUBSCRIPTION_ID"]],
+              "include_subscription_ids": ids,
               "headings": {"ja": "OshiNow 🔴 配信予兆", "en": "OshiNow"},
               "contents": {
                   "ja": "何？ 配信が始まる可能性\nいつ？ まもなく\nすること：Instagram / YouTubeを確認",
