@@ -20,6 +20,36 @@ function home(){return `<div class="topline"><div class="brand">OshiNow</div><bu
 function inbox(){return `<h1 class="page-title">通知</h1><p class="page-sub">大事なものだけ、短く。</p>${NOTICES.map(n=>`<div class="inbox-row"><div class="inbox-icon">${n.icon}</div><div><h4>${n.title}</h4><p>${n.body}</p></div>${n.unread?'<span class="dot"></span>':''}</div>`).join('')}<div class="setting-card"><h3>通知のテスト</h3><p class="page-sub">ホーム画面に追加したiPhoneでは、通知許可の動作確認ができます。</p><button class="primary" id="notifyTest">通知を試す</button></div>`}
 function calendar(){const groups={}; for(const e of SAMPLE_EVENTS){(groups[e.date]??=[]).push(e)}; return `<h1 class="page-title">カレンダー</h1><p class="page-sub">出演・配信・発売・締切をまとめて確認。</p>${Object.entries(groups).sort().map(([d,es])=>`<section class="calendar-group"><div class="date-label">${d.replaceAll('-','/')}</div>${es.map(e=>`<div class="calendar-item" data-id="${e.id}"><div class="timebox">${e.time}</div><div><h4>${e.icon} ${e.title}</h4><p>${e.type} ・ ${urgencyLabel(e.urgency)}</p></div></div>`).join('')}</section>`).join('')}`}
 function settings(){return `<h1 class="page-title">推し設定</h1><p class="page-sub">「原因は自分にある。」で動作確認中。</p><div class="setting-card"><div class="setting-row"><div><b>緊急通知</b><div class="page-sub" style="margin:3px 0 0">ライブ・締切・重要発表</div></div><input class="switch" type="checkbox" checked></div><div class="setting-row"><div><b>深夜通知</b><div class="page-sub" style="margin:3px 0 0">22時以降も通知</div></div><input class="switch" type="checkbox"></div><div class="setting-row"><div><b>予兆通知</b><div class="page-sub" style="margin:3px 0 0">「今から」「このあと」を検知</div></div><input class="switch" type="checkbox" checked></div></div><div class="setting-card"><h3>ホーム画面へ追加</h3><div class="install-box">iPhoneのSafariでこのページを開く → 共有ボタン →「ホーム画面に追加」。追加後にOshiNowを開くと、普通のアプリのように使えます。</div></div><div class="setting-card"><h3>通知について</h3><p class="page-sub">OneSignalを使った本番Push通知に対応しています。iPhoneではホーム画面に追加したOshiNowから通知を許可してください。</p><button class="secondary" id="notifyTest2">通知を試す</button></div>`}
+function openNoticeFromUrl(){
+  const params=new URLSearchParams(window.location.search);
+  const notice=params.get('notice');
+  if(!notice)return;
+
+  const title=params.get('title')||'OshiNow 通知';
+  const what=params.get('what')||'新しい情報があります';
+  const when=params.get('when')||'';
+  const action=params.get('action')||'詳細を確認';
+  const source=params.get('source')||'OshiNow';
+
+  dialog.innerHTML=`<div class="detail-inner">
+    <div class="detail-head">
+      <div><div class="kind">🔔 通知</div><h2>${title}</h2></div>
+      <button class="close" aria-label="閉じる">×</button>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-box"><b>何？</b>${what}</div>
+      ${when?`<div class="detail-box"><b>いつ？</b>${when}</div>`:''}
+      <div class="detail-box"><b>すること</b>${action}</div>
+      <div class="detail-box"><b>情報源</b>${source}</div>
+    </div>
+  </div>`;
+  dialog.querySelector('.close').onclick=()=>dialog.close();
+  dialog.showModal();
+
+  const clean=window.location.pathname+window.location.hash;
+  window.history.replaceState({},'',clean);
+}
+
 function render(){screen.innerHTML=tab==='home'?home():tab==='inbox'?inbox():tab==='calendar'?calendar():settings(); bind();}
 function bind(){document.querySelectorAll('[data-id]').forEach(el=>el.addEventListener('click',()=>openDetail(el.dataset.id))); document.querySelector('#notifyTest')?.addEventListener('click',testNotification); document.querySelector('#notifyTest2')?.addEventListener('click',testNotification); document.querySelector('#heartBtn')?.addEventListener('click',()=>showToast('推し設定を保存しました')); document.querySelector('#savedBtn')?.addEventListener('click',()=>{document.querySelector('#allBtn').classList.remove('active');document.querySelector('#savedBtn').classList.add('active');document.querySelector('#eventList').innerHTML=saved.size?[...saved].map(id=>eventCard(SAMPLE_EVENTS.find(e=>e.id===id))).join(''):'<div class="sample-note">保存した情報はまだありません</div>';bind()}); document.querySelector('#allBtn')?.addEventListener('click',()=>{render()})}
 function openDetail(id){const e=SAMPLE_EVENTS.find(x=>x.id===id); if(!e)return; dialog.innerHTML=`<div class="detail-inner"><div class="detail-head"><div><div class="kind">${e.icon} ${e.type}</div><h2>${e.title}</h2></div><button class="close" aria-label="閉じる">×</button></div><div class="detail-grid"><div class="detail-box"><b>誰？</b>${e.who}</div><div class="detail-box"><b>何？</b>${e.what}</div><div class="detail-box"><b>いつ？</b>${e.when}</div><div class="detail-box"><b>すること</b>${e.todo}</div><div class="detail-box"><b>情報源</b>${e.source}</div></div><button class="primary" id="saveDetail">${saved.has(e.id)?'保存済み':'この情報を保存'}</button></div>`;dialog.querySelector('.close').onclick=()=>dialog.close();dialog.querySelector('#saveDetail').onclick=()=>{saved.add(e.id);showToast('保存しました');dialog.close()};dialog.showModal()}
@@ -86,3 +116,4 @@ async function testNotification(){
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{tab=btn.dataset.tab;document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b===btn));render()}));
 if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(console.error))}
 render();
+setTimeout(openNoticeFromUrl,150);
