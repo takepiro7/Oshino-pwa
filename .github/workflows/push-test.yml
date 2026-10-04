@@ -32,22 +32,14 @@ jobs:
           if not raw:
               raw = os.environ.get("ONESIGNAL_SUBSCRIPTION_ID", "").strip()
 
+          uuid_re = re.compile(r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}")
           ids = []
-          invalid = []
-          uuid_re = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
-          for value in re.split(r"[\s,;]+", raw):
-              value = value.strip()
-              if not value:
-                  continue
-              if not uuid_re.match(value):
-                  invalid.append(value)
-                  continue
+          for value in uuid_re.findall(raw):
               if value not in ids:
                   ids.append(value)
 
-          if invalid:
-              print(f"Invalid subscription ID count: {len(invalid)}")
-              print("Please copy the value labeled 'Subscription ID' in OneSignal, not 'OneSignal ID'.")
+          if not ids:
+              print("No valid Subscription IDs found.")
               raise SystemExit(2)
 
           print(f"Testing push to {len(ids)} subscription(s).")
