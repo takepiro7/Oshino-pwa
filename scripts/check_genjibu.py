@@ -430,6 +430,8 @@ def summarize_for_push(item):
     concise = re.sub(r"\[[^\]]{0,60}\]", "", concise).strip()
     if len(concise) > 90:
         concise = concise[:87] + "…"
+    if not concise:
+        concise = text or item.get("heading") or "OshiNow new update"
 
     lines = [
         f"何？ {what}",
@@ -471,8 +473,8 @@ def send_push(api_key, subscription_ids, item):
             "en": "OshiNow",
         },
         "contents": {
-            "ja": summary,
-            "en": concise,
+            "ja": summary or "OshiNow 新着情報",
+            "en": concise or "OshiNow new update",
         },
         "url": item["url"],
         "data": {
