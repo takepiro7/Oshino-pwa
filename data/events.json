@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-05T10:07:59.432448+09:00",
+  "updated_at": "2026-10-05T16:01:20.261948+09:00",
   "events": [
+    {
+      "id": "https-genjibu-jp-news-detail-2508",
+      "type": "予定",
+      "icon": "📌",
+      "title": "第6回EBiDAN大運動会『スポーツマンヒップ！』オフィシャルグッズ 会場販売＆整理券配布のお知らせ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-10-05",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "第6回EBiDAN大運動会『スポーツマンヒップ！』オフィシャルグッズ 会場販売＆整理券配布のお知らせ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/5",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2508"
+    },
     {
       "id": "https-genjibu-jp-news-detail-2471",
       "type": "出演",
