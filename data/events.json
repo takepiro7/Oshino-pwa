@@ -1,54 +1,6 @@
 {
-  "updated_at": "2026-10-06T18:17:10.276361+09:00",
+  "updated_at": "2026-10-07T01:02:22.313896+09:00",
   "events": [
-    {
-      "id": "https-genjibu-jp-news-detail-2511",
-      "type": "予定",
-      "icon": "📌",
-      "title": "【ゲンジブ観測所先行】「ラブリーズン」リリース記念フリーライブ ＠横浜赤レンガ倉庫 赤レンガパーク特設会場 チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-06",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "【ゲンジブ観測所先行】「ラブリーズン」リリース記念フリーライブ ＠横浜赤レンガ倉庫 赤レンガパーク特設会場 チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/6",
-      "todo": "詳細を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2511"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2509",
-      "type": "予定",
-      "icon": "📌",
-      "title": "「ラブリーズン」リリース記念フリーライブ ＠横浜赤レンガ倉庫 赤レンガパーク特設会場 開催に伴うお願いと注意事項 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-06",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "「ラブリーズン」リリース記念フリーライブ ＠横浜赤レンガ倉庫 赤レンガパーク特設会場 開催に伴うお願いと注意事項 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/6",
-      "todo": "詳細を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2509"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2510",
-      "type": "予定",
-      "icon": "📌",
-      "title": "【TICKET INFO】「ラブリーズン」リリース記念フリーライブ",
-      "date": "2026-10-06",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "【TICKET INFO】「ラブリーズン」リリース記念フリーライブ",
-      "when": "10/6",
-      "todo": "詳細を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2510"
-    },
     {
       "id": "https-genjibu-jp-news-detail-2471",
       "type": "出演",
@@ -224,22 +176,6 @@
       "todo": "YouTubeを確認",
       "source": "YOUTUBE",
       "url": "https://www.youtube.com/watch?v=6DUS_LhY9D4"
-    },
-    {
-      "id": "https-www-youtube-com-watch-v-fMo-tAc2Gk",
-      "type": "配信",
-      "icon": "▶️",
-      "title": "EBiDAN THE LIVE 2026 15th Anniversary の裏側 ＜未公開映像＞【#原因は自分にある 。】",
-      "date": "2026-11-11",
-      "time": "14:30",
-      "urgency": "normal",
-      "action": "YouTubeを確認",
-      "who": "原因は自分にある。",
-      "what": "EBiDAN THE LIVE 2026 15th Anniversary の裏側 ＜未公開映像＞【#原因は自分にある 。】",
-      "when": "11/11 14:30",
-      "todo": "YouTubeを確認",
-      "source": "YOUTUBE",
-      "url": "https://www.youtube.com/watch?v=fMo--tAc2Gk"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
