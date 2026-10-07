@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T09:31:11.486946+09:00",
+  "updated_at": "2026-10-07T22:44:48.761962+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2471",
@@ -160,22 +160,6 @@
       "todo": "YouTubeを確認",
       "source": "YOUTUBE",
       "url": "https://www.youtube.com/watch?v=a6uTt3Crq6w"
-    },
-    {
-      "id": "https-www-youtube-com-watch-v-6DUS-LhY9D4",
-      "type": "配信",
-      "icon": "▶️",
-      "title": "JOIN ALIVE 2026 の裏側【#原因は自分にある 。】",
-      "date": "2026-11-11",
-      "time": "14:30",
-      "urgency": "normal",
-      "action": "YouTubeを確認",
-      "who": "原因は自分にある。",
-      "what": "JOIN ALIVE 2026 の裏側【#原因は自分にある 。】",
-      "when": "11/11 14:30",
-      "todo": "YouTubeを確認",
-      "source": "YOUTUBE",
-      "url": "https://www.youtube.com/watch?v=6DUS_LhY9D4"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
