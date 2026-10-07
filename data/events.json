@@ -1,38 +1,6 @@
 {
-  "updated_at": "2026-10-07T22:44:48.761962+09:00",
+  "updated_at": "2026-10-08T04:35:05.937976+09:00",
   "events": [
-    {
-      "id": "https-genjibu-jp-news-detail-2471",
-      "type": "出演",
-      "icon": "📺",
-      "title": "2026.10.07 TV 【杢代和人】 水曜プラチナイト『仮面教師～妻を亡くしたその日から』",
-      "date": "2026-10-07",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "原因は自分にある。",
-      "what": "2026.10.07 TV 【杢代和人】 水曜プラチナイト『仮面教師～妻を亡くしたその日から』",
-      "when": "10/7",
-      "todo": "放送・配信時間を確認",
-      "source": "MEDIA",
-      "url": "https://genjibu.jp/news/detail/2471"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2471",
-      "type": "予定",
-      "icon": "📌",
-      "title": "2026.10.07 TV 【杢代和人】 水曜プラチナイト『仮面教師～妻を亡くしたその日から』",
-      "date": "2026-10-07",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "2026.10.07 TV 【杢代和人】 水曜プラチナイト『仮面教師～妻を亡くしたその日から』",
-      "when": "10/7",
-      "todo": "詳細を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2471"
-    },
     {
       "id": "https-genjibu-jp-news-detail-2474",
       "type": "出演",
@@ -111,6 +79,22 @@
       "when": "10/18",
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
+      "url": "https://genjibu.jp/news/detail/2485"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2485",
+      "type": "予定",
+      "icon": "📌",
+      "title": "2026.10.18 TV 【吉澤要人】日本・シンガポール外交関係樹立 60 周年記念ドラマ『SQUALL』",
+      "date": "2026-10-18",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "2026.10.18 TV 【吉澤要人】日本・シンガポール外交関係樹立 60 周年記念ドラマ『SQUALL』",
+      "when": "10/18",
+      "todo": "詳細を確認",
+      "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2485"
     },
     {
