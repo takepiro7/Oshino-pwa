@@ -1,22 +1,6 @@
 {
-  "updated_at": "2026-10-08T19:28:15.401688+09:00",
+  "updated_at": "2026-10-09T02:33:28.784820+09:00",
   "events": [
-    {
-      "id": "https-genjibu-jp-news-detail-2512",
-      "type": "予定",
-      "icon": "📌",
-      "title": "【お知らせ】 EBiDAN SNS投稿ガイドラインに関するお知らせ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-08",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "【お知らせ】 EBiDAN SNS投稿ガイドラインに関するお知らせ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/8",
-      "todo": "詳細を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2512"
-    },
     {
       "id": "https-genjibu-jp-news-detail-2474",
       "type": "出演",
