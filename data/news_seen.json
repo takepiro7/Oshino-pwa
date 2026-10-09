@@ -2,6 +2,10 @@
   "schema": 2,
   "seen_by_category": {
     "NEWS": [
+      "https://genjibu.jp/news/detail/2516",
+      "https://genjibu.jp/news/detail/2515",
+      "https://genjibu.jp/news/detail/2514",
+      "https://genjibu.jp/news/detail/2513",
       "https://genjibu.jp/news/detail/2512",
       "https://genjibu.jp/news/detail/2485",
       "https://genjibu.jp/news/detail/2511",
@@ -40,6 +44,7 @@
       "https://genjibu.jp/news/detail/2466"
     ],
     "MEDIA": [
+      "https://genjibu.jp/news/detail/2514",
       "https://genjibu.jp/news/detail/2507",
       "https://genjibu.jp/news/detail/2506",
       "https://genjibu.jp/news/detail/2479",
@@ -55,6 +60,7 @@
       "https://genjibu.jp/news/detail/2377"
     ],
     "YOUTUBE": [
+      "https://www.youtube.com/shorts/dKmVX7rBcAM",
       "https://www.youtube.com/shorts/W_cVCKk4Cdc",
       "https://www.youtube.com/shorts/o5lW82BRqc8",
       "https://www.youtube.com/shorts/eTMaz5OAMsc",

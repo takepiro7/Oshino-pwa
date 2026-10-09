@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T07:25:44.969759+09:00",
+  "updated_at": "2026-10-09T18:28:38.585878+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2474",
@@ -18,6 +18,38 @@
       "url": "https://genjibu.jp/news/detail/2474"
     },
     {
+      "id": "https-genjibu-jp-news-detail-2516",
+      "type": "予定",
+      "icon": "📌",
+      "title": "【10月9日更新】10月11日(日)開催 リリースイベント＠愛知 参加方法・特典会内容についてのご案内 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-10-09",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "【10月9日更新】10月11日(日)開催 リリースイベント＠愛知 参加方法・特典会内容についてのご案内 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/9",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2516"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2515",
+      "type": "予定",
+      "icon": "📌",
+      "title": "10月11日(日)開催 リリースイベント＠愛知 参加方法一部変更のご案内 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-10-09",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "10月11日(日)開催 リリースイベント＠愛知 参加方法一部変更のご案内 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/9",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2515"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2474",
       "type": "予定",
       "icon": "📌",
@@ -34,6 +66,54 @@
       "url": "https://genjibu.jp/news/detail/2474"
     },
     {
+      "id": "https-genjibu-jp-news-detail-2513",
+      "type": "予定",
+      "icon": "📌",
+      "title": "第6回 EBiDAN 大運動会 『スポーツマンヒップ！』ファンクラブブース情報！",
+      "date": "2026-10-09",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "第6回 EBiDAN 大運動会 『スポーツマンヒップ！』ファンクラブブース情報！",
+      "when": "10/9",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2513"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2514",
+      "type": "出演",
+      "icon": "📺",
+      "title": "2026.10.16 TV 【EBiDAN】テレビ朝日系『ミュージックステーション』（小泉・武藤・吉澤）",
+      "date": "2026-10-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "原因は自分にある。",
+      "what": "2026.10.16 TV 【EBiDAN】テレビ朝日系『ミュージックステーション』（小泉・武藤・吉澤）",
+      "when": "10/16",
+      "todo": "放送・配信時間を確認",
+      "source": "MEDIA",
+      "url": "https://genjibu.jp/news/detail/2514"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2514",
+      "type": "予定",
+      "icon": "📌",
+      "title": "2026.10.16 TV 【EBiDAN】テレビ朝日系『ミュージックステーション』（小泉・武藤・吉澤）",
+      "date": "2026-10-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "2026.10.16 TV 【EBiDAN】テレビ朝日系『ミュージックステーション』（小泉・武藤・吉澤）",
+      "when": "10/16",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2514"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2447",
       "type": "出演",
       "icon": "📺",
@@ -79,22 +159,6 @@
       "when": "10/18",
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
-      "url": "https://genjibu.jp/news/detail/2485"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2485",
-      "type": "予定",
-      "icon": "📌",
-      "title": "2026.10.18 TV 【吉澤要人】日本・シンガポール外交関係樹立 60 周年記念ドラマ『SQUALL』",
-      "date": "2026-10-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "原因は自分にある。",
-      "what": "2026.10.18 TV 【吉澤要人】日本・シンガポール外交関係樹立 60 周年記念ドラマ『SQUALL』",
-      "when": "10/18",
-      "todo": "詳細を確認",
-      "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2485"
     },
     {
@@ -128,22 +192,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2479"
-    },
-    {
-      "id": "https-www-youtube-com-watch-v-a6uTt3Crq6w",
-      "type": "配信",
-      "icon": "▶️",
-      "title": "テレビ朝日・六本木ヒルズ SUMMER FES 2026の裏側【#原因は自分にある 。】",
-      "date": "2026-11-11",
-      "time": "14:30",
-      "urgency": "normal",
-      "action": "YouTubeを確認",
-      "who": "原因は自分にある。",
-      "what": "テレビ朝日・六本木ヒルズ SUMMER FES 2026の裏側【#原因は自分にある 。】",
-      "when": "11/11 14:30",
-      "todo": "YouTubeを確認",
-      "source": "YOUTUBE",
-      "url": "https://www.youtube.com/watch?v=a6uTt3Crq6w"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
