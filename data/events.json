@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-10-11T06:21:55.898751+09:00",
+  "updated_at": "2026-10-11T22:04:24.180004+09:00",
   "events": [
+    {
+      "id": "https-genjibu-jp-news-detail-2517",
+      "type": "予定",
+      "icon": "📌",
+      "title": "5thシングル リード楽曲「ラブリーズン」10月19日先行配信決定 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-10-11",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "原因は自分にある。",
+      "what": "5thシングル リード楽曲「ラブリーズン」10月19日先行配信決定 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/11",
+      "todo": "詳細を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2517"
+    },
     {
       "id": "https-genjibu-jp-news-detail-2514",
       "type": "出演",
