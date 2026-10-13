@@ -23,22 +23,39 @@ SOURCES = {
     "NEWS": {
         "url": SITE_URL,
         "heading": "OshiNow NEWS",
+        "profile": "genjibu",
+        "notify": True,
     },
     "LIVE": {
         "url": "https://genjibu.jp/news/3/?range=future_event_end_time&sort=asc",
         "heading": "OshiNow LIVE",
+        "profile": "genjibu",
+        "notify": True,
     },
     "MEDIA": {
         "url": "https://genjibu.jp/news/7/?range=all_event_start_time",
         "heading": "OshiNow MEDIA",
+        "profile": "genjibu",
+        "notify": True,
     },
     "YOUTUBE": {
         "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCz3x9qQNFcbc37R3ND0B8kw",
         "heading": "OshiNow YOUTUBE",
+        "profile": "genjibu",
+        "notify": True,
     },
     "X": {
         "url": "https://syndication.twitter.com/srv/timeline-profile/screen-name/genjibu_sdr",
         "heading": "OshiNow X",
+        "profile": "genjibu",
+        "notify": True,
+    },
+    "EBIDAN": {
+        "url": "https://ebidan.jp/",
+        "base_url": "https://ebidan.jp/",
+        "heading": "OshiNow EBiDAN",
+        "profile": "ebidan",
+        "notify": False,
     },
 }
 
@@ -147,6 +164,8 @@ def fetch_youtube(category, config):
                 "category": category,
                 "heading": config["heading"],
                 "text": combined,
+                "profile": config.get("profile", "genjibu"),
+                "notify": config.get("notify", True),
             }
             items.append(apply_prediction(item, combined))
 
@@ -214,6 +233,8 @@ def fetch_x_public(category, config):
                 "category": category,
                 "heading": config["heading"],
                 "text": raw,
+                "profile": config.get("profile", "genjibu"),
+                "notify": config.get("notify", True),
             }
             items.append(apply_prediction(item, raw))
             seen.add(url)
@@ -243,7 +264,7 @@ def fetch_category(category, config):
         if "/news/detail/" not in href:
             continue
 
-        url = urljoin(SITE_URL, href)
+        url = urljoin(config.get("base_url", SITE_URL), href)
         if url in seen:
             continue
 
@@ -261,6 +282,8 @@ def fetch_category(category, config):
             "category": category,
             "heading": config["heading"],
             "text": raw,
+            "profile": config.get("profile", "genjibu"),
+            "notify": config.get("notify", True),
         }
         items.append(apply_prediction(item, raw))
         seen.add(url)
@@ -273,9 +296,9 @@ def infer_event_type(item):
     category = item.get("category")
     if re.search(r"締切|申込|申し込み|受付終了|応募締切|販売終了", text):
         return "締切", "⏰", "important", "期限までに確認・申込"
-    if category == "LIVE":
+    if category == "LIVE" or re.search(r"ライブ|LIVE|TOUR|ツアー|公演|ファンミ", text, re.IGNORECASE):
         return "ライブ", "🎤", "normal", "会場・開演時刻を確認"
-    if category == "MEDIA":
+    if category == "MEDIA" or re.search(r"出演|テレビ|TV|TBS|フジテレビ|日本テレビ|テレビ朝日|NHK|ラジオ|放送", text, re.IGNORECASE):
         return "出演", "📺", "normal", "放送・配信時間を確認"
     if category == "YOUTUBE":
         return "配信", "▶️", "normal", "YouTubeを確認"
@@ -335,7 +358,8 @@ def extract_event(item):
         "time": dt.strftime("%H:%M") if tm else "終日",
         "urgency": urgency,
         "action": action,
-        "who": "原因は自分にある。",
+        "who": "EBiDAN" if item.get("profile") == "ebidan" else "原因は自分にある。",
+        "oshi": item.get("profile", "genjibu"),
         "what": title,
         "when": dt.strftime("%-m/%-d %H:%M") if tm else dt.strftime("%-m/%-d"),
         "todo": action,
@@ -612,11 +636,14 @@ def main():
     for category, items in current_by_category.items():
         seen = set(seen_by_category.get(category, []))
         for item in items:
-            if item["url"] not in seen:
+            if item["url"] not in seen and item.get("notify", True):
                 pending.append(item)
 
+        if items and not any(x.get("notify", True) for x in items):
+            seen_by_category[category] = [x["url"] for x in items][:500]
+
     if not pending:
-        print("No new NEWS / LIVE / MEDIA / YOUTUBE / X items.")
+        print("No new GENJIBU push items. EBiDAN calendar data may still have updated.")
         save_state(state)
         return 0
 
