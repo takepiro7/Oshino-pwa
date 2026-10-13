@@ -10,13 +10,15 @@
       "time": "終日",
       "urgency": "urgent",
       "action": "Instagram / YouTubeを確認",
-      "who": "EBiDAN",
+      "who": "BUDDiiS",
       "oshi": "ebidan",
       "what": "2026/10/13 BUDDiiS 「FUMIYA 22nd Biirthday 生配信」撮り下ろしワイドチェキプレゼント！",
       "when": "10/13",
       "todo": "Instagram / YouTubeを確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21118634"
+      "url": "https://ebidan.jp/news/detail/21118634",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS"
     },
     {
       "id": "https-ebidan-jp-news-detail-21117577",
@@ -27,13 +29,15 @@
       "time": "終日",
       "urgency": "normal",
       "action": "放送・配信時間を確認",
-      "who": "EBiDAN",
+      "who": "M!LK",
       "oshi": "ebidan",
       "what": "2026/10/13 M!LK 【山中柔太朗】TBS「A-Studio+」出演決定！",
       "when": "10/13",
       "todo": "放送・配信時間を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21117577"
+      "url": "https://ebidan.jp/news/detail/21117577",
+      "group_key": "milk",
+      "group_name": "M!LK"
     },
     {
       "id": "https-ebidan-jp-news-detail-21117580",
@@ -44,13 +48,15 @@
       "time": "終日",
       "urgency": "normal",
       "action": "放送・配信時間を確認",
-      "who": "EBiDAN",
+      "who": "M!LK",
       "oshi": "ebidan",
       "what": "2026/10/13 M!LK 【山中柔太朗】TBS系「それSnow Manにやらせて下さい“それスノ×東京フレンドパーク”3時間SP」出演決定！",
       "when": "10/13",
       "todo": "放送・配信時間を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21117580"
+      "url": "https://ebidan.jp/news/detail/21117580",
+      "group_key": "milk",
+      "group_name": "M!LK"
     },
     {
       "id": "https-ebidan-jp-news-detail-21117967",
@@ -61,13 +67,15 @@
       "time": "終日",
       "urgency": "normal",
       "action": "詳細を確認",
-      "who": "EBiDAN",
+      "who": "M!LK",
       "oshi": "ebidan",
       "what": "2026/10/13 M!LK 11月3日(火・祝)より、全国のローソンにて「M!LK」ローソンキャンペーン 実施決定！",
       "when": "10/13",
       "todo": "詳細を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21117967"
+      "url": "https://ebidan.jp/news/detail/21117967",
+      "group_key": "milk",
+      "group_name": "M!LK"
     },
     {
       "id": "https-ebidan-jp-news-detail-9092747",
@@ -78,13 +86,15 @@
       "time": "終日",
       "urgency": "normal",
       "action": "詳細を確認",
-      "who": "EBiDAN",
+      "who": "Sakurashimeji",
       "oshi": "ebidan",
       "what": "2026/10/13 Sakurashimeji 【FC会員限定】Sakurashimeji 2nd EP『あなたの声になれたら』発売記念《3ショット撮影会》実施のお知らせ",
       "when": "10/13",
       "todo": "詳細を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/9092747"
+      "url": "https://ebidan.jp/news/detail/9092747",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji"
     },
     {
       "id": "https-genjibu-jp-news-detail-2514",
