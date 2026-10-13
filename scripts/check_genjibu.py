@@ -55,7 +55,7 @@ SOURCES = {
         "base_url": "https://ebidan.jp/",
         "heading": "OshiNow EBiDAN",
         "profile": "ebidan",
-        "notify": False,
+        "notify": True,
     },
 }
 
@@ -539,12 +539,25 @@ def load_subscription_ids():
     return ids
 
 
+def post_onesignal(api_key, payload):
+    return requests.post(
+        "https://api.onesignal.com/notifications",
+        headers={
+            "Authorization": f"Key {api_key}",
+            "Content-Type": "application/json",
+        },
+        json=payload,
+        timeout=20,
+    )
+
+
 def send_push(api_key, subscription_ids, item):
     concise, summary = summarize_for_push(item)
-    payload = {
+    profile = item.get("profile", "genjibu")
+
+    base_payload = {
         "app_id": ONESIGNAL_APP_ID,
         "target_channel": "push",
-        "include_subscription_ids": subscription_ids,
         "headings": {
             "ja": item["heading"],
             "en": "OshiNow",
@@ -555,35 +568,55 @@ def send_push(api_key, subscription_ids, item):
         },
         "url": item["url"],
         "data": {
-            "source": "genjibu_official",
+            "source": "oshinow_official",
+            "profile": profile,
             "category": item["category"],
             "prediction": item.get("prediction"),
             "url": item["url"],
         },
     }
 
-    r = requests.post(
-        "https://api.onesignal.com/notifications",
-        headers={
-            "Authorization": f"Key {api_key}",
-            "Content-Type": "application/json",
-        },
-        json=payload,
-        timeout=20,
-    )
+    # Primary route: users who selected this Oshi in the app.
+    payload = dict(base_payload)
+    payload["filters"] = [
+        {
+            "field": "tag",
+            "key": "oshi",
+            "relation": "=",
+            "value": profile,
+        }
+    ]
 
+    r = post_onesignal(api_key, payload)
     if r.status_code >= 300:
         raise RuntimeError(f"OneSignal error {r.status_code}: {r.text[:500]}")
 
     data = r.json() if r.text else {}
     if data.get("id"):
-        print(f"Sent [{item['category']}]: {concise} -> {data['id']}")
+        print(f"Sent [{profile}/{item['category']}]: {concise} -> {data['id']}")
         return True
 
     errors = data.get("errors") or []
-    if any("not subscribed" in str(e).lower() for e in errors):
-        print("No active OneSignal push subscribers. Leaving new items pending for retry.")
-        return False
+    no_audience = any("not subscribed" in str(e).lower() for e in errors)
+
+    # Migration safety: GENJIBU used direct Subscription IDs before Oshi tags.
+    # Keep that fallback until all existing devices have opened the new app.
+    if profile == "genjibu" and no_audience and subscription_ids:
+        fallback = dict(base_payload)
+        fallback["include_subscription_ids"] = subscription_ids
+        r2 = post_onesignal(api_key, fallback)
+        if r2.status_code >= 300:
+            raise RuntimeError(f"OneSignal fallback error {r2.status_code}: {r2.text[:500]}")
+        data2 = r2.json() if r2.text else {}
+        if data2.get("id"):
+            print(f"Sent [genjibu fallback/{item['category']}]: {concise} -> {data2['id']}")
+            return True
+        print(f"GENJIBU fallback had no active audience: {data2}")
+        return True
+
+    if no_audience:
+        print(f"No tagged push audience for {profile}; item recorded without push.")
+        return True
 
     raise RuntimeError(f"OneSignal accepted request but returned no message id: {data}")
 
