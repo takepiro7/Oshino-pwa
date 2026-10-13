@@ -95,54 +95,66 @@ def apply_prediction(item, text):
 
 
 def fetch_youtube(category, config):
-    r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
-    r.raise_for_status()
+    """
+    Best-effort YouTube RSS reader.
+    YouTube occasionally returns transient 404/5xx responses for channel feeds.
+    A YouTube failure must not stop NEWS/LIVE/MEDIA monitoring.
+    """
+    try:
+        r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
+        if r.status_code != 200:
+            print(f"YouTube watcher unavailable: HTTP {r.status_code}. Skipping this run.")
+            return []
 
-    root = ET.fromstring(r.content)
-    ns = {
-        "atom": "http://www.w3.org/2005/Atom",
-        "yt": "http://www.youtube.com/xml/schemas/2015",
-        "media": "http://search.yahoo.com/mrss/",
-    }
-
-    items = []
-    for entry in root.findall("atom:entry", ns):
-        title_node = entry.find("atom:title", ns)
-        link_node = entry.find("atom:link", ns)
-        video_id_node = entry.find("yt:videoId", ns)
-
-        if title_node is None or not (title_node.text or "").strip():
-            continue
-
-        title = normalize_title(category, title_node.text.strip())
-        if not title:
-            continue
-
-        url = None
-        if link_node is not None:
-            url = link_node.attrib.get("href")
-        if not url and video_id_node is not None and (video_id_node.text or "").strip():
-            url = f"https://www.youtube.com/watch?v={video_id_node.text.strip()}"
-        if not url:
-            continue
-
-        description = ""
-        desc_node = entry.find("media:group/media:description", ns)
-        if desc_node is not None and desc_node.text:
-            description = desc_node.text.strip()
-
-        combined = f"{title} {description}"
-
-        item = {
-            "url": url,
-            "title": title,
-            "category": category,
-            "heading": config["heading"],
-            "text": combined,
+        root = ET.fromstring(r.content)
+        ns = {
+            "atom": "http://www.w3.org/2005/Atom",
+            "yt": "http://www.youtube.com/xml/schemas/2015",
+            "media": "http://search.yahoo.com/mrss/",
         }
-        items.append(apply_prediction(item, combined))
 
-    return items
+        items = []
+        for entry in root.findall("atom:entry", ns):
+            title_node = entry.find("atom:title", ns)
+            link_node = entry.find("atom:link", ns)
+            video_id_node = entry.find("yt:videoId", ns)
+
+            if title_node is None or not (title_node.text or "").strip():
+                continue
+
+            title = normalize_title(category, title_node.text.strip())
+            if not title:
+                continue
+
+            url = None
+            if link_node is not None:
+                url = link_node.attrib.get("href")
+            if not url and video_id_node is not None and (video_id_node.text or "").strip():
+                url = f"https://www.youtube.com/watch?v={video_id_node.text.strip()}"
+            if not url:
+                continue
+
+            description = ""
+            desc_node = entry.find("media:group/media:description", ns)
+            if desc_node is not None and desc_node.text:
+                description = desc_node.text.strip()
+
+            combined = f"{title} {description}"
+
+            item = {
+                "url": url,
+                "title": title,
+                "category": category,
+                "heading": config["heading"],
+                "text": combined,
+            }
+            items.append(apply_prediction(item, combined))
+
+        return items
+
+    except Exception as e:
+        print(f"YouTube watcher error: {type(e).__name__}: {e}. Skipping YouTube for this run.")
+        return []
 
 
 def fetch_x_public(category, config):
