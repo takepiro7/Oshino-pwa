@@ -59,6 +59,33 @@ SOURCES = {
     },
 }
 
+EBIDAN_GROUPS = [
+    {"key": "bullettrain", "name": "超特急", "aliases": ["超特急"]},
+    {"key": "milk", "name": "M!LK", "aliases": ["M!LK"]},
+    {"key": "superdragon", "name": "SUPER★DRAGON", "aliases": ["SUPER★DRAGON", "SUPER☆DRAGON", "SUPER DRAGON"]},
+    {"key": "sakurashimeji", "name": "Sakurashimeji", "aliases": ["Sakurashimeji", "さくらしめじ"]},
+    {"key": "onenonly", "name": "ONE N’ ONLY", "aliases": ["ONE N’ ONLY", "ONE N' ONLY", "ONE N ONLY"]},
+    {"key": "genjibu", "name": "原因は自分にある。", "aliases": ["原因は自分にある。", "原因は自分にある", "GENJIBU"]},
+    {"key": "buddiis", "name": "BUDDiiS", "aliases": ["BUDDiiS"]},
+    {"key": "icex", "name": "ICEx", "aliases": ["ICEx"]},
+    {"key": "lienel", "name": "Lienel", "aliases": ["Lienel"]},
+    {"key": "iiondo", "name": "iiONDO", "aliases": ["iiONDO"]},
+]
+
+
+def detect_ebidan_group(text):
+    matches = []
+    lowered = text.lower()
+    for group in EBIDAN_GROUPS:
+        if any(alias.lower() in lowered for alias in group["aliases"]):
+            matches.append(group)
+    # Cross-EBiDAN announcements can mention multiple groups. Keep them general
+    # so every EBiDAN follower sees them rather than assigning one group.
+    unique = {g["key"]: g for g in matches}
+    if len(unique) == 1:
+        return next(iter(unique.values()))
+    return None
+
 
 def normalize_title(category, text):
     text = re.sub(r"\s+", " ", text).strip()
@@ -285,6 +312,11 @@ def fetch_category(category, config):
             "profile": config.get("profile", "genjibu"),
             "notify": config.get("notify", True),
         }
+        if item["profile"] == "ebidan":
+            group = detect_ebidan_group(raw)
+            if group:
+                item["group_key"] = group["key"]
+                item["group_name"] = group["name"]
         items.append(apply_prediction(item, raw))
         seen.add(url)
 
@@ -358,8 +390,10 @@ def extract_event(item):
         "time": dt.strftime("%H:%M") if tm else "終日",
         "urgency": urgency,
         "action": action,
-        "who": "EBiDAN" if item.get("profile") == "ebidan" else "原因は自分にある。",
+        "who": (item.get("group_name") or "EBiDAN") if item.get("profile") == "ebidan" else "原因は自分にある。",
         "oshi": item.get("profile", "genjibu"),
+        "group_key": item.get("group_key"),
+        "group_name": item.get("group_name"),
         "what": title,
         "when": dt.strftime("%-m/%-d %H:%M") if tm else dt.strftime("%-m/%-d"),
         "todo": action,
@@ -570,6 +604,8 @@ def send_push(api_key, subscription_ids, item):
         "data": {
             "source": "oshinow_official",
             "profile": profile,
+            "group_key": item.get("group_key"),
+            "group_name": item.get("group_name"),
             "category": item["category"],
             "prediction": item.get("prediction"),
             "url": item["url"],
@@ -578,7 +614,7 @@ def send_push(api_key, subscription_ids, item):
 
     # Primary route: users who selected this Oshi in the app.
     payload = dict(base_payload)
-    payload["filters"] = [
+    filters = [
         {
             "field": "tag",
             "key": "oshi",
@@ -586,6 +622,17 @@ def send_push(api_key, subscription_ids, item):
             "value": profile,
         }
     ]
+    if profile == "ebidan" and item.get("group_key"):
+        filters.extend([
+            {"operator": "AND"},
+            {
+                "field": "tag",
+                "key": f"group_{item['group_key']}",
+                "relation": "=",
+                "value": "1",
+            },
+        ])
+    payload["filters"] = filters
 
     r = post_onesignal(api_key, payload)
     if r.status_code >= 300:
@@ -593,7 +640,8 @@ def send_push(api_key, subscription_ids, item):
 
     data = r.json() if r.text else {}
     if data.get("id"):
-        print(f"Sent [{profile}/{item['category']}]: {concise} -> {data['id']}")
+        group_label = item.get("group_name") or "ALL"
+        print(f"Sent [{profile}/{group_label}/{item['category']}]: {concise} -> {data['id']}")
         return True
 
     errors = data.get("errors") or []
@@ -676,7 +724,7 @@ def main():
             seen_by_category[category] = [x["url"] for x in items][:500]
 
     if not pending:
-        print("No new GENJIBU push items. EBiDAN calendar data may still have updated.")
+        print("No new push items. Calendar data may still have updated.")
         save_state(state)
         return 0
 
