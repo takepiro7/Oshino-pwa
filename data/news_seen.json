@@ -2,6 +2,7 @@
   "schema": 2,
   "seen_by_category": {
     "NEWS": [
+      "https://genjibu.jp/news/detail/2521",
       "https://genjibu.jp/news/detail/2519",
       "https://genjibu.jp/news/detail/2518",
       "https://genjibu.jp/news/detail/2517",
@@ -100,6 +101,9 @@
       "https://www.youtube.com/shorts/2HAML6rCKeI"
     ],
     "EBIDAN": [
+      "https://ebidan.jp/news/detail/3002521",
+      "https://ebidan.jp/news/detail/21119403",
+      "https://ebidan.jp/news/detail/21118995",
       "https://ebidan.jp/news/detail/21118539",
       "https://ebidan.jp/news/detail/21118533",
       "https://ebidan.jp/news/detail/3002519",
