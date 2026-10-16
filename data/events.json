@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T10:40:17.889946+09:00",
+  "updated_at": "2026-10-16T15:27:13.899520+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2514",
@@ -19,6 +19,44 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2514"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110218",
+      "type": "予定",
+      "icon": "📌",
+      "title": "2026/10/16 超特急 超特急 presents『トンチキランド2〜エトランス・フィーバー〜』 全国3都市で開催決定！",
+      "date": "2026-10-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "what": "2026/10/16 超特急 超特急 presents『トンチキランド2〜エトランス・フィーバー〜』 全国3都市で開催決定！",
+      "when": "10/16",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110218"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21119468",
+      "type": "出演",
+      "icon": "📺",
+      "title": "2026/10/16 Lienel 芳賀柊斗 出演番組欠席のお知らせ",
+      "date": "2026-10-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "what": "2026/10/16 Lienel 芳賀柊斗 出演番組欠席のお知らせ",
+      "when": "10/16",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21119468"
     },
     {
       "id": "https-genjibu-jp-news-detail-2447",
