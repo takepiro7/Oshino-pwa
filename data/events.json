@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T18:02:38.510291+09:00",
+  "updated_at": "2026-10-17T21:55:47.604346+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2447",
@@ -19,6 +19,44 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2447"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110222",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "2026/10/17 超特急 「BULLET TRAIN ARENA TOUR 2026 ESCORT」U-NEXTにて見放題で独占アーカイブ配信開始",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "what": "2026/10/17 超特急 「BULLET TRAIN ARENA TOUR 2026 ESCORT」U-NEXTにて見放題で独占アーカイブ配信開始",
+      "when": "10/17",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110222"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21119591",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "2026/10/17 M!LK M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」オフィシャルグッズ＆生写真セット 【10/24(土)、25(日)宮城・ゼビオアリーナ仙台公演】会場販売＆整理券配布のお知らせ",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "what": "2026/10/17 M!LK M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」オフィシャルグッズ＆生写真セット 【10/24(土)、25(日)宮城・ゼビオアリーナ仙台公演】会場販売＆整理券配布のお知らせ",
+      "when": "10/17",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21119591"
     },
     {
       "id": "https-ebidan-jp-news-detail-2011815",
@@ -76,25 +114,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/1110221"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21118547",
-      "type": "出演",
-      "icon": "📺",
-      "title": "2026/10/17 M!LK 【塩﨑太智】日本テレビ「千鳥かまいたちゴールデンアワー」出演決定！",
-      "date": "2026-10-17",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "what": "2026/10/17 M!LK 【塩﨑太智】日本テレビ「千鳥かまいたちゴールデンアワー」出演決定！",
-      "when": "10/17",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21118547"
     },
     {
       "id": "https-genjibu-jp-news-detail-2485",
