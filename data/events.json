@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T09:25:13.850611+09:00",
+  "updated_at": "2026-10-17T13:50:44.392738+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2447",
@@ -19,6 +19,25 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2447"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110221",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "2026/10/17 超特急 BULLET TRAIN 1st DOME LIVE Signal 機材席開放販売２次受付 実施決定！",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "what": "2026/10/17 超特急 BULLET TRAIN 1st DOME LIVE Signal 機材席開放販売２次受付 実施決定！",
+      "when": "10/17",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110221"
     },
     {
       "id": "https-ebidan-jp-news-detail-21118547",
