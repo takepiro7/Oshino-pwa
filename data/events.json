@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T13:50:44.392738+09:00",
+  "updated_at": "2026-10-17T18:02:38.510291+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2447",
@@ -19,6 +19,44 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2447"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-2011815",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "2026/10/17 SUPER★DRAGON SUPER★DRAGON LIVE TOUR 2027「house」最新チケット情報！",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "what": "2026/10/17 SUPER★DRAGON SUPER★DRAGON LIVE TOUR 2027「house」最新チケット情報！",
+      "when": "10/17",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/2011815"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21119927",
+      "type": "予定",
+      "icon": "📌",
+      "title": "2026/10/17 ONE N' ONLY 「Merry XmaSWAG 2026 〜メガホリ〜」最新チケット情報！",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "ONE N’ ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N’ ONLY",
+      "what": "2026/10/17 ONE N' ONLY 「Merry XmaSWAG 2026 〜メガホリ〜」最新チケット情報！",
+      "when": "10/17",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21119927"
     },
     {
       "id": "https-ebidan-jp-news-detail-1110221",
@@ -133,6 +171,25 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2479"
+    },
+    {
+      "id": "https-www-youtube-com-watch-v-wLM-Wt5D-M",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "ゲンジブがモルック【#原因は自分にある 。】",
+      "date": "2026-11-11",
+      "time": "14:30",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "what": "ゲンジブがモルック【#原因は自分にある 。】",
+      "when": "11/11 14:30",
+      "todo": "会場・開演時刻を確認",
+      "source": "YOUTUBE",
+      "url": "https://www.youtube.com/watch?v=wLM__Wt5D-M"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
