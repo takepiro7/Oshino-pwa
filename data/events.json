@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T07:03:22.829041+09:00",
+  "updated_at": "2026-10-17T09:25:13.850611+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2447",
@@ -19,6 +19,25 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2447"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21118547",
+      "type": "出演",
+      "icon": "📺",
+      "title": "2026/10/17 M!LK 【塩﨑太智】日本テレビ「千鳥かまいたちゴールデンアワー」出演決定！",
+      "date": "2026-10-17",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "what": "2026/10/17 M!LK 【塩﨑太智】日本テレビ「千鳥かまいたちゴールデンアワー」出演決定！",
+      "when": "10/17",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21118547"
     },
     {
       "id": "https-genjibu-jp-news-detail-2485",
@@ -95,25 +114,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2479"
-    },
-    {
-      "id": "https-www-youtube-com-watch-v-wLM-Wt5D-M",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "ゲンジブがモルック【#原因は自分にある 。】",
-      "date": "2026-11-11",
-      "time": "14:30",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "what": "ゲンジブがモルック【#原因は自分にある 。】",
-      "when": "11/11 14:30",
-      "todo": "会場・開演時刻を確認",
-      "source": "YOUTUBE",
-      "url": "https://www.youtube.com/watch?v=wLM__Wt5D-M"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
