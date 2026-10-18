@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T07:57:58.468361+09:00",
+  "updated_at": "2026-10-18T09:50:13.228272+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2485",
@@ -76,25 +76,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2479"
-    },
-    {
-      "id": "https-www-youtube-com-watch-v-wLM-Wt5D-M",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "ゲンジブがモルック【#原因は自分にある 。】",
-      "date": "2026-11-11",
-      "time": "14:30",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "what": "ゲンジブがモルック【#原因は自分にある 。】",
-      "when": "11/11 14:30",
-      "todo": "会場・開演時刻を確認",
-      "source": "YOUTUBE",
-      "url": "https://www.youtube.com/watch?v=wLM__Wt5D-M"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
