@@ -206,6 +206,7 @@ def fetch_ebidan_schedule(category, config):
                 url = config["url"]
 
             group = groups[0] if len(groups) == 1 else None
+            group_names = [g["name"] for g in groups]
             item = {
                 "url": url,
                 "title": title[:180],
@@ -217,7 +218,9 @@ def fetch_ebidan_schedule(category, config):
                 "schedule_date": event_date.isoformat(),
                 "schedule_kind": kind,
                 "group_key": group["key"] if group else None,
-                "group_name": group["name"] if group else ("EBiDAN" if raw.startswith("EBiDAN ") else None),
+                "group_name": group["name"] if group else (" / ".join(group_names) if group_names else ("EBiDAN" if raw.startswith("EBiDAN ") else None)),
+                "group_keys": [g["key"] for g in groups],
+                "group_names": group_names,
             }
 
             key = (item["schedule_date"], url, item.get("group_key") or "", title)
@@ -630,10 +633,15 @@ def fetch_category(category, config):
         if detail_text:
             item["detail_text"] = detail_text
         if item["profile"] == "ebidan":
-            group = detect_ebidan_group(f"{raw} {detail_text}")
+            groups = schedule_groups(f"{raw} {detail_text}")
+            group = groups[0] if len(groups) == 1 else None
             if group:
                 item["group_key"] = group["key"]
                 item["group_name"] = group["name"]
+            elif groups:
+                item["group_keys"] = [g["key"] for g in groups]
+                item["group_names"] = [g["name"] for g in groups]
+                item["group_name"] = " / ".join(item["group_names"])
         items.append(apply_prediction(item, raw))
         seen.add(url)
 
@@ -716,6 +724,8 @@ def extract_event(item):
             "oshi": "ebidan",
             "group_key": item.get("group_key"),
             "group_name": item.get("group_name"),
+            "group_keys": item.get("group_keys", []),
+            "group_names": item.get("group_names", []),
             "what": title,
             "when": dt.strftime("%-m/%-d"),
             "todo": action,
@@ -768,6 +778,8 @@ def extract_event(item):
         "oshi": item.get("profile", "genjibu"),
         "group_key": item.get("group_key"),
         "group_name": item.get("group_name"),
+        "group_keys": item.get("group_keys", []),
+        "group_names": item.get("group_names", []),
         "what": title,
         "when": chosen["display"],
         "todo": action,
