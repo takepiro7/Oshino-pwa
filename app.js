@@ -207,8 +207,9 @@ async function loadLiveEvents(){
       const today=new Date();
       today.setHours(0,0,0,0);
       LIVE_EVENTS=data.events.filter(e=>{
-        const d=new Date(e.date+'T00:00:00');
-        return !Number.isNaN(d.getTime()) && d>=new Date(today.getTime()-7*86400000);
+        const start=new Date(e.date+'T00:00:00');
+        const end=new Date((e.end_date||e.date)+'T23:59:59');
+        return !Number.isNaN(start.getTime()) && !Number.isNaN(end.getTime()) && end>=today;
       });
       render();
     }
