@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlencode
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 import xml.etree.ElementTree as ET
 
 SITE_URL = "https://genjibu.jp/"
@@ -52,6 +52,13 @@ SOURCES = {
         "profile": "genjibu",
         "notify": True,
     },
+    "EBIDAN_SCHEDULE": {
+        "url": "https://ebidan.jp/schedule/list/?tag=0",
+        "base_url": "https://ebidan.jp/",
+        "heading": "OshiNow EBiDAN SCHEDULE",
+        "profile": "ebidan",
+        "notify": False,
+    },
     "EBIDAN": {
         "url": "https://ebidan.jp/",
         "base_url": "https://ebidan.jp/",
@@ -88,6 +95,144 @@ def detect_ebidan_group(text):
         return next(iter(unique.values()))
     return None
 
+
+
+SCHEDULE_KIND_MAP = {
+    "LiVE&EVENT": ("ライブ", "🎤", "会場・開演時刻を確認"),
+    "STAGE": ("イベント", "🎟️", "公演・出演情報を確認"),
+    "RELEASE": ("発売", "💿", "発売・購入情報を確認"),
+    "TV": ("出演", "📺", "放送時間を確認"),
+    "RADiO": ("出演", "📻", "放送時間を確認"),
+    "MAG": ("発売", "📖", "発売情報を確認"),
+    "WEB": ("配信", "🌐", "配信先を確認"),
+    "MOViE": ("出演", "🎬", "公開・上映情報を確認"),
+    "BiRTHDAY": ("誕生日", "🎂", "お祝い情報を確認"),
+    "OTHER": ("予定", "📌", "詳細を確認"),
+}
+SCHEDULE_KINDS = tuple(SCHEDULE_KIND_MAP.keys())
+
+
+def schedule_groups(text):
+    lowered = text.lower()
+    found = []
+    for group in EBIDAN_GROUPS:
+        if any(alias.lower() in lowered for alias in group["aliases"]):
+            found.append(group)
+    unique = {g["key"]: g for g in found}
+    return list(unique.values())
+
+
+def fetch_ebidan_schedule(category, config):
+    """Read EBiDAN's official current-month schedule list."""
+    try:
+        r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        root = soup.find("main") or soup.body or soup
+
+        page_text = re.sub(r"\s+", " ", " ".join(root.stripped_strings))
+        ym = re.search(
+            r"(20\d{2})\s+(\d{1,2})\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)",
+            page_text,
+            re.IGNORECASE,
+        )
+        if ym:
+            year, month = int(ym.group(1)), int(ym.group(2))
+        else:
+            now = datetime.now(JST)
+            year, month = now.year, now.month
+
+        today = datetime.now(JST).date()
+        current_day = None
+        by_key = {}
+
+        for node in root.descendants:
+            if isinstance(node, NavigableString):
+                # Ignore text inside event anchors; title numbers must not become days.
+                if node.parent and node.parent.find_parent("a"):
+                    continue
+                t = re.sub(r"\s+", " ", str(node)).strip()
+                if re.fullmatch(r"(?:[1-9]|[12]\d|3[01])", t):
+                    current_day = int(t)
+                continue
+
+            if getattr(node, "name", None) != "a" or current_day is None:
+                continue
+
+            raw = re.sub(r"\s+", " ", " ".join(node.stripped_strings)).strip()
+            if not raw:
+                continue
+            groups = schedule_groups(raw)
+            if not groups and not raw.startswith("EBiDAN "):
+                continue
+
+            try:
+                event_date = datetime(year, month, current_day, tzinfo=JST).date()
+            except ValueError:
+                continue
+            if event_date < today:
+                continue
+
+            kind_match = re.search(
+                r"\b(" + "|".join(re.escape(x) for x in SCHEDULE_KINDS) + r")\b",
+                raw,
+                re.IGNORECASE,
+            )
+            kind = next((x for x in SCHEDULE_KINDS if kind_match and x.lower() == kind_match.group(1).lower()), "OTHER")
+
+            title = raw
+            # Remove leading group names, then the schedule category label.
+            changed = True
+            while changed:
+                changed = False
+                for group in sorted(EBIDAN_GROUPS, key=lambda g: len(g["name"]), reverse=True):
+                    prefix = group["name"] + " "
+                    if title.lower().startswith(prefix.lower()):
+                        title = title[len(prefix):].strip()
+                        changed = True
+            title = re.sub(
+                r"^(" + "|".join(re.escape(x) for x in SCHEDULE_KINDS) + r")\s+",
+                "",
+                title,
+                flags=re.IGNORECASE,
+            ).strip()
+            if not title:
+                title = raw
+
+            href = node.get("href", "")
+            if href and not href.lower().startswith("javascript:") and not href.startswith("#"):
+                url = urljoin(config.get("base_url", "https://ebidan.jp/"), href)
+            else:
+                url = config["url"]
+
+            group = groups[0] if len(groups) == 1 else None
+            item = {
+                "url": url,
+                "title": title[:180],
+                "category": category,
+                "heading": config["heading"],
+                "text": raw,
+                "profile": "ebidan",
+                "notify": False,
+                "schedule_date": event_date.isoformat(),
+                "schedule_kind": kind,
+                "group_key": group["key"] if group else None,
+                "group_name": group["name"] if group else ("EBiDAN" if raw.startswith("EBiDAN ") else None),
+            }
+
+            key = (item["schedule_date"], url, item.get("group_key") or "", title)
+            # The page contains both calendar and list renderings. Prefer the
+            # rendering that exposes an explicit schedule kind.
+            existing = by_key.get(key)
+            if existing is None or (existing.get("schedule_kind") == "OTHER" and kind != "OTHER"):
+                by_key[key] = item
+
+        items = list(by_key.values())
+        print(f"EBiDAN schedule: {len(items)} upcoming current-month item(s) for {year}-{month:02d}.")
+        return items
+    except Exception as e:
+        print(f"EBiDAN schedule error: {type(e).__name__}: {e}. Skipping schedule this run.")
+        return []
 
 def normalize_title(category, text):
     text = re.sub(r"\s+", " ", text).strip()
@@ -546,6 +691,38 @@ def infer_range_end(item, dt):
 def extract_event(item):
     now = datetime.now(JST)
 
+    if item.get("category") == "EBIDAN_SCHEDULE" and item.get("schedule_date"):
+        try:
+            dt = datetime.strptime(item["schedule_date"], "%Y-%m-%d").replace(tzinfo=JST)
+        except ValueError:
+            return None
+        event_type, icon, action = SCHEDULE_KIND_MAP.get(
+            item.get("schedule_kind", "OTHER"),
+            SCHEDULE_KIND_MAP["OTHER"],
+        )
+        title = clean_event_title(item)
+        event_id = re.sub(r"[^a-zA-Z0-9]+", "-", f"{item.get('url','')}-{item['schedule_date']}-{title}")[-100:]
+        return {
+            "id": event_id,
+            "type": event_type,
+            "icon": icon,
+            "title": title,
+            "date": dt.strftime("%Y-%m-%d"),
+            "end_date": dt.strftime("%Y-%m-%d"),
+            "time": "終日",
+            "urgency": "normal",
+            "action": action,
+            "who": item.get("group_name") or "EBiDAN",
+            "oshi": "ebidan",
+            "group_key": item.get("group_key"),
+            "group_name": item.get("group_name"),
+            "what": title,
+            "when": dt.strftime("%-m/%-d"),
+            "todo": action,
+            "source": "EBIDAN_SCHEDULE",
+            "url": item.get("url", "https://ebidan.jp/schedule/"),
+        }
+
     # YouTube is useful for push signals, but it is too noisy for the calendar.
     if item.get("category") == "YOUTUBE":
         return None
@@ -630,7 +807,7 @@ def save_calendar_events(current_by_category):
 
     # Prefer the most specific official category when one URL appears in
     # multiple lists (for example MEDIA + NEWS).
-    priority = {"LIVE": 0, "MEDIA": 1, "EBIDAN": 2, "NEWS": 3, "X": 4, "YOUTUBE": 5}
+    priority = {"LIVE": 0, "MEDIA": 1, "EBIDAN": 2, "EBIDAN_SCHEDULE": 3, "NEWS": 4, "X": 5, "YOUTUBE": 6}
     by_url = {}
     for event in fresh:
         key = event.get("url") or event.get("id")
@@ -943,6 +1120,8 @@ def main():
             items = fetch_youtube(category, config)
         elif category == "X":
             items = fetch_x_public(category, config)
+        elif category == "EBIDAN_SCHEDULE":
+            items = fetch_ebidan_schedule(category, config)
         else:
             items = fetch_category(category, config)
         current_by_category[category] = items
