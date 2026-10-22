@@ -81,6 +81,7 @@ function openNoticeFromUrl(){
   const when=params.get('when')||'';
   const action=params.get('action')||'詳細を確認';
   const source=params.get('source')||'OshiNow';
+  const link=params.get('link')||'';
 
   dialog.innerHTML=`<div class="detail-inner">
     <div class="detail-head">
@@ -93,8 +94,10 @@ function openNoticeFromUrl(){
       <div class="detail-box"><b>すること</b>${action}</div>
       <div class="detail-box"><b>情報源</b>${source}</div>
     </div>
+    ${link?'<button class="primary" id="openNoticeSource">公式情報を開く</button>':''}
   </div>`;
   dialog.querySelector('.close').onclick=()=>dialog.close();
+  dialog.querySelector('#openNoticeSource')?.addEventListener('click',()=>window.open(link,'_blank','noopener'));
   dialog.showModal();
 
   const clean=window.location.pathname+window.location.hash;
@@ -126,7 +129,7 @@ function syncOshiTag(){
   });
 }
 function bind(){document.querySelectorAll('[data-id]').forEach(el=>el.addEventListener('click',()=>openDetail(el.dataset.id))); document.querySelectorAll('[data-oshi]').forEach(el=>el.addEventListener('click',()=>{selectedOshi=el.dataset.oshi;localStorage.setItem('oshinow_oshi',selectedOshi);syncOshiTag();showToast(currentOshi().name+'に切り替えました');render()})); document.querySelectorAll('[data-ebidan-group]').forEach(el=>el.addEventListener('click',()=>{const key=el.dataset.ebidanGroup;if(selectedEbidanGroups.has(key))selectedEbidanGroups.delete(key);else selectedEbidanGroups.add(key);localStorage.setItem('oshinow_ebidan_groups',JSON.stringify([...selectedEbidanGroups]));syncOshiTag();render()})); document.querySelector('#groupAllBtn')?.addEventListener('click',()=>{if(selectedEbidanGroups.size===EBIDAN_GROUPS.length)selectedEbidanGroups.clear();else selectedEbidanGroups=new Set(EBIDAN_GROUPS.map(g=>g.key));localStorage.setItem('oshinow_ebidan_groups',JSON.stringify([...selectedEbidanGroups]));syncOshiTag();render()}); document.querySelector('#urgentSwitch')?.addEventListener('change',e=>{notifyUrgent=e.target.checked;localStorage.setItem('oshinow_notify_urgent',notifyUrgent?'1':'0');syncOshiTag();showToast('緊急通知設定を保存しました')}); document.querySelector('#predictionSwitch')?.addEventListener('change',e=>{notifyPrediction=e.target.checked;localStorage.setItem('oshinow_notify_prediction',notifyPrediction?'1':'0');syncOshiTag();showToast('予兆通知設定を保存しました')}); document.querySelector('#notifyTest')?.addEventListener('click',testNotification); document.querySelector('#notifyTest2')?.addEventListener('click',testNotification); document.querySelector('#heartBtn')?.addEventListener('click',()=>showToast('推し設定を保存しました')); document.querySelector('#savedBtn')?.addEventListener('click',()=>{document.querySelector('#allBtn').classList.remove('active');document.querySelector('#savedBtn').classList.add('active');document.querySelector('#eventList').innerHTML=saved.size?[...saved].map(id=>activeEvents().find(e=>e.id===id)).filter(Boolean).map(eventCard).join(''):'<div class="sample-note">保存した情報はまだありません</div>';bind()}); document.querySelector('#allBtn')?.addEventListener('click',()=>{render()})}
-function openDetail(id){const e=activeEvents().find(x=>x.id===id); if(!e)return; dialog.innerHTML=`<div class="detail-inner"><div class="detail-head"><div><div class="kind">${e.icon} ${e.type}</div><h2>${e.title}</h2></div><button class="close" aria-label="閉じる">×</button></div><div class="detail-grid"><div class="detail-box"><b>誰？</b>${e.who}</div><div class="detail-box"><b>何？</b>${e.what}</div><div class="detail-box"><b>いつ？</b>${e.when}</div><div class="detail-box"><b>すること</b>${e.todo}</div><div class="detail-box"><b>情報源</b>${e.source}</div></div><button class="primary" id="saveDetail">${saved.has(e.id)?'保存済み':'この情報を保存'}</button></div>`;dialog.querySelector('.close').onclick=()=>dialog.close();dialog.querySelector('#saveDetail').onclick=()=>{saved.add(e.id);showToast('保存しました');dialog.close()};dialog.showModal()}
+function openDetail(id){const e=activeEvents().find(x=>x.id===id); if(!e)return; dialog.innerHTML=`<div class="detail-inner"><div class="detail-head"><div><div class="kind">${e.icon} ${e.type}</div><h2>${e.title}</h2></div><button class="close" aria-label="閉じる">×</button></div><div class="detail-grid"><div class="detail-box"><b>誰？</b>${e.who}</div><div class="detail-box"><b>何？</b>${e.what}</div><div class="detail-box"><b>いつ？</b>${e.when}</div><div class="detail-box"><b>すること</b>${e.todo}</div><div class="detail-box"><b>情報源</b>${e.source}</div></div><button class="primary" id="saveDetail">${saved.has(e.id)?'保存済み':'この情報を保存'}</button>${e.url?'<button class="secondary" id="openEventSource" style="margin-top:10px">公式情報を開く</button>':''}</div>`;dialog.querySelector('.close').onclick=()=>dialog.close();dialog.querySelector('#saveDetail').onclick=()=>{saved.add(e.id);showToast('保存しました');dialog.close()};dialog.querySelector('#openEventSource')?.addEventListener('click',()=>window.open(e.url,'_blank','noopener'));dialog.showModal()}
 function showToast(msg){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)}
 const ONESIGNAL_APP_ID='d40f1748-dbb5-472a-aaa1-5178eb3ed064';
 window.OneSignalDeferred=window.OneSignalDeferred||[];
