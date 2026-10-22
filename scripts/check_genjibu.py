@@ -5,7 +5,7 @@ import re
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlencode
 
 import requests
 from bs4 import BeautifulSoup
@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 
 SITE_URL = "https://genjibu.jp/"
 ONESIGNAL_APP_ID = "d40f1748-dbb5-472a-aaa1-5178eb3ed064"
+APP_URL = "https://takepiro7.github.io/Oshino-pwa/"
 STATE_PATH = Path("data/news_seen.json")
 EVENTS_PATH = Path("data/events.json")
 JST = timezone(timedelta(hours=9))
@@ -723,6 +724,46 @@ def load_subscription_ids():
     return ids
 
 
+
+def make_app_deep_link(item):
+    title = clean_event_title(item)
+    chosen = None
+    if item.get("category") not in ("YOUTUBE", "X"):
+        chosen = choose_event_date(item)
+
+    if item.get("prediction") == "urgent":
+        what = "配信が始まる可能性"
+        action = "Instagram / YouTubeを確認"
+        when = chosen["display"] if chosen else "まもなく"
+    elif item.get("prediction") == "stream":
+        what = "配信情報"
+        action = "配信先を確認"
+        when = chosen["display"] if chosen else ""
+    elif item.get("category") == "LIVE":
+        what = "ライブ・イベント情報"
+        action = "会場・開演時刻を確認"
+        when = chosen["display"] if chosen else ""
+    elif item.get("category") == "MEDIA":
+        what = "出演情報"
+        action = "放送・配信時間を確認"
+        when = chosen["display"] if chosen else ""
+    else:
+        what = title or "公式お知らせ"
+        action = "詳細を確認"
+        when = chosen["display"] if chosen else ""
+
+    source = item.get("group_name") or item.get("category") or "公式"
+    params = {
+        "notice": "push",
+        "title": title or "OshiNow 通知",
+        "what": what,
+        "when": when,
+        "action": action,
+        "source": source,
+        "link": item.get("url", ""),
+    }
+    return APP_URL + "?" + urlencode(params)
+
 def post_onesignal(api_key, payload):
     return requests.post(
         "https://api.onesignal.com/notifications",
@@ -754,7 +795,7 @@ def send_push(api_key, subscription_ids, item):
             "ja": summary or "OshiNow 新着情報",
             "en": concise or "OshiNow new update",
         },
-        "url": item["url"],
+        "url": make_app_deep_link(item),
         "data": {
             "source": "oshinow_official",
             "profile": profile,
