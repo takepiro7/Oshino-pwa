@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T21:38:19.733265+09:00",
+  "updated_at": "2026-10-22T21:39:03.907622+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2519",
@@ -107,7 +107,7 @@
       "icon": "🎤",
       "title": "M!LK 【宮城】【10月24日・25日 ゼビオアリーナ仙台公演】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」会場限定オンラインラッキードロー実施のお知らせ",
       "date": "2026-10-24",
-      "end_date": "2026-10-24",
+      "end_date": "2026-10-25",
       "time": "12:00",
       "urgency": "normal",
       "action": "会場・開演時刻を確認",
@@ -116,7 +116,7 @@
       "group_key": "milk",
       "group_name": "M!LK",
       "what": "M!LK 【宮城】【10月24日・25日 ゼビオアリーナ仙台公演】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」会場限定オンラインラッキードロー実施のお知らせ",
-      "when": "10/24 12:00",
+      "when": "10/24・25 12:00",
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/21121082"
@@ -145,7 +145,7 @@
       "id": "https-ebidan-jp-news-detail-9086254",
       "type": "ライブ",
       "icon": "🎤",
-      "title": "Sakurashimeji Sakurashimeji FREE LIVE TOUR 2026「あなたの声になれたら」全日程会場更新！(10/22更新)",
+      "title": "Sakurashimeji FREE LIVE TOUR 2026「あなたの声になれたら」全日程会場更新！(10/22更新)",
       "date": "2026-10-25",
       "end_date": "2026-10-25",
       "time": "終日",
@@ -155,7 +155,7 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
-      "what": "Sakurashimeji Sakurashimeji FREE LIVE TOUR 2026「あなたの声になれたら」全日程会場更新！(10/22更新)",
+      "what": "Sakurashimeji FREE LIVE TOUR 2026「あなたの声になれたら」全日程会場更新！(10/22更新)",
       "when": "10/25",
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN",
