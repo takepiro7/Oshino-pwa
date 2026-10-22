@@ -411,10 +411,15 @@ def choose_event_date(item):
     if not candidates:
         return None
 
-    # If EBiDAN only exposes the article date and no actual schedule date,
-    # omit it from the calendar rather than showing a misleading date.
+    # EBiDAN list titles begin with the publication date. The same publication
+    # date is often repeated in the article body, so remove every occurrence
+    # of that date when a real schedule/deadline date is available.
     if item.get("profile") == "ebidan":
-        usable = [c for c in candidates if not c["leading_publish"]]
+        published = next((c["dt"].date() for c in candidates if c["leading_publish"]), None)
+        if published:
+            usable = [c for c in candidates if c["dt"].date() != published]
+        else:
+            usable = [c for c in candidates if not c["leading_publish"]]
         if not usable:
             return None
         candidates = usable
@@ -456,7 +461,9 @@ def fetch_category(category, config):
             "profile": config.get("profile", "genjibu"),
             "notify": config.get("notify", True),
         }
-        detail_text = fetch_detail_text(url)
+        detail_text = ""
+        if item["profile"] == "ebidan" or category == "NEWS":
+            detail_text = fetch_detail_text(url)
         if detail_text:
             item["detail_text"] = detail_text
         if item["profile"] == "ebidan":
@@ -503,6 +510,12 @@ def extract_event(item):
 
     dt = chosen["dt"]
     event_type, icon, urgency, action = infer_event_type(item)
+    if (
+        item.get("category") in ("NEWS", "EBIDAN")
+        and event_type == "予定"
+        and dt.date() <= now.date()
+    ):
+        return None
     title = clean_event_title(item)
     event_id = re.sub(r"[^a-zA-Z0-9]+", "-", item.get("url", ""))[-80:] or f"event-{int(dt.timestamp())}"
 
@@ -627,18 +640,22 @@ def save_state(state):
 
 
 def summarize_for_push(item):
-    text = re.sub(r"\s+", " ", item.get("title", "")).strip()
-    who = "原因は自分にある。"
+    text = re.sub(r"\s+", " ", clean_event_title(item)).strip()
     when = None
     action = None
 
-    # Basic date/time extraction from Japanese text.
-    m = re.search(r"(\d{1,2}/\d{1,2}(?:\([^)]*\))?(?:\s*\d{1,2}:\d{2})?)", text)
-    if not m:
+    if item.get("category") not in ("YOUTUBE", "X"):
+        chosen = choose_event_date(item)
+        if chosen:
+            when = chosen["display"]
+
+    # Fallback extraction for sources without structured schedule context.
+    m = None if when else re.search(r"(\d{1,2}/\d{1,2}(?:\([^)]*\))?(?:\s*\d{1,2}:\d{2})?)", text)
+    if not when and not m:
         m = re.search(r"(\d{1,2}月\d{1,2}日(?:\([^)]*\))?(?:\s*\d{1,2}:\d{2})?)", text)
-    if not m:
+    if not when and not m:
         m = re.search(r"(\d{1,2}:\d{2})", text)
-    if m:
+    if not when and m:
         when = m.group(1)
 
     pred = item.get("prediction")
@@ -722,11 +739,15 @@ def send_push(api_key, subscription_ids, item):
     concise, summary = summarize_for_push(item)
     profile = item.get("profile", "genjibu")
 
+    push_heading = item["heading"]
+    if profile == "ebidan" and item.get("group_name") and item.get("prediction") not in ("urgent", "stream"):
+        push_heading = f"OshiNow · {item['group_name']}"
+
     base_payload = {
         "app_id": ONESIGNAL_APP_ID,
         "target_channel": "push",
         "headings": {
-            "ja": item["heading"],
+            "ja": push_heading,
             "en": "OshiNow",
         },
         "contents": {
