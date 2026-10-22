@@ -330,11 +330,15 @@ def extract_date_candidates(item):
         except ValueError:
             continue
 
-        if not m.group(1) and dt.date() < today - timedelta(days=30):
-            try:
-                dt = dt.replace(year=year + 1)
-            except ValueError:
-                pass
+        if not m.group(1) and dt.date() < today:
+            # Do not turn ordinary past dates (e.g. July/August seen in October)
+            # into fake next-year events. Only Jan-Mar are safely inferred as
+            # next year when announced late in the year.
+            if now.month >= 10 and month <= 3:
+                try:
+                    dt = dt.replace(year=year + 1)
+                except ValueError:
+                    pass
 
         context = text[max(0, m.start()-80):min(len(text), m.end()+100)]
         score = 0
@@ -511,13 +515,18 @@ def extract_event(item):
 
     dt = chosen["dt"]
     event_type, icon, urgency, action = infer_event_type(item)
+    title = clean_event_title(item)
     if (
         item.get("category") in ("NEWS", "EBIDAN")
         and event_type == "予定"
         and dt.date() <= now.date()
     ):
         return None
-    title = clean_event_title(item)
+    if (
+        event_type == "予定"
+        and re.search(r"メンテナンス|サービス再開|障害|会員証|発送完了|システム", title)
+    ):
+        return None
     event_id = re.sub(r"[^a-zA-Z0-9]+", "-", item.get("url", ""))[-80:] or f"event-{int(dt.timestamp())}"
 
     return {
