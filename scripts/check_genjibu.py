@@ -308,6 +308,11 @@ def clean_event_title(item):
     if item.get("profile") == "ebidan":
         # EBiDAN list titles begin with the article publication date.
         title = re.sub(r"^20\d{2}[./-]\d{1,2}[./-]\d{1,2}\s*", "", title).strip()
+        group_name = item.get("group_name")
+        if group_name:
+            doubled = f"{group_name} {group_name} "
+            if title.lower().startswith(doubled.lower()):
+                title = title[len(group_name) + 1:]
     return title[:120]
 
 
@@ -516,6 +521,28 @@ def infer_event_type(item):
     return "予定", "📌", "normal", "詳細を確認"
 
 
+
+def infer_range_end(item, dt):
+    """Infer a same-month end date from forms such as 10月24日・25日."""
+    text = " ".join(filter(None, [
+        item.get("title", ""),
+        item.get("text", ""),
+        item.get("detail_text", ""),
+    ]))
+    patterns = [
+        r"(\d{1,2})月(\d{1,2})日\s*(?:・|、|,|／|/)\s*(\d{1,2})日",
+        r"(\d{1,2})/(\d{1,2})\s*(?:・|、|,|／|/)\s*(\d{1,2})",
+    ]
+    for pattern in patterns:
+        for m in re.finditer(pattern, text):
+            month, start_day, end_day = map(int, m.groups())
+            if month == dt.month and start_day == dt.day and end_day >= start_day:
+                try:
+                    return dt.replace(day=end_day)
+                except ValueError:
+                    pass
+    return dt
+
 def extract_event(item):
     now = datetime.now(JST)
 
@@ -528,6 +555,13 @@ def extract_event(item):
         return None
 
     dt = chosen["dt"]
+    range_end = infer_range_end(item, chosen.get("end_dt", dt))
+    chosen["end_dt"] = range_end
+    if range_end.date() > dt.date() and "・" not in chosen["display"].split(" ")[0]:
+        time_suffix = ""
+        if chosen["has_time"]:
+            time_suffix = " " + dt.strftime("%H:%M")
+        chosen["display"] = f"{dt.month}/{dt.day}・{range_end.day}{time_suffix}"
     event_type, icon, urgency, action = infer_event_type(item)
     title = clean_event_title(item)
     if (
