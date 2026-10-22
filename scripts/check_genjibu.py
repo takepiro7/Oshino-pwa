@@ -786,6 +786,21 @@ def send_push(api_key, subscription_ids, item):
                 "value": "1",
             },
         ])
+
+    is_urgent = item.get("prediction") == "urgent" or bool(
+        re.search(r"締切|重要|緊急|受付終了|販売終了", item.get("title", ""))
+    )
+    if is_urgent:
+        filters.extend([
+            {"operator": "AND"},
+            {"field": "tag", "key": "notify_urgent", "relation": "=", "value": "1"},
+        ])
+    if item.get("prediction") in ("urgent", "stream"):
+        filters.extend([
+            {"operator": "AND"},
+            {"field": "tag", "key": "notify_prediction", "relation": "=", "value": "1"},
+        ])
+
     payload["filters"] = filters
 
     r = post_onesignal(api_key, payload)
@@ -801,20 +816,6 @@ def send_push(api_key, subscription_ids, item):
     errors = data.get("errors") or []
     no_audience = any("not subscribed" in str(e).lower() for e in errors)
 
-    # Migration safety: GENJIBU used direct Subscription IDs before Oshi tags.
-    # Keep that fallback until all existing devices have opened the new app.
-    if profile == "genjibu" and no_audience and subscription_ids:
-        fallback = dict(base_payload)
-        fallback["include_subscription_ids"] = subscription_ids
-        r2 = post_onesignal(api_key, fallback)
-        if r2.status_code >= 300:
-            raise RuntimeError(f"OneSignal fallback error {r2.status_code}: {r2.text[:500]}")
-        data2 = r2.json() if r2.text else {}
-        if data2.get("id"):
-            print(f"Sent [genjibu fallback/{item['category']}]: {concise} -> {data2['id']}")
-            return True
-        print(f"GENJIBU fallback had no active audience: {data2}")
-        return True
 
     if no_audience:
         print(f"No tagged push audience for {profile}; item recorded without push.")
@@ -829,10 +830,7 @@ def main():
     if not api_key:
         print("ONESIGNAL_REST_API_KEY is not configured.", file=sys.stderr)
         return 2
-    if not subscription_ids:
-        print("No valid OneSignal subscription IDs are configured.", file=sys.stderr)
-        return 2
-    print(f"Push targets: {len(subscription_ids)} subscription(s).")
+    print(f"Legacy fallback IDs configured: {len(subscription_ids)} (not used for normal delivery).")
 
     state = load_state()
     seen_by_category = state["seen_by_category"]
