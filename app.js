@@ -63,6 +63,7 @@ function activeEvents(){
     if((e.oshi||'genjibu')!==selectedOshi)return false;
     if(!selectedDisplayFilters.has(displayFilterKey(e.type)))return false;
     if(selectedOshi!=='ebidan')return true;
+    if(Array.isArray(e.group_keys)&&e.group_keys.length)return e.group_keys.some(k=>selectedEbidanGroups.has(k));
     if(!e.group_key)return true;
     return selectedEbidanGroups.has(e.group_key);
   });
