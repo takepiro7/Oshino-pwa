@@ -17,7 +17,8 @@ STATE_PATH = Path("data/news_seen.json")
 EVENTS_PATH = Path("data/events.json")
 JST = timezone(timedelta(hours=9))
 MAX_PUSH_PER_RUN = 6
-UA = "OshiNow/0.2 (+https://takepiro7.github.io/Oshino-pwa/)"
+UA = "OshiNow/0.4 (+https://takepiro7.github.io/Oshino-pwa/)"
+DETAIL_CACHE = {}
 
 SOURCES = {
     "NEWS": {
@@ -278,6 +279,149 @@ def fetch_x_public(category, config):
         return []
 
 
+
+def fetch_detail_text(url):
+    """Best-effort extraction of official article text, cached per URL."""
+    if url in DETAIL_CACHE:
+        return DETAIL_CACHE[url]
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=15)
+        if r.status_code != 200:
+            DETAIL_CACHE[url] = ""
+            return ""
+        soup = BeautifulSoup(r.text, "html.parser")
+        root = soup.find("main") or soup.find("article") or soup.body or soup
+        for tag in root.find_all(["script", "style", "nav", "footer", "noscript"]):
+            tag.decompose()
+        text = re.sub(r"\s+", " ", " ".join(root.stripped_strings)).strip()
+        DETAIL_CACHE[url] = text[:20000]
+        return DETAIL_CACHE[url]
+    except Exception as e:
+        print(f"Detail fetch skipped for {url}: {type(e).__name__}: {e}")
+        DETAIL_CACHE[url] = ""
+        return ""
+
+
+def clean_event_title(item):
+    title = item.get("title", "")
+    if item.get("profile") == "ebidan":
+        # EBiDAN list titles begin with the article publication date.
+        title = re.sub(r"^20\d{2}[./-]\d{1,2}[./-]\d{1,2}\s*", "", title).strip()
+    return title[:120]
+
+
+def extract_date_candidates(item):
+    """Find likely event/deadline dates and score context, not just first date."""
+    title = re.sub(r"\s+", " ", item.get("title", "")).strip()
+    detail = re.sub(r"\s+", " ", item.get("detail_text", "")).strip()
+    text = (title + " " + detail).strip()
+    now = datetime.now(JST)
+    today = now.date()
+
+    date_re = re.compile(r"(?:(20\d{2})[./年-])?(\d{1,2})[./月-](\d{1,2})日?")
+    candidates = []
+    for idx, m in enumerate(date_re.finditer(text)):
+        year = int(m.group(1)) if m.group(1) else now.year
+        month = int(m.group(2))
+        day = int(m.group(3))
+        try:
+            dt = datetime(year, month, day, tzinfo=JST)
+        except ValueError:
+            continue
+
+        if not m.group(1) and dt.date() < today - timedelta(days=30):
+            try:
+                dt = dt.replace(year=year + 1)
+            except ValueError:
+                pass
+
+        context = text[max(0, m.start()-80):min(len(text), m.end()+100)]
+        score = 0
+        if dt.date() >= today:
+            score += 3
+        else:
+            score -= 12
+
+        if re.search(r"締切|受付終了|応募締切|申込締切|販売終了|予約終了|まで", context):
+            score += 10
+        if re.search(r"開催|公演|出演|放送|配信|発売|実施|開演|開場|集合|START|スタート", context, re.IGNORECASE):
+            score += 6
+        if re.search(r"より|から", context):
+            score += 2
+        if re.search(r"更新|掲載|発表|お知らせ", context) and m.start() < len(title) + 20:
+            score -= 2
+
+        leading_publish = (
+            item.get("profile") == "ebidan"
+            and idx == 0
+            and m.start() <= 2
+            and bool(m.group(1))
+        )
+        if leading_publish:
+            score -= 15
+
+        # GENJIBU LIVE/MEDIA list dates are actual schedule dates.
+        if (
+            item.get("profile") == "genjibu"
+            and item.get("category") in ("LIVE", "MEDIA")
+            and idx == 0
+            and m.start() <= 2
+        ):
+            score += 20
+
+        near = text[m.end():m.end()+35]
+        extra_days = []
+        for dm in re.finditer(r"(?:・|、|,|／|/)\s*(\d{1,2})日", near):
+            try:
+                extra_day = int(dm.group(1))
+                datetime(dt.year, dt.month, extra_day)
+                extra_days.append(extra_day)
+            except ValueError:
+                pass
+
+        time_context = text[max(0, m.start()-40):min(len(text), m.end()+90)]
+        tm = re.search(r"(\d{1,2})[:：](\d{2})", time_context)
+        hour = minute = 0
+        if tm:
+            h, mi = int(tm.group(1)), int(tm.group(2))
+            if 0 <= h <= 23 and 0 <= mi <= 59:
+                hour, minute = h, mi
+                dt = dt.replace(hour=hour, minute=minute)
+
+        display = f"{dt.month}/{dt.day}"
+        if extra_days:
+            display += "・" + "・".join(str(d) for d in extra_days)
+        if tm:
+            display += f" {hour:02d}:{minute:02d}"
+
+        candidates.append({
+            "dt": dt,
+            "score": score,
+            "position": m.start(),
+            "leading_publish": leading_publish,
+            "has_time": bool(tm),
+            "display": display,
+        })
+
+    return candidates
+
+
+def choose_event_date(item):
+    candidates = extract_date_candidates(item)
+    if not candidates:
+        return None
+
+    # If EBiDAN only exposes the article date and no actual schedule date,
+    # omit it from the calendar rather than showing a misleading date.
+    if item.get("profile") == "ebidan":
+        usable = [c for c in candidates if not c["leading_publish"]]
+        if not usable:
+            return None
+        candidates = usable
+
+    candidates.sort(key=lambda x: (-x["score"], x["dt"], x["position"]))
+    return candidates[0]
+
 def fetch_category(category, config):
     r = requests.get(config["url"], headers={"User-Agent": UA}, timeout=20)
     r.raise_for_status()
@@ -312,8 +456,11 @@ def fetch_category(category, config):
             "profile": config.get("profile", "genjibu"),
             "notify": config.get("notify", True),
         }
+        detail_text = fetch_detail_text(url)
+        if detail_text:
+            item["detail_text"] = detail_text
         if item["profile"] == "ebidan":
-            group = detect_ebidan_group(raw)
+            group = detect_ebidan_group(f"{raw} {detail_text}")
             if group:
                 item["group_key"] = group["key"]
                 item["group_name"] = group["name"]
@@ -324,61 +471,39 @@ def fetch_category(category, config):
 
 
 def infer_event_type(item):
-    text = item.get("text", item.get("title", ""))
+    text = " ".join(filter(None, [
+        item.get("text", ""),
+        item.get("detail_text", ""),
+        item.get("title", ""),
+    ]))
     category = item.get("category")
-    if re.search(r"締切|申込|申し込み|受付終了|応募締切|販売終了", text):
+    if re.search(r"締切|申込|申し込み|受付終了|応募締切|販売終了|予約終了", text):
         return "締切", "⏰", "important", "期限までに確認・申込"
+    if item.get("prediction") in ("urgent", "stream"):
+        return "配信予兆", "🔴", "urgent", "Instagram / YouTubeを確認"
     if category == "LIVE" or re.search(r"ライブ|LIVE|TOUR|ツアー|公演|ファンミ", text, re.IGNORECASE):
         return "ライブ", "🎤", "normal", "会場・開演時刻を確認"
     if category == "MEDIA" or re.search(r"出演|テレビ|TV|TBS|フジテレビ|日本テレビ|テレビ朝日|NHK|ラジオ|放送", text, re.IGNORECASE):
         return "出演", "📺", "normal", "放送・配信時間を確認"
     if category == "YOUTUBE":
         return "配信", "▶️", "normal", "YouTubeを確認"
-    if item.get("prediction") in ("urgent", "stream"):
-        return "配信予兆", "🔴", "urgent", "Instagram / YouTubeを確認"
     return "予定", "📌", "normal", "詳細を確認"
 
 
 def extract_event(item):
-    text = re.sub(r"\s+", " ", item.get("text", item.get("title", ""))).strip()
     now = datetime.now(JST)
 
-    # YouTube is useful for breaking/stream signals, but ordinary uploads
-    # often duplicate information already published on official feeds.
-    if item.get("category") == "YOUTUBE" and item.get("prediction") not in ("urgent", "stream"):
-        return None
-    year = now.year
-    month = day = None
-    hour = minute = 0
-
-    m = re.search(r"(?:(20\d{2})[./年-])?(\d{1,2})[./月-](\d{1,2})日?", text)
-    if m:
-        if m.group(1):
-            year = int(m.group(1))
-        month = int(m.group(2))
-        day = int(m.group(3))
-    else:
+    # YouTube is useful for push signals, but it is too noisy for the calendar.
+    if item.get("category") == "YOUTUBE":
         return None
 
-    tm = re.search(r"(\d{1,2})[:：](\d{2})", text)
-    if tm:
-        hour = int(tm.group(1))
-        minute = int(tm.group(2))
-
-    try:
-        dt = datetime(year, month, day, hour, minute, tzinfo=JST)
-    except ValueError:
+    chosen = choose_event_date(item)
+    if not chosen:
         return None
 
-    # If year omitted and date is clearly behind us, treat it as next year.
-    if not m.group(1) and dt < now - timedelta(days=30):
-        try:
-            dt = dt.replace(year=year + 1)
-        except ValueError:
-            pass
-
+    dt = chosen["dt"]
     event_type, icon, urgency, action = infer_event_type(item)
-    title = item.get("title", "")[:120]
+    title = clean_event_title(item)
     event_id = re.sub(r"[^a-zA-Z0-9]+", "-", item.get("url", ""))[-80:] or f"event-{int(dt.timestamp())}"
 
     return {
@@ -387,7 +512,7 @@ def extract_event(item):
         "icon": icon,
         "title": title,
         "date": dt.strftime("%Y-%m-%d"),
-        "time": dt.strftime("%H:%M") if tm else "終日",
+        "time": dt.strftime("%H:%M") if chosen["has_time"] else "終日",
         "urgency": urgency,
         "action": action,
         "who": (item.get("group_name") or "EBiDAN") if item.get("profile") == "ebidan" else "原因は自分にある。",
@@ -395,7 +520,7 @@ def extract_event(item):
         "group_key": item.get("group_key"),
         "group_name": item.get("group_name"),
         "what": title,
-        "when": dt.strftime("%-m/%-d %H:%M") if tm else dt.strftime("%-m/%-d"),
+        "when": chosen["display"],
         "todo": action,
         "source": item.get("category", "公式"),
         "url": item.get("url", ""),
@@ -430,9 +555,17 @@ def save_calendar_events(current_by_category):
 
             fresh.append(event)
 
-    # Prefer official site categories over X/YouTube when the same date/title
-    # appears more than once.
-    priority = {"LIVE": 0, "MEDIA": 1, "NEWS": 2, "X": 3, "YOUTUBE": 4}
+    # Prefer the most specific official category when one URL appears in
+    # multiple lists (for example MEDIA + NEWS).
+    priority = {"LIVE": 0, "MEDIA": 1, "EBIDAN": 2, "NEWS": 3, "X": 4, "YOUTUBE": 5}
+    by_url = {}
+    for event in fresh:
+        key = event.get("url") or event.get("id")
+        current = by_url.get(key)
+        if current is None or priority.get(event.get("source"), 9) < priority.get(current.get("source"), 9):
+            by_url[key] = event
+
+    fresh = list(by_url.values())
     fresh.sort(key=lambda e: (
         e.get("date", ""),
         e.get("time", ""),
@@ -443,7 +576,7 @@ def save_calendar_events(current_by_category):
     seen_keys = set()
     for event in fresh:
         title_key = re.sub(r"\W+", "", event.get("title", "")).lower()[:60]
-        key = (event.get("date"), event.get("time"), event.get("type"), title_key)
+        key = (event.get("date"), event.get("time"), title_key)
         if key in seen_keys:
             continue
         seen_keys.add(key)
