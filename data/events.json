@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T21:41:46.941971+09:00",
+  "updated_at": "2026-10-22T21:44:42.851166+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-50000162-2026-10-22-ONE-N-ONLY-TV-EIKU-MBS-",
@@ -15,6 +15,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV 【EIKU】MBSドラマ特区「付き合ってあげてもいいかな」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -35,6 +41,8 @@
       "oshi": "ebidan",
       "group_key": null,
       "group_name": "EBiDAN",
+      "group_keys": [],
+      "group_names": [],
       "what": "EBiDAN TV テレビ東京「DAN! DAN! EBiDAN」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -55,6 +63,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【アロハ】読売テレビ・日本テレビ系 木曜ドラマ「ダウト -15年目の復讐-」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -75,6 +89,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV 【HAYATO】MBS ドラマフィル「おかえり、初恋。」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -95,6 +115,12 @@
       "oshi": "ebidan",
       "group_key": "icex",
       "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
       "what": "文化放送「ICEx の愛すべきラジオ」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -115,6 +141,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "テレビ朝日「ゲンジブハウス」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -135,6 +167,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV TBS「ONE N' ONLYのフルアウトTV」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -151,10 +189,18 @@
       "time": "終日",
       "urgency": "normal",
       "action": "放送時間を確認",
-      "who": "EBiDAN",
+      "who": "M!LK / SUPER★DRAGON",
       "oshi": "ebidan",
       "group_key": null,
-      "group_name": null,
+      "group_name": "M!LK / SUPER★DRAGON",
+      "group_keys": [
+        "milk",
+        "superdragon"
+      ],
+      "group_names": [
+        "M!LK",
+        "SUPER★DRAGON"
+      ],
       "what": "【志村玲於／NAOYA／吉澤要人】文化放送「M!LK 吉田仁人のレコメン！」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -175,6 +221,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "TBSラジオ「アフター6ジャンクション2」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -195,6 +247,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【芳賀柊斗／高岡ミロ】TOKYO FM「山崎怜奈の誰かに話したかったこと。」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -215,6 +273,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【曽野舜太】NHK Eテレ「NHK高校講座 ベーシック英語」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -235,6 +299,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【佐野勇斗】日本テレビ「ぐるぐるナインティナイン」ゴチになります！27",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -255,6 +325,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
       "when": "10/22",
       "todo": "放送時間を確認",
@@ -275,6 +351,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "“原因は自分にある。×楽天ブックスキャンペーン” 開催 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
       "when": "10/23 11:00",
       "todo": "参加・応募条件を確認",
@@ -295,6 +373,8 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [],
+      "group_names": [],
       "what": "ONE N' ONLY 「October SCRATCH 2026」開催決定！",
       "when": "10/23 19:00",
       "todo": "参加・応募条件を確認",
@@ -315,6 +395,8 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
       "what": "Sakurashimeji 6スタ14時集合で。会員限定オンラインくじ『HYOGA 25th BIRTHDAY CHANCE』開催決定！",
       "when": "10/23 19:00",
       "todo": "参加・応募条件を確認",
@@ -335,6 +417,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "「ラブリーズン」リリース記念フリーライブ 『+KIRARI』会員限定先行 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
       "when": "10/23 19:00",
       "todo": "期限までに確認・申込",
@@ -355,6 +439,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.10.23 OTHER 【大倉空人】『うるわしの宵の月』",
       "when": "10/23",
       "todo": "放送・配信時間を確認",
@@ -375,6 +461,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【HAPPY BiRTHDAY!】リョウガ",
       "when": "10/23",
       "todo": "お祝い情報を確認",
@@ -395,6 +487,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "【HAPPY BiRTHDAY!】髙田彪我",
       "when": "10/23",
       "todo": "お祝い情報を確認",
@@ -415,6 +513,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【大倉空人】映画「うるわしの宵の月」",
       "when": "10/23",
       "todo": "公開・上映情報を確認",
@@ -435,6 +539,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
       "when": "10/23",
       "todo": "放送時間を確認",
@@ -455,6 +565,12 @@
       "oshi": "ebidan",
       "group_key": "iiondo",
       "group_name": "iiONDO",
+      "group_keys": [
+        "iiondo"
+      ],
+      "group_names": [
+        "iiONDO"
+      ],
       "what": "テレビ東京「超超音波」",
       "when": "10/23",
       "todo": "放送時間を確認",
@@ -475,6 +591,8 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
       "what": "M!LK 【宮城】【10月24日・25日 ゼビオアリーナ仙台公演】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」会場限定オンラインラッキードロー実施のお知らせ",
       "when": "10/24・25 12:00",
       "todo": "会場・開演時刻を確認",
@@ -495,6 +613,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【宮城】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」",
       "when": "10/24",
       "todo": "会場・開演時刻を確認",
@@ -515,6 +639,12 @@
       "oshi": "ebidan",
       "group_key": "buddiis",
       "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
       "what": "TOKYO FM「No BUDDiiS」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -535,6 +665,12 @@
       "oshi": "ebidan",
       "group_key": "superdragon",
       "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
       "what": "フジテレビ「スパドラ★クエスト」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -555,6 +691,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【埼玉】メジャー2ndシングル「愛のダバダ」リリースイベント",
       "when": "10/24",
       "todo": "会場・開演時刻を確認",
@@ -575,6 +717,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【杢代和人】日本テレビ 土曜ドラマ「俺たちの箱根駅伝」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -595,6 +743,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【桜木雅哉】ABCテレビ「修学旅行で仲良くないグループに入りました seasons2」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -615,6 +769,12 @@
       "oshi": "ebidan",
       "group_key": "buddiis",
       "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
       "what": "【東京】メジャー2ndシングル「無限大LOVE!!!」リリースイベント",
       "when": "10/24",
       "todo": "会場・開演時刻を確認",
@@ -635,6 +795,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "TBS「M!LKの爆裂ミッション」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -655,6 +821,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "ラジオ「もしかしてどぶろっくだけど」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -675,6 +847,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【リョウガ】TOKYO MX「波乱盤上‼負けるが勝ち‼芸能界負けオセロ王決定戦」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -695,6 +873,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【リョウガ】TBS「王様のブランチ」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -715,6 +899,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【高岡ミロ／武田創世】TBS「王様のブランチ」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -735,6 +925,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【芳賀柊斗／高岡ミロ／森田璃空】TOKYO MX「音ボケPOPS」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -755,6 +951,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【シューヤ】カンテレ・フジテレビ系全国ネット「土曜はナニする！？」",
       "when": "10/24",
       "todo": "放送時間を確認",
@@ -775,6 +977,12 @@
       "oshi": "ebidan",
       "group_key": "iiondo",
       "group_name": "iiONDO",
+      "group_keys": [
+        "iiondo"
+      ],
+      "group_names": [
+        "iiONDO"
+      ],
       "what": "【千葉】1stシングル『はつ恋ONDO』発売記念リリースイベント",
       "when": "10/24",
       "todo": "会場・開演時刻を確認",
@@ -795,6 +1003,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "「ラブリーズン」リリース記念フリーライブ ローチケ先行チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
       "when": "10/25 18:00",
       "todo": "期限までに確認・申込",
@@ -815,6 +1025,8 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
       "what": "Sakurashimeji FREE LIVE TOUR 2026「あなたの声になれたら」全日程会場更新！(10/22更新)",
       "when": "10/25",
       "todo": "会場・開演時刻を確認",
@@ -835,6 +1047,12 @@
       "oshi": "ebidan",
       "group_key": "icex",
       "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
       "what": "【志賀李玖】NHK総合大河ドラマ 「豊臣兄弟！」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -855,6 +1073,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【宮城】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」",
       "when": "10/25",
       "todo": "会場・開演時刻を確認",
@@ -875,6 +1099,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【曽野舜太】テレ東系「ポケモンとどこいく！？」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -895,6 +1125,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【塩﨑太智】ABCテレビ・テレビ朝日系ドラマ「もうパパ！」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -915,6 +1151,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "FM大阪「Lienelのラキネルパーティー」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -935,6 +1177,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【大倉空人／長野凌大】ラジオ日本「空人凌大のラジオの原因。」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -955,6 +1203,12 @@
       "oshi": "ebidan",
       "group_key": "icex",
       "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
       "what": "【志賀李玖】日本テレビ系 日曜ドラマ「ハイド&シーク 0秒前の彼女」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -975,6 +1229,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【吉澤要人】ABC テレビ 日本・シンガポール外交関係樹立 60 周年記念ドラマ「SQUALL」",
       "when": "10/25",
       "todo": "放送時間を確認",
@@ -995,6 +1255,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "【東京】Sakurashimeji FREE LIVE TOUR 2026",
       "when": "10/25",
       "todo": "会場・開演時刻を確認",
@@ -1015,6 +1281,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【HAPPY BiRTHDAY!】アロハ",
       "when": "10/26",
       "todo": "お祝い情報を確認",
@@ -1035,6 +1307,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【カイ／リョウガ】文化放送「稜海しました！超特急QR」",
       "when": "10/26",
       "todo": "放送時間を確認",
@@ -1055,6 +1333,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "「VS.超特急」",
       "when": "10/26",
       "todo": "放送時間を確認",
@@ -1075,6 +1359,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV 【NAOYA】BS朝日「青と碧」",
       "when": "10/26",
       "todo": "放送時間を確認",
@@ -1095,6 +1385,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【曽野舜太】TBS「日本くらべてみたら」",
       "when": "10/26",
       "todo": "放送時間を確認",
@@ -1115,6 +1411,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【HAPPY BiRTHDAY!】森田璃空",
       "when": "10/27",
       "todo": "お祝い情報を確認",
@@ -1135,6 +1437,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY RADiO FM大阪「ONE N' ONLYの夜ふかしナイトフィーバー！」",
       "when": "10/27",
       "todo": "放送時間を確認",
@@ -1155,6 +1463,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "NACK5「Sakurashimejiとハモって。」",
       "when": "10/27",
       "todo": "放送時間を確認",
@@ -1175,6 +1489,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【山中柔太朗】TBS系火曜ドラマ「いろはの恋は時代をかける」",
       "when": "10/27",
       "todo": "放送時間を確認",
@@ -1195,6 +1515,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "日本テレビ「ザッツ M!LK」",
       "when": "10/27",
       "todo": "放送時間を確認",
@@ -1215,6 +1541,12 @@
       "oshi": "ebidan",
       "group_key": "iiondo",
       "group_name": "iiONDO",
+      "group_keys": [
+        "iiondo"
+      ],
+      "group_names": [
+        "iiONDO"
+      ],
       "what": "テレビ東京「あのちゃんの電電電波」",
       "when": "10/27",
       "todo": "放送時間を確認",
@@ -1235,6 +1567,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【杢代和人】水曜プラチナイト「仮面教師～妻を亡くしたその日から」",
       "when": "10/28",
       "todo": "放送時間を確認",
@@ -1255,6 +1593,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "ラジオアプリGERA「Sakurashimejiの花修行」",
       "when": "10/28",
       "todo": "詳細を確認",
@@ -1275,6 +1619,12 @@
       "oshi": "ebidan",
       "group_key": "superdragon",
       "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
       "what": "【池田彪馬／田中洸希】「GIANNA BOYFRIEND 12」",
       "when": "10/28",
       "todo": "発売情報を確認",
@@ -1295,6 +1645,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY MAG 【HAYATO／REI】「GIANNA BOYFRIEND 12」",
       "when": "10/28",
       "todo": "発売情報を確認",
@@ -1315,6 +1671,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "【芳賀柊斗／高桑真之】「GIANNA BOYFRIEND 12」",
       "when": "10/28",
       "todo": "発売情報を確認",
@@ -1335,6 +1697,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "【田中雅功】MBSラジオ「ヤングタウンA水曜日」",
       "when": "10/28",
       "todo": "放送時間を確認",
@@ -1355,6 +1723,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【塩﨑太智】TBS「よるのブランチ」",
       "when": "10/28",
       "todo": "放送時間を確認",
@@ -1375,6 +1749,12 @@
       "oshi": "ebidan",
       "group_key": "sakurashimeji",
       "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
       "what": "NACK5「Smile SUMMIT」",
       "when": "10/28",
       "todo": "放送時間を確認",
@@ -1395,6 +1775,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【アロハ】「BAILA 12月号」",
       "when": "10/28",
       "todo": "発売情報を確認",
@@ -1415,6 +1801,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV 【EIKU】MBSドラマ特区「付き合ってあげてもいいかな」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1435,6 +1827,8 @@
       "oshi": "ebidan",
       "group_key": null,
       "group_name": "EBiDAN",
+      "group_keys": [],
+      "group_names": [],
       "what": "EBiDAN TV テレビ東京「DAN! DAN! EBiDAN」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1455,6 +1849,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【アロハ】読売テレビ・日本テレビ系 木曜ドラマ「ダウト -15年目の復讐-」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1475,6 +1875,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV 【HAYATO】MBS ドラマフィル「おかえり、初恋。」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1495,6 +1901,8 @@
       "oshi": "ebidan",
       "group_key": null,
       "group_name": "EBiDAN",
+      "group_keys": [],
+      "group_names": [],
       "what": "EBiDAN LiVE&EVENT 「MTV VMAJ 2026」",
       "when": "10/29",
       "todo": "会場・開演時刻を確認",
@@ -1515,6 +1923,12 @@
       "oshi": "ebidan",
       "group_key": "icex",
       "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
       "what": "文化放送「ICEx の愛すべきラジオ」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1535,6 +1949,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "テレビ朝日「ゲンジブハウス」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1555,6 +1975,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY TV TBS「ONE N' ONLYのフルアウトTV」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1575,6 +2001,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【杢代和人】よみうりランド「ジュエルミネーション2026」点灯式",
       "when": "10/29",
       "todo": "会場・開演時刻を確認",
@@ -1595,6 +2027,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【曽野舜太】NHK Eテレ「NHK高校講座 ベーシック英語」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1615,6 +2053,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【佐野勇斗】日本テレビ「ぐるぐるナインティナイン」ゴチになります！27",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1635,6 +2079,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
       "when": "10/29",
       "todo": "放送時間を確認",
@@ -1655,6 +2105,12 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
       "what": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
       "when": "10/30",
       "todo": "放送時間を確認",
@@ -1675,6 +2131,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【吉田仁人／池田彪馬】TOKYO MX金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」",
       "when": "10/30",
       "todo": "放送時間を確認",
@@ -1695,6 +2157,12 @@
       "oshi": "ebidan",
       "group_key": "buddiis",
       "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
       "what": "TOKYO FM「No BUDDiiS」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1715,6 +2183,12 @@
       "oshi": "ebidan",
       "group_key": "superdragon",
       "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
       "what": "フジテレビ「スパドラ★クエスト」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1735,6 +2209,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【杢代和人】日本テレビ 土曜ドラマ「俺たちの箱根駅伝」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1755,6 +2235,12 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
       "what": "【桜木雅哉】ABCテレビ「修学旅行で仲良くないグループに入りました seasons2」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1775,6 +2261,12 @@
       "oshi": "ebidan",
       "group_key": "onenonly",
       "group_name": "ONE N’ ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N’ ONLY"
+      ],
       "what": "ONE N' ONLY LiVE&EVENT 「Livejack 2026 SMASH BEAT SP」",
       "when": "10/31",
       "todo": "会場・開演時刻を確認",
@@ -1795,6 +2287,12 @@
       "oshi": "ebidan",
       "group_key": "lienel",
       "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
       "what": "フジテレビTWO「夜のスジガネスタジオ 2026」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1815,6 +2313,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "【曽野舜太】「岡山大学祭(津島祭) 」トークショー",
       "when": "10/31",
       "todo": "会場・開演時刻を確認",
@@ -1835,6 +2339,12 @@
       "oshi": "ebidan",
       "group_key": "icex",
       "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
       "what": "【千葉】「ICEx Halloween Party 2026」",
       "when": "10/31",
       "todo": "会場・開演時刻を確認",
@@ -1855,6 +2365,12 @@
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
       "what": "TBS「M!LKの爆裂ミッション」",
       "when": "10/31",
       "todo": "放送時間を確認",
@@ -1875,6 +2391,8 @@
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
       "what": "超特急 15th Anniversary Special Event「超特急×DISH//」最新チケット情報",
       "when": "11/3 18:00",
       "todo": "期限までに確認・申込",
@@ -1895,6 +2413,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.11.05 TV 【武藤潤】ドラマ特区「ふったらどしゃぶり メロウレイン」",
       "when": "11/5",
       "todo": "放送・配信時間を確認",
@@ -1915,6 +2435,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "【TICKET INFO】「ラブリーズン」リリース記念フリーライブ",
       "when": "11/11 17:00",
       "todo": "期限までに確認・申込",
@@ -1935,6 +2457,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.11.20 OTHER 【桜木雅哉】『 Open yard【OY】POPUP 2026AW supported by A'GEM/9 - MODEL：桜木雅哉（原因は自分にある。）』",
       "when": "11/20",
       "todo": "放送・配信時間を確認",
@@ -1955,6 +2479,8 @@
       "oshi": "ebidan",
       "group_key": "iiondo",
       "group_name": "iiONDO",
+      "group_keys": [],
+      "group_names": [],
       "what": "「iiONDO 1st Fan Meeting」",
       "when": "12/4 14:45",
       "todo": "期限までに確認・申込",
@@ -1975,6 +2501,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.06 OTHER 【長野凌大】田辺桃子「逢ひ時」5th Anniversary PHOTO EXHIBITION & TALK EVENT『 Encounter 』TALK SHOW出演",
       "when": "12/6",
       "todo": "放送・配信時間を確認",
@@ -1995,6 +2523,8 @@
       "oshi": "ebidan",
       "group_key": "genjibu",
       "group_name": "原因は自分にある。",
+      "group_keys": [],
+      "group_names": [],
       "what": "GNJB FC Limited Tour Laboratory – Ne",
       "when": "12/13 14:30",
       "todo": "期限までに確認・申込",
@@ -2015,6 +2545,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.13 TOUR GNJB FC Limited Tour Laboratory – Ne【北海道】",
       "when": "12/13",
       "todo": "会場・開演時刻を確認",
@@ -2035,6 +2567,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.17 TOUR GNJB FC Limited Tour Laboratory – Ne【愛知県】",
       "when": "12/17",
       "todo": "会場・開演時刻を確認",
@@ -2055,6 +2589,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.20 TOUR GNJB FC Limited Tour Laboratory – Ne【大阪府】",
       "when": "12/20",
       "todo": "会場・開演時刻を確認",
@@ -2075,6 +2611,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.25 TOUR GNJB FC Limited Tour Laboratory – Ne 【福岡県】",
       "when": "12/25",
       "todo": "会場・開演時刻を確認",
@@ -2095,6 +2633,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2026.12.27 TOUR GNJB FC Limited Tour Laboratory – Ne 【東京都】",
       "when": "12/27",
       "todo": "会場・開演時刻を確認",
@@ -2115,6 +2655,8 @@
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
+      "group_keys": [],
+      "group_names": [],
       "what": "2027.01.09 OTHER 【桜木雅哉】『桜木雅哉 20th カレンダーブック／MASAYA SAKURAGI 20th calendar book』",
       "when": "1/9",
       "todo": "放送・配信時間を確認",
