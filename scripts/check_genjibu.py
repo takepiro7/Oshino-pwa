@@ -393,6 +393,13 @@ def extract_date_candidates(item):
                 hour, minute = h, mi
                 dt = dt.replace(hour=hour, minute=minute)
 
+        end_dt = dt
+        if extra_days:
+            try:
+                end_dt = datetime(dt.year, dt.month, max(extra_days), hour, minute, tzinfo=JST)
+            except ValueError:
+                end_dt = dt
+
         display = f"{dt.month}/{dt.day}"
         if extra_days:
             display += "・" + "・".join(str(d) for d in extra_days)
@@ -401,6 +408,7 @@ def extract_date_candidates(item):
 
         candidates.append({
             "dt": dt,
+            "end_dt": end_dt,
             "score": score,
             "position": m.start(),
             "leading_publish": leading_publish,
@@ -497,6 +505,12 @@ def infer_event_type(item):
         return "ライブ", "🎤", "normal", "会場・開演時刻を確認"
     if category == "MEDIA" or re.search(r"出演|テレビ|TV|TBS|フジテレビ|日本テレビ|テレビ朝日|NHK|ラジオ|放送", text, re.IGNORECASE):
         return "出演", "📺", "normal", "放送・配信時間を確認"
+    if re.search(r"キャンペーン|SCRATCH|くじ|プレゼント|抽選", text, re.IGNORECASE):
+        return "キャンペーン", "🎁", "normal", "参加・応募条件を確認"
+    if re.search(r"発売|リリース|販売開始", text):
+        return "発売", "💿", "normal", "発売・購入情報を確認"
+    if re.search(r"撮影会|特典会|トークイベント|TALK SHOW|イベント", text, re.IGNORECASE):
+        return "イベント", "🎟️", "normal", "日時・参加方法を確認"
     if category == "YOUTUBE":
         return "配信", "▶️", "normal", "YouTubeを確認"
     return "予定", "📌", "normal", "詳細を確認"
@@ -535,6 +549,7 @@ def extract_event(item):
         "icon": icon,
         "title": title,
         "date": dt.strftime("%Y-%m-%d"),
+        "end_date": chosen.get("end_dt", dt).strftime("%Y-%m-%d"),
         "time": dt.strftime("%H:%M") if chosen["has_time"] else "終日",
         "urgency": urgency,
         "action": action,
@@ -569,11 +584,12 @@ def save_calendar_events(current_by_category):
                 continue
             try:
                 event_date = datetime.strptime(event["date"], "%Y-%m-%d").date()
+                event_end_date = datetime.strptime(event.get("end_date", event["date"]), "%Y-%m-%d").date()
             except Exception:
                 continue
 
-            # Finished information is not useful in the fan calendar.
-            if event_date < today:
+            # Keep multi-day events through their final day, then remove them.
+            if event_end_date < today:
                 continue
 
             fresh.append(event)
