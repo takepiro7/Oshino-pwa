@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T10:01:45.006886+09:00",
+  "updated_at": "2026-10-23T15:00:49.973311+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2519",
@@ -196,6 +196,28 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001307"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21121299",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "BUDDiiS 「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
+      "date": "2026-10-24",
+      "end_date": "2026-10-24",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [],
+      "group_names": [],
+      "what": "BUDDiiS 「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
+      "when": "10/24",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121299"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005643-2026-10-24-M-LK-ARENA-TOUR-2026-2027-",
@@ -588,6 +610,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001324"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21121233",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜宮城公演＞本人確認事前認証のご案内",
+      "date": "2026-10-25",
+      "end_date": "2026-10-25",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜宮城公演＞本人確認事前認証のご案内",
+      "when": "10/25 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121233"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2526",
       "type": "締切",
       "icon": "⏰",
@@ -842,6 +886,34 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50000836"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21120915",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世抽選先行、ICEx COOLer BOX山本龍人抽選先行受付が決定！",
+      "date": "2026-10-26",
+      "end_date": "2026-10-26",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急 / ICEx",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": "超特急 / ICEx",
+      "group_keys": [
+        "bullettrain",
+        "icex"
+      ],
+      "group_names": [
+        "超特急",
+        "ICEx"
+      ],
+      "what": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世抽選先行、ICEx COOLer BOX山本龍人抽選先行受付が決定！",
+      "when": "10/26 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21120915"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10000692-2026-10-26-HAPPY-BiRTHDAY-",
@@ -1364,6 +1436,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001308"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001326-2026-10-28-DayDay-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "日本テレビ「DayDay.」",
+      "date": "2026-10-28",
+      "end_date": "2026-10-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "日本テレビ「DayDay.」",
+      "when": "10/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001326"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000163-2026-10-29-ONE-N-ONLY-TV-EIKU-MBS-",
       "type": "出演",
       "icon": "📺",
@@ -1666,6 +1764,34 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50000480"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-2011862",
+      "type": "出演",
+      "icon": "📺",
+      "title": "SUPER★DRAGON SUPER★DRAGON 10月30日(金)配信リリースの新曲「本能」がTOKYO MX 新金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」オープニングテーマに決定！「本能」の配信ジャケット写真も公開！",
+      "date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK / SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": "M!LK / SUPER★DRAGON",
+      "group_keys": [
+        "milk",
+        "superdragon"
+      ],
+      "group_names": [
+        "M!LK",
+        "SUPER★DRAGON"
+      ],
+      "what": "SUPER★DRAGON SUPER★DRAGON 10月30日(金)配信リリースの新曲「本能」がTOKYO MX 新金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」オープニングテーマに決定！「本能」の配信ジャケット写真も公開！",
+      "when": "10/30",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/2011862"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006729-2026-10-30-CS-",
@@ -1998,6 +2124,28 @@
       "url": "https://genjibu.jp/news/detail/2510"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21121303",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "BUDDiiS 11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
+      "date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "time": "23:59",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [],
+      "group_names": [],
+      "what": "BUDDiiS 11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
+      "when": "11/17 23:59",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121303"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2506",
       "type": "出演",
       "icon": "📺",
@@ -2018,50 +2166,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2506"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121194",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 1月20日(水)リリース 8thシングル 『ニコニコニコイチ』の発売を記念して、FC限定のセット商品の販売が決定！",
-      "date": "2026-11-28",
-      "end_date": "2026-11-28",
-      "time": "22:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 1月20日(水)リリース 8thシングル 『ニコニコニコイチ』の発売を記念して、FC限定のセット商品の販売が決定！",
-      "when": "11/28 22:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121194"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121190",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "ICEx 1月20日(水)リリース 8thシングル『ニコニコニコイチ』の早期予約キャンペーン&チェーン別オリジナル特典が決定！",
-      "date": "2026-11-30",
-      "end_date": "2026-11-30",
-      "time": "21:00",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 1月20日(水)リリース 8thシングル『ニコニコニコイチ』の早期予約キャンペーン&チェーン別オリジナル特典が決定！",
-      "when": "11/30 21:00",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121190"
     },
     {
       "id": "https-iiondo-com-news-detail-89",
@@ -2260,72 +2364,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121203",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 10月31日（土）開催のICEx 8thシングル「ニコニコニコイチ」発売記念ハロウィンイベント「ICEx Halloween Party 2026」詳細のお知らせ",
-      "date": "2027-01-19",
-      "end_date": "2027-01-19",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 10月31日（土）開催のICEx 8thシングル「ニコニコニコイチ」発売記念ハロウィンイベント「ICEx Halloween Party 2026」詳細のお知らせ",
-      "when": "1/19",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121203"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121187",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "ICEx 1月20日(水)リリース8thシングル『ニコニコニコイチ』の商品形態を公開！",
-      "date": "2027-01-20",
-      "end_date": "2027-01-20",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 1月20日(水)リリース8thシングル『ニコニコニコイチ』の商品形態を公開！",
-      "when": "1/20",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121187"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121175",
-      "type": "発売",
-      "icon": "💿",
-      "title": "ICEx 1月20日(水)リリース8thシングル『ニコニコニコイチ』リリース決定！新ビジュアルも公開！",
-      "date": "2027-01-20",
-      "end_date": "2027-01-20",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売・購入情報を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 1月20日(水)リリース8thシングル『ニコニコニコイチ』リリース決定！新ビジュアルも公開！",
-      "when": "1/20",
-      "todo": "発売・購入情報を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121175"
     }
   ]
 }
