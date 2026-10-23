@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-23T15:00:49.973311+09:00",
+  "updated_at": "2026-10-23T20:32:03.415872+09:00",
   "events": [
     {
-      "id": "https-genjibu-jp-news-detail-2519",
+      "id": "https-genjibu-jp-news-detail-2528",
       "type": "キャンペーン",
       "icon": "🎁",
-      "title": "“原因は自分にある。×楽天ブックスキャンペーン” 開催 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "title": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
       "date": "2026-10-23",
       "end_date": "2026-10-23",
-      "time": "11:00",
+      "time": "13:00",
       "urgency": "normal",
       "action": "参加・応募条件を確認",
       "who": "原因は自分にある。",
@@ -17,11 +17,11 @@
       "group_name": null,
       "group_keys": [],
       "group_names": [],
-      "what": "“原因は自分にある。×楽天ブックスキャンペーン” 開催 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/23 11:00",
+      "what": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/23 13:00",
       "todo": "参加・応募条件を確認",
       "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2519"
+      "url": "https://genjibu.jp/news/detail/2528"
     },
     {
       "id": "https-genjibu-jp-news-detail-2521",
@@ -198,26 +198,26 @@
       "url": "https://ebidan.jp/schedule/detail/50001307"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21121299",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "BUDDiiS 「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
+      "id": "https-ebidan-jp-news-detail-11000195",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "iiONDO 1st Fan Meeting EBiDAN先行情報",
       "date": "2026-10-24",
       "end_date": "2026-10-24",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "BUDDiiS",
+      "time": "09:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "iiONDO",
       "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
+      "group_key": "iiondo",
+      "group_name": "iiONDO",
       "group_keys": [],
       "group_names": [],
-      "what": "BUDDiiS 「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
-      "when": "10/24",
-      "todo": "参加・応募条件を確認",
+      "what": "iiONDO 1st Fan Meeting EBiDAN先行情報",
+      "when": "10/24 09:00",
+      "todo": "期限までに確認・申込",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121299"
+      "url": "https://ebidan.jp/news/detail/11000195"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005643-2026-10-24-M-LK-ARENA-TOUR-2026-2027-",
@@ -610,28 +610,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001324"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21121233",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜宮城公演＞本人確認事前認証のご案内",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜宮城公演＞本人確認事前認証のご案内",
-      "when": "10/25 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121233"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2526",
       "type": "締切",
       "icon": "⏰",
@@ -888,34 +866,6 @@
       "url": "https://ebidan.jp/schedule/detail/50000836"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21120915",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世抽選先行、ICEx COOLer BOX山本龍人抽選先行受付が決定！",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急 / ICEx",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "超特急 / ICEx",
-      "group_keys": [
-        "bullettrain",
-        "icex"
-      ],
-      "group_names": [
-        "超特急",
-        "ICEx"
-      ],
-      "what": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世抽選先行、ICEx COOLer BOX山本龍人抽選先行受付が決定！",
-      "when": "10/26 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21120915"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10000692-2026-10-26-HAPPY-BiRTHDAY-",
       "type": "誕生日",
       "icon": "🎂",
@@ -1044,6 +994,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001297"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001329-2026-10-26-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
+      "date": "2026-10-26",
+      "end_date": "2026-10-26",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
+      "when": "10/26",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001329"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10002408-2026-10-27-HAPPY-BiRTHDAY-",
@@ -1462,6 +1438,50 @@
       "url": "https://ebidan.jp/schedule/detail/50001326"
     },
     {
+      "id": "https-ebidan-jp-news-detail-1110236",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 超特急「RYOGA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
+      "date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "time": "17:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 超特急「RYOGA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
+      "when": "10/29 17:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110236"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-9093722",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "Sakurashimeji 髙田彪我25歳 生誕Square Photoset＆プロデュースグッズ スタダ便受注販売決定！",
+      "date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "time": "20:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Sakurashimeji 髙田彪我25歳 生誕Square Photoset＆プロデュースグッズ スタダ便受注販売決定！",
+      "when": "10/29 20:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/9093722"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000163-2026-10-29-ONE-N-ONLY-TV-EIKU-MBS-",
       "type": "出演",
       "icon": "📺",
@@ -1766,34 +1786,6 @@
       "url": "https://ebidan.jp/schedule/detail/50000480"
     },
     {
-      "id": "https-ebidan-jp-news-detail-2011862",
-      "type": "出演",
-      "icon": "📺",
-      "title": "SUPER★DRAGON SUPER★DRAGON 10月30日(金)配信リリースの新曲「本能」がTOKYO MX 新金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」オープニングテーマに決定！「本能」の配信ジャケット写真も公開！",
-      "date": "2026-10-30",
-      "end_date": "2026-10-30",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK / SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "M!LK / SUPER★DRAGON",
-      "group_keys": [
-        "milk",
-        "superdragon"
-      ],
-      "group_names": [
-        "M!LK",
-        "SUPER★DRAGON"
-      ],
-      "what": "SUPER★DRAGON SUPER★DRAGON 10月30日(金)配信リリースの新曲「本能」がTOKYO MX 新金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」オープニングテーマに決定！「本能」の配信ジャケット写真も公開！",
-      "when": "10/30",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2011862"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10006729-2026-10-30-CS-",
       "type": "出演",
       "icon": "📺",
@@ -2080,6 +2072,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001196"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21121338",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "ICEx 舞台『手紙』中村旺太郎 初主演＆ICEx COOLer BOX中村旺太郎抽選先行受付が決定！",
+      "date": "2026-11-03",
+      "end_date": "2026-11-03",
+      "time": "19:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "ICEx",
+      "oshi": "ebidan",
+      "group_key": "icex",
+      "group_name": "ICEx",
+      "group_keys": [],
+      "group_names": [],
+      "what": "ICEx 舞台『手紙』中村旺太郎 初主演＆ICEx COOLer BOX中村旺太郎抽選先行受付が決定！",
+      "when": "11/3 19:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121338"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2479",
       "type": "出演",
       "icon": "📺",
@@ -2122,28 +2136,6 @@
       "todo": "期限までに確認・申込",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2510"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21121303",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "BUDDiiS 11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
-      "date": "2026-11-17",
-      "end_date": "2026-11-17",
-      "time": "23:59",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [],
-      "group_names": [],
-      "what": "BUDDiiS 11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
-      "when": "11/17 23:59",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21121303"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
