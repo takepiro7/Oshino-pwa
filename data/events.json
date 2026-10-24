@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T07:41:13.626595+09:00",
+  "updated_at": "2026-10-24T10:12:19.980892+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-news-detail-11000195",
@@ -1286,28 +1286,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001326"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110236",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 超特急「RYOGA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
-      "date": "2026-10-29",
-      "end_date": "2026-10-29",
-      "time": "17:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 超特急「RYOGA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
-      "when": "10/29 17:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110236"
-    },
-    {
       "id": "https-ebidan-jp-news-detail-9093722",
       "type": "締切",
       "icon": "⏰",
@@ -1918,6 +1896,28 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001196"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-11000221",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "iiONDO 1st Fan Meeting ローソンチケットプレリクエスト先行情報",
+      "date": "2026-11-01",
+      "end_date": "2026-11-01",
+      "time": "09:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "iiONDO",
+      "oshi": "ebidan",
+      "group_key": "iiondo",
+      "group_name": "iiONDO",
+      "group_keys": [],
+      "group_names": [],
+      "what": "iiONDO 1st Fan Meeting ローソンチケットプレリクエスト先行情報",
+      "when": "11/1 09:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/11000221"
     },
     {
       "id": "https-ebidan-jp-news-detail-21121338",
