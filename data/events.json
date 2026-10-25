@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:55:01.616772+09:00",
+  "updated_at": "2026-10-25T18:36:45.864359+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2526",
@@ -300,6 +300,28 @@
       "todo": "参加・応募条件を確認",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2528"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21121813",
+      "type": "発売",
+      "icon": "💿",
+      "title": "M!LK 「ザッツ！超常」配信リリース記念！ Stationheadリスニングパーティー開催決定！",
+      "date": "2026-10-26",
+      "end_date": "2026-10-26",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売・購入情報を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 「ザッツ！超常」配信リリース記念！ Stationheadリスニングパーティー開催決定！",
+      "when": "10/26",
+      "todo": "発売・購入情報を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121813"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10000692-2026-10-26-HAPPY-BiRTHDAY-",
