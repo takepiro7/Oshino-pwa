@@ -1,284 +1,6 @@
 {
-  "updated_at": "2026-10-25T22:55:33.771575+09:00",
+  "updated_at": "2026-10-26T02:27:19.771195+09:00",
   "events": [
-    {
-      "id": "https-genjibu-jp-news-detail-2526",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "「ラブリーズン」リリース記念フリーライブ ローチケ先行チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "group_keys": [],
-      "group_names": [],
-      "what": "「ラブリーズン」リリース記念フリーライブ ローチケ先行チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/25 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2526"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2521",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "「ラブリーズン」リリース記念フリーライブ 『+KIRARI』会員限定先行 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "23:59",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "group_keys": [],
-      "group_names": [],
-      "what": "「ラブリーズン」リリース記念フリーライブ 『+KIRARI』会員限定先行 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/25 23:59",
-      "todo": "期限までに確認・申込",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2521"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10005341-2026-10-25-NHK-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【志賀李玖】NHK総合大河ドラマ 「豊臣兄弟！」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [
-        "icex"
-      ],
-      "group_names": [
-        "ICEx"
-      ],
-      "what": "【志賀李玖】NHK総合大河ドラマ 「豊臣兄弟！」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10005341"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10005644-2026-10-25-M-LK-ARENA-TOUR-2026-2027-",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "【宮城】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【宮城】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」",
-      "when": "10/25",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10005644"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006121-2026-10-25-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【曽野舜太】テレ東系「ポケモンとどこいく！？」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【曽野舜太】テレ東系「ポケモンとどこいく！？」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006121"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000369-2026-10-25-ABC-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【塩﨑太智】ABCテレビ・テレビ朝日系ドラマ「もうパパ！」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【塩﨑太智】ABCテレビ・テレビ朝日系ドラマ「もうパパ！」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000369"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000617-2026-10-25-FM-Lienel-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "FM大阪「Lienelのラキネルパーティー」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "FM大阪「Lienelのラキネルパーティー」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000617"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000669-2026-10-25-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【大倉空人／長野凌大】ラジオ日本「空人凌大のラジオの原因。」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【大倉空人／長野凌大】ラジオ日本「空人凌大のラジオの原因。」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000669"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000781-2026-10-25-0-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【志賀李玖】日本テレビ系 日曜ドラマ「ハイド&シーク 0秒前の彼女」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [
-        "icex"
-      ],
-      "group_names": [
-        "ICEx"
-      ],
-      "what": "【志賀李玖】日本テレビ系 日曜ドラマ「ハイド&シーク 0秒前の彼女」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000781"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000794-2026-10-25-ABC-60-SQUALL-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【吉澤要人】ABC テレビ 日本・シンガポール外交関係樹立 60 周年記念ドラマ「SQUALL」",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【吉澤要人】ABC テレビ 日本・シンガポール外交関係樹立 60 周年記念ドラマ「SQUALL」",
-      "when": "10/25",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000794"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000836-2026-10-25-Sakurashimeji-FREE-LIVE-TOUR-2026",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "【東京】Sakurashimeji FREE LIVE TOUR 2026",
-      "date": "2026-10-25",
-      "end_date": "2026-10-25",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "【東京】Sakurashimeji FREE LIVE TOUR 2026",
-      "when": "10/25",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000836"
-    },
     {
       "id": "https-genjibu-jp-news-detail-2528",
       "type": "キャンペーン",
@@ -656,6 +378,28 @@
       "todo": "期限までに確認・申込",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/21121241"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2526",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "「ラブリーズン」リリース記念フリーライブ ローチケ先行チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-10-28",
+      "end_date": "2026-10-28",
+      "time": "18:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "「ラブリーズン」リリース記念フリーライブ ローチケ先行チケット情報 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "10/28 18:00",
+      "todo": "期限までに確認・申込",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2526"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000293-2026-10-28-",
@@ -1616,6 +1360,28 @@
       "todo": "放送・配信時間を確認",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/21121728"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2521",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "「ラブリーズン」リリース記念フリーライブ 『+KIRARI』会員限定先行 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "time": "17:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "「ラブリーズン」リリース記念フリーライブ 『+KIRARI』会員限定先行 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/11 17:00",
+      "todo": "期限までに確認・申込",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2521"
     },
     {
       "id": "https-genjibu-jp-news-detail-2510",
