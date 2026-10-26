@@ -1,184 +1,6 @@
 {
-  "updated_at": "2026-10-26T20:15:29.876217+09:00",
+  "updated_at": "2026-10-27T02:27:18.756418+09:00",
   "events": [
-    {
-      "id": "https-genjibu-jp-news-detail-2528",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "13:00",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "group_keys": [],
-      "group_names": [],
-      "what": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/26 13:00",
-      "todo": "参加・応募条件を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2528"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10000692-2026-10-26-HAPPY-BiRTHDAY-",
-      "type": "誕生日",
-      "icon": "🎂",
-      "title": "【HAPPY BiRTHDAY!】アロハ",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "お祝い情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【HAPPY BiRTHDAY!】アロハ",
-      "when": "10/26",
-      "todo": "お祝い情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10000692"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000392-2026-10-26-QR-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【カイ／リョウガ】文化放送「稜海しました！超特急QR」",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【カイ／リョウガ】文化放送「稜海しました！超特急QR」",
-      "when": "10/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000392"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000533-2026-10-26-VS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "「VS.超特急」",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "「VS.超特急」",
-      "when": "10/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000533"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000682-2026-10-26-ONE-N-ONLY-TV-NAOYA-BS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "ONE N' ONLY TV 【NAOYA】BS朝日「青と碧」",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N’ ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N’ ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N’ ONLY"
-      ],
-      "what": "ONE N' ONLY TV 【NAOYA】BS朝日「青と碧」",
-      "when": "10/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000682"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001297-2026-10-26-TBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【曽野舜太】TBS「日本くらべてみたら」",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【曽野舜太】TBS「日本くらべてみたら」",
-      "when": "10/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001297"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001329-2026-10-26-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
-      "date": "2026-10-26",
-      "end_date": "2026-10-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
-      "when": "10/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001329"
-    },
     {
       "id": "https-ebidan-jp-schedule-detail-10002408-2026-10-27-HAPPY-BiRTHDAY-",
       "type": "誕生日",
@@ -1000,6 +822,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001336"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21122386",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "Lienel ＼森田璃空 20th BIRTHDAY SCRATCH開催決定！／",
+      "date": "2026-10-31",
+      "end_date": "2026-10-31",
+      "time": "20:30",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Lienel ＼森田璃空 20th BIRTHDAY SCRATCH開催決定！／",
+      "when": "10/31 20:30",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21122386"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2529",
       "type": "出演",
       "icon": "📺",
@@ -1348,26 +1192,26 @@
       "url": "https://ebidan.jp/news/detail/21122168"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21122025",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "BUDDiiS 【BUDDiiSLAND会員限定】11月21日(土)開催｜岡本聖哉 出演「Tokyo Beauty Week 2026 Beauty Meet-up トークショー」にご招待！",
+      "id": "https-genjibu-jp-news-detail-2528",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
       "date": "2026-11-02",
       "end_date": "2026-11-02",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
+      "time": "13:00",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
       "group_keys": [],
       "group_names": [],
-      "what": "BUDDiiS 【BUDDiiSLAND会員限定】11月21日(土)開催｜岡本聖哉 出演「Tokyo Beauty Week 2026 Beauty Meet-up トークショー」にご招待！",
-      "when": "11/2 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21122025"
+      "what": "EBiDAN オンラインくじ vol.2発売決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/2 13:00",
+      "todo": "参加・応募条件を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2528"
     },
     {
       "id": "https-genjibu-jp-news-detail-2479",
