@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T09:55:04.563867+09:00",
+  "updated_at": "2026-10-27T15:01:56.586291+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10002408-2026-10-27-HAPPY-BiRTHDAY-",
@@ -744,6 +744,28 @@
       "url": "https://ebidan.jp/schedule/detail/50000480"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21122366",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【山中柔太朗】TBS系「知識の扉よ開け！ドア×ドアクエスト」出演決定！",
+      "date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "time": "20:55",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【山中柔太朗】TBS系「知識の扉よ開け！ドア×ドアクエスト」出演決定！",
+      "when": "10/30 20:55",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21122366"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10006729-2026-10-30-CS-",
       "type": "出演",
       "icon": "📺",
@@ -1148,6 +1170,54 @@
       "url": "https://ebidan.jp/schedule/detail/50001338"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001344-2026-10-31-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【近藤駿太】日本テレビ「ラストワン」",
+      "date": "2026-10-31",
+      "end_date": "2026-10-31",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "【近藤駿太】日本テレビ「ラストワン」",
+      "when": "10/31",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001344"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21122368",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "M!LK 【曽野舜太】日本テレビ「メシドラ〜兼近＆真之介のグルメドライブ〜」出演決定！",
+      "date": "2026-11-01",
+      "end_date": "2026-11-01",
+      "time": "12:45",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【曽野舜太】日本テレビ「メシドラ〜兼近＆真之介のグルメドライブ〜」出演決定！",
+      "when": "11/1 12:45",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21122368"
+    },
+    {
       "id": "https-ebidan-jp-news-detail-1110238",
       "type": "締切",
       "icon": "⏰",
@@ -1168,28 +1238,6 @@
       "todo": "期限までに確認・申込",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/1110238"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21122168",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "M!LK 「ザッツ！超常」ダウンロードキャンペーン実施決定！",
-      "date": "2026-11-01",
-      "end_date": "2026-11-01",
-      "time": "23:59",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 「ザッツ！超常」ダウンロードキャンペーン実施決定！",
-      "when": "11/1 23:59",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21122168"
     },
     {
       "id": "https-genjibu-jp-news-detail-2528",
@@ -1234,28 +1282,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2479"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21122187",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "M!LK 【M!LK】「YouTube おちゃのまスペシャル」参加決定！",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【M!LK】「YouTube おちゃのまスペシャル」参加決定！",
-      "when": "11/9",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21122187"
     },
     {
       "id": "https-genjibu-jp-news-detail-2510",
