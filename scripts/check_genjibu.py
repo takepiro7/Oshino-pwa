@@ -5,7 +5,7 @@ import re
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from urllib.parse import urljoin, urlencode
+from urllib.parse import urljoin, urlencode, urlparse
 
 import requests
 from bs4 import BeautifulSoup, NavigableString
@@ -14,7 +14,9 @@ import xml.etree.ElementTree as ET
 SITE_URL = "https://genjibu.jp/"
 ONESIGNAL_APP_ID = "d40f1748-dbb5-472a-aaa1-5178eb3ed064"
 APP_URL = "https://takepiro7.github.io/Oshino-pwa/"
+EBIDAN_ARTIST_URL = "https://ebidan.jp/feature/artist"
 STATE_PATH = Path("data/news_seen.json")
+ARTISTS_PATH = Path("data/artists.json")
 EVENTS_PATH = Path("data/events.json")
 JST = timezone(timedelta(hours=9))
 MAX_PUSH_PER_RUN = 6
@@ -68,6 +70,21 @@ SOURCES = {
     },
 }
 
+KNOWN_EBIDAN_KEYS = {
+    "超特急": "bullettrain",
+    "M!LK": "milk",
+    "SUPER★DRAGON": "superdragon",
+    "Sakurashimeji": "sakurashimeji",
+    "ONE N' ONLY": "onenonly",
+    "ONE N’ ONLY": "onenonly",
+    "原因は自分にある。": "genjibu",
+    "BUDDiiS": "buddiis",
+    "ICEx": "icex",
+    "Lienel": "lienel",
+    "iiONDO": "iiondo",
+}
+
+
 EBIDAN_GROUPS = [
     {"key": "bullettrain", "name": "超特急", "aliases": ["超特急"]},
     {"key": "milk", "name": "M!LK", "aliases": ["M!LK"]},
@@ -80,6 +97,117 @@ EBIDAN_GROUPS = [
     {"key": "lienel", "name": "Lienel", "aliases": ["Lienel"]},
     {"key": "iiondo", "name": "iiONDO", "aliases": ["iiONDO"]},
 ]
+
+
+
+def normalize_artist_name(name):
+    return re.sub(r"\s+", " ", name).strip()
+
+
+def artist_key(name, official_url):
+    if name in KNOWN_EBIDAN_KEYS:
+        return KNOWN_EBIDAN_KEYS[name]
+    host = (urlparse(official_url).hostname or "").lower().replace("www.", "")
+    stem = host.split(".")[0] if host else ""
+    key = re.sub(r"[^a-z0-9]+", "", stem)
+    if key:
+        return key[:32]
+    key = re.sub(r"[^a-z0-9]+", "", name.lower())
+    return key[:32] or f"artist{abs(hash(name)) % 100000000:08d}"
+
+
+def fetch_ebidan_artist_catalog():
+    """Read EBiDAN's official artist links and refresh the in-memory group list."""
+    try:
+        r = requests.get(EBIDAN_ARTIST_URL, headers={"User-Agent": UA}, timeout=20)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        heading = None
+        for tag in soup.find_all(["h2", "h3", "h4"]):
+            compact = re.sub(r"\s+", "", tag.get_text(" ", strip=True)).upper()
+            if "OFFICIALSITELINK" in compact:
+                heading = tag
+                break
+
+        found = []
+        if heading:
+            for node in heading.find_all_next(["h2", "h3", "h4", "a"]):
+                if node is heading:
+                    continue
+                if node.name in ("h2", "h3", "h4"):
+                    break
+                if node.name != "a" or not node.get("href"):
+                    continue
+                name = normalize_artist_name(node.get_text(" ", strip=True))
+                href = urljoin(EBIDAN_ARTIST_URL, node["href"])
+                if not name or not href.startswith(("http://", "https://")):
+                    continue
+                if "ebidan.jp" in (urlparse(href).hostname or ""):
+                    continue
+                found.append((name, href))
+
+        # Fallback: current known groups keep the app usable if the page layout changes.
+        if not found:
+            print("EBiDAN artist catalog layout not recognized; keeping known groups.")
+            return []
+
+        existing = {g["key"]: g for g in EBIDAN_GROUPS}
+        by_name = {normalize_artist_name(g["name"]).lower(): g for g in EBIDAN_GROUPS}
+        catalog = []
+        for name, href in found:
+            known = by_name.get(name.lower())
+            key = known["key"] if known else artist_key(name, href)
+            aliases = list(dict.fromkeys((known or {}).get("aliases", []) + [name]))
+            group = {
+                "key": key,
+                "name": name,
+                "aliases": aliases,
+                "official_url": href,
+            }
+            existing[key] = group
+            by_name[name.lower()] = group
+
+            artist_id = "genjibu" if key == "genjibu" else f"ebidan:{key}"
+            catalog.append({
+                "id": artist_id,
+                "key": key,
+                "name": name,
+                "network": "EBiDAN",
+                "provider": "ebidan",
+                "official_url": href,
+                "monitoring": "active",
+            })
+
+        EBIDAN_GROUPS[:] = list(existing.values())
+
+        # Keep official page order while removing accidental duplicates.
+        deduped = []
+        seen_ids = set()
+        for artist in catalog:
+            if artist["id"] in seen_ids:
+                continue
+            seen_ids.add(artist["id"])
+            deduped.append(artist)
+
+        ARTISTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+        ARTISTS_PATH.write_text(
+            json.dumps(
+                {
+                    "updated_at": datetime.now(JST).isoformat(),
+                    "source": EBIDAN_ARTIST_URL,
+                    "artists": deduped,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ) + "\n",
+            encoding="utf-8",
+        )
+        print(f"EBiDAN artist catalog: {len(deduped)} monitored artist(s).")
+        return deduped
+    except Exception as e:
+        print(f"EBiDAN artist catalog error: {type(e).__name__}: {e}. Keeping existing catalog.")
+        return []
 
 
 def detect_ebidan_group(text):
@@ -1120,6 +1248,8 @@ def main():
         print("ONESIGNAL_REST_API_KEY is not configured.", file=sys.stderr)
         return 2
     print(f"Legacy fallback IDs configured: {len(subscription_ids)} (not used for normal delivery).")
+
+    fetch_ebidan_artist_catalog()
 
     state = load_state()
     seen_by_category = state["seen_by_category"]
