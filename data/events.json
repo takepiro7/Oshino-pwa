@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T10:08:53.893182+09:00",
+  "updated_at": "2026-10-28T15:51:19.977823+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2526",
@@ -308,6 +308,28 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001372"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21121325",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【曽野舜太】日本テレビ系「ぐるぐるナインティナイン」出演決定！",
+      "date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "time": "19:54",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【曽野舜太】日本テレビ系「ぐるぐるナインティナイン」出演決定！",
+      "when": "10/29 19:54",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121325"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000163-2026-10-29-ONE-N-ONLY-TV-EIKU-MBS-",
@@ -1234,28 +1256,6 @@
       "todo": "期限までに確認・申込",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2510"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21105947",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "BUDDiiS 【10月27日 更新】BUDDiiS メジャー2ndシングル「無限大LOVE!!!」リリースイベント開催決定！",
-      "date": "2026-11-14",
-      "end_date": "2026-11-14",
-      "time": "10:45",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [],
-      "group_names": [],
-      "what": "BUDDiiS 【10月27日 更新】BUDDiiS メジャー2ndシングル「無限大LOVE!!!」リリースイベント開催決定！",
-      "when": "11/14 10:45",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21105947"
     },
     {
       "id": "https-ebidan-jp-news-detail-21122638",
