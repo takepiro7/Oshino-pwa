@@ -104,7 +104,8 @@ function followedArtistsPanel(){
   const active=monitoredArtists();
   const activeRows=active.map(x=>`<div class="follow-row"><div><b>${escHtml(x.name)}</b><span class="status-ok">監視中</span></div><button class="mini-remove" data-follow-remove="${x.id}">解除</button></div>`).join('');
   const pendingRows=customArtists.map(x=>`<div class="follow-row"><div><b>${escHtml(x.name)}</b><span class="status-pending">監視準備中</span>${x.official_url?`<small>${escHtml(x.official_url)}</small>`:''}</div><button class="mini-remove" data-custom-remove="${x.id}">削除</button></div>`).join('');
-  return `<div class="setting-card"><div class="group-title-row"><div><h3>フォロー中</h3><p class="page-sub" style="margin:4px 0 0">監視中 ${active.length} ・ 準備中 ${customArtists.length}</p></div></div><div class="follow-list">${activeRows||pendingRows?'':''}${activeRows}${pendingRows}${(!activeRows&&!pendingRows)?'<div class="empty-follow">まだ推しが登録されていません</div>':''}</div></div>`;
+  const allActive=ARTIST_CATALOG.length>0&&active.length===ARTIST_CATALOG.length;
+  return `<div class="setting-card"><div class="group-title-row"><div><h3>フォロー中</h3><p class="page-sub" style="margin:4px 0 0">監視中 ${active.length} ・ 準備中 ${customArtists.length}</p></div><button class="group-all" id="bulkFollowBtn">${allActive?'全解除':'EBiDAN全組'}</button></div><div class="follow-list">${activeRows||pendingRows?'':''}${activeRows}${pendingRows}${(!activeRows&&!pendingRows)?'<div class="empty-follow">まだ推しが登録されていません</div>':''}</div></div>`;
 }
 function artistSearchPanel(){
   return `<div class="setting-card"><h3>推しを追加</h3><p class="page-sub" style="margin:4px 0 12px">EBiDAN所属は公式一覧から自動更新。その他のアーティストも検索できます。</p><input class="artist-input" id="artistSearch" placeholder="アーティスト名を検索" autocomplete="off"><div id="artistSearchResults" class="artist-results"></div><div class="external-search"><button class="secondary" id="externalArtistSearch">この名前で外部検索</button><div id="externalArtistResults" class="artist-results"></div></div><div class="custom-add"><h4>検索で見つからない場合</h4><input class="artist-input" id="customArtistName" placeholder="アーティスト名"><input class="artist-input" id="customArtistUrl" placeholder="公式サイトURL（任意）" inputmode="url"><button class="secondary" id="customArtistAdd">追加候補として登録</button><p class="pending-help">EBiDAN外は「監視準備中」で登録します。検索結果から追加した場合は、登録済みの公式サイトも自動取得します。</p></div></div>`;
@@ -131,6 +132,8 @@ async function searchExternalArtists(query){
   }catch(e){console.error(e);box.innerHTML='<div class="empty-follow">外部検索に失敗しました。時間をおいて再度お試しください。</div>'}
 }
 async function addExternalArtist(qid,name,description){
+  const monitored=ARTIST_CATALOG.find(x=>x.name.toLowerCase()===name.toLowerCase());
+  if(monitored){selectedEbidanGroups.add(monitored.key);saveFollowedGroups();syncOshiTag();showToast(name+'を監視中に追加しました');render();return}
   if(customArtists.some(x=>x.wikidata_id===qid||x.name.toLowerCase()===name.toLowerCase())){showToast('すでに追加済みです');return}
   let official_url='';
   try{
@@ -221,6 +224,7 @@ function syncOshiTag(){
 function bind(){
   document.querySelectorAll('[data-id]').forEach(el=>el.addEventListener('click',()=>openDetail(el.dataset.id)));
   document.querySelectorAll('[data-follow-remove]').forEach(el=>el.addEventListener('click',()=>{const key=groupKeyForArtistId(el.dataset.followRemove);if(key){selectedEbidanGroups.delete(key);saveFollowedGroups();syncOshiTag();render()}}));
+  document.querySelector('#bulkFollowBtn')?.addEventListener('click',()=>{const activeCount=monitoredArtists().length;if(ARTIST_CATALOG.length&&activeCount===ARTIST_CATALOG.length)selectedEbidanGroups.clear();else selectedEbidanGroups=new Set(ARTIST_CATALOG.map(x=>x.key));saveFollowedGroups();syncOshiTag();render()});
   document.querySelectorAll('[data-custom-remove]').forEach(el=>el.addEventListener('click',()=>{customArtists=customArtists.filter(x=>x.id!==el.dataset.customRemove);localStorage.setItem('oshinow_custom_artists',JSON.stringify(customArtists));render()}));
   const search=document.querySelector('#artistSearch');if(search){renderArtistSearch('');search.addEventListener('input',e=>renderArtistSearch(e.target.value))}
   document.querySelector('#externalArtistSearch')?.addEventListener('click',()=>searchExternalArtists(document.querySelector('#artistSearch')?.value||''));
