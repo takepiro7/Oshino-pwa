@@ -112,7 +112,8 @@ function renderArtistSearch(query=''){
   const box=document.querySelector('#artistSearchResults');if(!box)return;
   const q=query.trim().toLowerCase();
   const rows=ARTIST_CATALOG.filter(x=>!selectedEbidanGroups.has(x.key)&&(!q||x.name.toLowerCase().includes(q))).slice(0,20);
-  box.innerHTML=rows.length?rows.map(x=>`<div class="artist-result"><div><b>${x.name}</b><small>${x.network||''} ・ 自動監視対応</small></div><button class="artist-add" data-artist-add="${x.id}">追加</button></div>`).join(''):'<div class="empty-follow">${q?'該当する自動監視対応アーティストはありません':'追加できるEBiDANアーティストはありません'}</div>';
+  const emptyMessage=q?'該当する自動監視対応アーティストはありません':'追加できるEBiDANアーティストはありません';
+  box.innerHTML=rows.length?rows.map(x=>`<div class="artist-result"><div><b>${x.name}</b><small>${x.network||''} ・ 自動監視対応</small></div><button class="artist-add" data-artist-add="${x.id}">追加</button></div>`).join(''):`<div class="empty-follow">${emptyMessage}</div>`;
   document.querySelectorAll('[data-artist-add]').forEach(el=>el.addEventListener('click',()=>{const key=groupKeyForArtistId(el.dataset.artistAdd);if(!key)return;selectedEbidanGroups.add(key);saveFollowedGroups();syncOshiTag();render()}));
 }
 function saveFollowedGroups(){localStorage.setItem('oshinow_ebidan_groups',JSON.stringify([...selectedEbidanGroups]));localStorage.setItem('oshinow_oshi','ebidan')}
