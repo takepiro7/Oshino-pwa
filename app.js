@@ -163,7 +163,11 @@ function render(){screen.innerHTML=tab==='home'?home():tab==='inbox'?inbox():tab
 async function applyPushTags(OneSignal){
   await OneSignal.User.addTag('oshi',selectedEbidanGroups.size?'ebidan':'none');
   const tags={};
-  EBIDAN_GROUPS.forEach(g=>{tags['group_'+g.key]=selectedEbidanGroups.has(g.key)?'1':'0'});
+  let previouslyTagged=[];
+  try{previouslyTagged=JSON.parse(localStorage.getItem('oshinow_tagged_group_keys')||'[]')}catch(_){}
+  const allKeys=new Set([...previouslyTagged,...EBIDAN_GROUPS.map(g=>g.key)]);
+  allKeys.forEach(key=>{tags['group_'+key]=selectedEbidanGroups.has(key)?'1':'0'});
+  localStorage.setItem('oshinow_tagged_group_keys',JSON.stringify([...allKeys]));
   tags.notify_urgent=notifyUrgent?'1':'0';
   tags.notify_prediction=notifyPrediction?'1':'0';
   if(typeof OneSignal.User.addTags==='function'){
@@ -177,7 +181,7 @@ function syncOshiTag(){
   window.OneSignalDeferred.push(async function(OneSignal){
     try{
       await applyPushTags(OneSignal);
-      console.log('OshiNow: push preference synced',selectedOshi,[...selectedEbidanGroups]);
+      console.log('OshiNow: push preference synced',[...selectedEbidanGroups]);
     }catch(e){
       console.error('OshiNow: failed to sync push preference',e);
     }
@@ -272,6 +276,8 @@ async function loadArtistCatalog(){
     EBIDAN_GROUPS=ARTIST_CATALOG.map(x=>({key:x.key,name:x.name,aliases:(oldByKey.get(x.key)?.aliases)||[x.name]}));
     const valid=new Set(EBIDAN_GROUPS.map(g=>g.key));
     selectedEbidanGroups=new Set([...selectedEbidanGroups].filter(k=>valid.has(k)));
+    saveFollowedGroups();
+    syncOshiTag();
     render();
   }catch(e){console.error('OshiNow artist catalog load failed',e)}
 }
