@@ -59,7 +59,20 @@ jobs:
           fi
           git config user.name "oshinow-bot"
           git config user.email "actions@users.noreply.github.com"
+          tmpdir="$(mktemp -d)"
+          cp data/news_seen.json "$tmpdir/news_seen.json"
+          cp data/events.json "$tmpdir/events.json"
+          if [ -f data/artists.json ]; then cp data/artists.json "$tmpdir/artists.json"; fi
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p data
+          cp "$tmpdir/news_seen.json" data/news_seen.json
+          cp "$tmpdir/events.json" data/events.json
+          if [ -f "$tmpdir/artists.json" ]; then cp "$tmpdir/artists.json" data/artists.json; fi
           git add data/news_seen.json data/events.json data/artists.json
+          if git diff --cached --quiet; then
+            echo "Generated data already current."
+            exit 0
+          fi
           git commit -m "Update OshiNow watcher state and calendar"
-          git pull --rebase origin main
           git push
