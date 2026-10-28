@@ -1,314 +1,6 @@
 {
-  "updated_at": "2026-10-28T22:52:11.688008+09:00",
+  "updated_at": "2026-10-29T04:21:47.720551+09:00",
   "events": [
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000293-2026-10-28-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【杢代和人】水曜プラチナイト「仮面教師～妻を亡くしたその日から」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【杢代和人】水曜プラチナイト「仮面教師～妻を亡くしたその日から」",
-      "when": "10/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000293"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000354-2026-10-28-GERA-Sakurashimeji-",
-      "type": "予定",
-      "icon": "📌",
-      "title": "ラジオアプリGERA「Sakurashimejiの花修行」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "ラジオアプリGERA「Sakurashimejiの花修行」",
-      "when": "10/28",
-      "todo": "詳細を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000354"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000988-2026-10-28-GIANNA-BOYFRIEND-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【池田彪馬／田中洸希】「GIANNA BOYFRIEND 12」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [
-        "superdragon"
-      ],
-      "group_names": [
-        "SUPER★DRAGON"
-      ],
-      "what": "【池田彪馬／田中洸希】「GIANNA BOYFRIEND 12」",
-      "when": "10/28",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000988"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000989-2026-10-28-HAYATO-REI-GIANNA-BOYFRIEND-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【HAYATO／REI】「GIANNA BOYFRIEND 12」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【HAYATO／REI】「GIANNA BOYFRIEND 12」",
-      "when": "10/28",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000989"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000990-2026-10-28-GIANNA-BOYFRIEND-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【芳賀柊斗／高桑真之】「GIANNA BOYFRIEND 12」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "【芳賀柊斗／高桑真之】「GIANNA BOYFRIEND 12」",
-      "when": "10/28",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000990"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001103-2026-10-28-MBS-A-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【田中雅功】MBSラジオ「ヤングタウンA水曜日」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "【田中雅功】MBSラジオ「ヤングタウンA水曜日」",
-      "when": "10/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001103"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001137-2026-10-28-TBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【塩﨑太智】TBS「よるのブランチ」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【塩﨑太智】TBS「よるのブランチ」",
-      "when": "10/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001137"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001305-2026-10-28-NACK5-Smile-SUMMIT-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "NACK5「Smile SUMMIT」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "NACK5「Smile SUMMIT」",
-      "when": "10/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001305"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001308-2026-10-28-BAILA-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【アロハ】「BAILA 12月号」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【アロハ】「BAILA 12月号」",
-      "when": "10/28",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001308"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001326-2026-10-28-DayDay-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "日本テレビ「DayDay.」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "日本テレビ「DayDay.」",
-      "when": "10/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001326"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001372-2026-10-28-NAOYA-GIANNA-Another-08-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【NAOYA】「GIANNA Another 08」",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【NAOYA】「GIANNA Another 08」",
-      "when": "10/28",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001372"
-    },
-    {
-      "id": "https-genjibu-jp-news-detail-2533",
-      "type": "発売",
-      "icon": "💿",
-      "title": "5thシングル「ラブリーズン」CDショップ・Onlineストアオリジナル先着特典絵柄公開 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "date": "2026-10-28",
-      "end_date": "2026-10-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売・購入情報を確認",
-      "who": "原因は自分にある。",
-      "oshi": "genjibu",
-      "group_key": null,
-      "group_name": null,
-      "group_keys": [],
-      "group_names": [],
-      "what": "5thシングル「ラブリーズン」CDショップ・Onlineストアオリジナル先着特典絵柄公開 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
-      "when": "10/28",
-      "todo": "発売・購入情報を確認",
-      "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2533"
-    },
     {
       "id": "https-ebidan-jp-schedule-detail-50000163-2026-10-29-EIKU-MBS-",
       "type": "出演",
@@ -1256,6 +948,28 @@
       "todo": "発売・購入情報を確認",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/3002533"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2533",
+      "type": "発売",
+      "icon": "💿",
+      "title": "5thシングル「ラブリーズン」CDショップ・Onlineストアオリジナル先着特典絵柄公開 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売・購入情報を確認",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "5thシングル「ラブリーズン」CDショップ・Onlineストアオリジナル先着特典絵柄公開 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/11",
+      "todo": "発売・購入情報を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2533"
     },
     {
       "id": "https-genjibu-jp-news-detail-2506",
