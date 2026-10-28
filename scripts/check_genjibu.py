@@ -1177,46 +1177,60 @@ def send_push(api_key, subscription_ids, item):
             "profile": profile,
             "group_key": item.get("group_key"),
             "group_name": item.get("group_name"),
+            "group_keys": item.get("group_keys", []),
+            "group_names": item.get("group_names", []),
             "category": item["category"],
             "prediction": item.get("prediction"),
             "url": item["url"],
         },
     }
 
-    # Primary route: users who selected this Oshi in the app.
+    # Route by every artist the user follows, not by one selected profile.
     payload = dict(base_payload)
-    filters = [
-        {
-            "field": "tag",
-            "key": "oshi",
-            "relation": "=",
-            "value": profile,
-        }
-    ]
-    if profile == "ebidan" and item.get("group_key"):
-        filters.extend([
-            {"operator": "AND"},
-            {
-                "field": "tag",
-                "key": f"group_{item['group_key']}",
-                "relation": "=",
-                "value": "1",
-            },
-        ])
+    group_keys = list(dict.fromkeys(item.get("group_keys") or []))
+    if item.get("group_key") and item["group_key"] not in group_keys:
+        group_keys.append(item["group_key"])
 
+    target_conditions = []
+    if profile == "genjibu":
+        target_conditions = [
+            {"field": "tag", "key": "group_genjibu", "relation": "=", "value": "1"}
+        ]
+    elif profile == "ebidan" and group_keys:
+        target_conditions = [
+            {"field": "tag", "key": f"group_{key}", "relation": "=", "value": "1"}
+            for key in group_keys
+        ]
+    elif profile == "ebidan":
+        target_conditions = [
+            {"field": "tag", "key": "oshi", "relation": "=", "value": "ebidan"}
+        ]
+    else:
+        target_conditions = [
+            {"field": "tag", "key": "oshi", "relation": "=", "value": profile}
+        ]
+
+    extra_conditions = []
     is_urgent = item.get("prediction") == "urgent" or bool(
         re.search(r"締切|重要|緊急|受付終了|販売終了", item.get("title", ""))
     )
     if is_urgent:
-        filters.extend([
-            {"operator": "AND"},
-            {"field": "tag", "key": "notify_urgent", "relation": "=", "value": "1"},
-        ])
+        extra_conditions.append(
+            {"field": "tag", "key": "notify_urgent", "relation": "=", "value": "1"}
+        )
     if item.get("prediction") in ("urgent", "stream"):
-        filters.extend([
-            {"operator": "AND"},
-            {"field": "tag", "key": "notify_prediction", "relation": "=", "value": "1"},
-        ])
+        extra_conditions.append(
+            {"field": "tag", "key": "notify_prediction", "relation": "=", "value": "1"}
+        )
+
+    filters = []
+    for target_index, target in enumerate(target_conditions):
+        if target_index:
+            filters.append({"operator": "OR"})
+        filters.append(target)
+        for extra in extra_conditions:
+            filters.append({"operator": "AND"})
+            filters.append(extra)
 
     payload["filters"] = filters
 
