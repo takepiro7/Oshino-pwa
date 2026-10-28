@@ -69,6 +69,7 @@ const screen=document.querySelector('#screen');
 const dialog=document.querySelector('#detailDialog');
 const toast=document.querySelector('#toast');
 
+function escHtml(value){return String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
 function urgencyLabel(u){return u==='urgent'?'緊急':u==='important'?'重要':'通常'}
 function displayFilterKey(type){const f=DISPLAY_FILTERS.find(x=>x.types.includes(type));return f?f.key:'other'}
 function displayFilterPicker(){
@@ -101,20 +102,50 @@ function updatedLabel(){if(!EVENTS_UPDATED_AT)return '';const d=new Date(EVENTS_
 function currentOshiSubtitle(){return currentOshi().subtitle}
 function followedArtistsPanel(){
   const active=monitoredArtists();
-  const activeRows=active.map(x=>`<div class="follow-row"><div><b>${x.name}</b><span class="status-ok">監視中</span></div><button class="mini-remove" data-follow-remove="${x.id}">解除</button></div>`).join('');
-  const pendingRows=customArtists.map(x=>`<div class="follow-row"><div><b>${x.name}</b><span class="status-pending">監視準備中</span>${x.official_url?`<small>${x.official_url}</small>`:''}</div><button class="mini-remove" data-custom-remove="${x.id}">削除</button></div>`).join('');
+  const activeRows=active.map(x=>`<div class="follow-row"><div><b>${escHtml(x.name)}</b><span class="status-ok">監視中</span></div><button class="mini-remove" data-follow-remove="${x.id}">解除</button></div>`).join('');
+  const pendingRows=customArtists.map(x=>`<div class="follow-row"><div><b>${escHtml(x.name)}</b><span class="status-pending">監視準備中</span>${x.official_url?`<small>${escHtml(x.official_url)}</small>`:''}</div><button class="mini-remove" data-custom-remove="${x.id}">削除</button></div>`).join('');
   return `<div class="setting-card"><div class="group-title-row"><div><h3>フォロー中</h3><p class="page-sub" style="margin:4px 0 0">監視中 ${active.length} ・ 準備中 ${customArtists.length}</p></div></div><div class="follow-list">${activeRows||pendingRows?'':''}${activeRows}${pendingRows}${(!activeRows&&!pendingRows)?'<div class="empty-follow">まだ推しが登録されていません</div>':''}</div></div>`;
 }
 function artistSearchPanel(){
-  return `<div class="setting-card"><h3>推しを追加</h3><p class="page-sub" style="margin:4px 0 12px">EBiDAN所属は公式一覧から自動更新されます。</p><input class="artist-input" id="artistSearch" placeholder="アーティスト名を検索" autocomplete="off"><div id="artistSearchResults" class="artist-results"></div><div class="custom-add"><h4>一覧にないアーティスト</h4><input class="artist-input" id="customArtistName" placeholder="例：Snow Man"><input class="artist-input" id="customArtistUrl" placeholder="公式サイトURL（任意）" inputmode="url"><button class="secondary" id="customArtistAdd">追加候補として登録</button><p class="pending-help">EBiDAN外はまず「監視準備中」で登録します。自動監視の接続ができると「監視中」に切り替わります。</p></div></div>`;
+  return `<div class="setting-card"><h3>推しを追加</h3><p class="page-sub" style="margin:4px 0 12px">EBiDAN所属は公式一覧から自動更新。その他のアーティストも検索できます。</p><input class="artist-input" id="artistSearch" placeholder="アーティスト名を検索" autocomplete="off"><div id="artistSearchResults" class="artist-results"></div><div class="external-search"><button class="secondary" id="externalArtistSearch">この名前で外部検索</button><div id="externalArtistResults" class="artist-results"></div></div><div class="custom-add"><h4>検索で見つからない場合</h4><input class="artist-input" id="customArtistName" placeholder="アーティスト名"><input class="artist-input" id="customArtistUrl" placeholder="公式サイトURL（任意）" inputmode="url"><button class="secondary" id="customArtistAdd">追加候補として登録</button><p class="pending-help">EBiDAN外は「監視準備中」で登録します。検索結果から追加した場合は、登録済みの公式サイトも自動取得します。</p></div></div>`;
 }
 function renderArtistSearch(query=''){
   const box=document.querySelector('#artistSearchResults');if(!box)return;
   const q=query.trim().toLowerCase();
   const rows=ARTIST_CATALOG.filter(x=>!selectedEbidanGroups.has(x.key)&&(!q||x.name.toLowerCase().includes(q))).slice(0,20);
   const emptyMessage=q?'該当する自動監視対応アーティストはありません':'追加できるEBiDANアーティストはありません';
-  box.innerHTML=rows.length?rows.map(x=>`<div class="artist-result"><div><b>${x.name}</b><small>${x.network||''} ・ 自動監視対応</small></div><button class="artist-add" data-artist-add="${x.id}">追加</button></div>`).join(''):`<div class="empty-follow">${emptyMessage}</div>`;
+  box.innerHTML=rows.length?rows.map(x=>`<div class="artist-result"><div><b>${escHtml(x.name)}</b><small>${escHtml(x.network||'')} ・ 自動監視対応</small></div><button class="artist-add" data-artist-add="${x.id}">追加</button></div>`).join(''):`<div class="empty-follow">${emptyMessage}</div>`;
   document.querySelectorAll('[data-artist-add]').forEach(el=>el.addEventListener('click',()=>{const key=groupKeyForArtistId(el.dataset.artistAdd);if(!key)return;selectedEbidanGroups.add(key);saveFollowedGroups();syncOshiTag();render()}));
+}
+async function searchExternalArtists(query){
+  const box=document.querySelector('#externalArtistResults');if(!box)return;
+  const q=query.trim();if(q.length<2){box.innerHTML='<div class="empty-follow">2文字以上入力してください</div>';return}
+  box.innerHTML='<div class="empty-follow">検索中…</div>';
+  try{
+    const url='https://www.wikidata.org/w/api.php?action=wbsearchentities&search='+encodeURIComponent(q)+'&language=ja&uselang=ja&type=item&limit=8&format=json&origin=*';
+    const res=await fetch(url,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);
+    const data=await res.json();
+    const rows=Array.isArray(data.search)?data.search:[];
+    box.innerHTML=rows.length?rows.map(x=>`<div class="artist-result"><div><b>${escHtml(x.label||x.id)}</b><small>${escHtml(x.description||'Wikidata候補')}</small></div><button class="artist-add" data-external-add="${escHtml(x.id)}" data-external-name="${escHtml(x.label||x.id)}" data-external-desc="${escHtml(x.description||'')}">追加</button></div>`).join(''):'<div class="empty-follow">候補が見つかりませんでした</div>';
+    document.querySelectorAll('[data-external-add]').forEach(el=>el.addEventListener('click',()=>addExternalArtist(el.dataset.externalAdd,el.dataset.externalName,el.dataset.externalDesc||'')));
+  }catch(e){console.error(e);box.innerHTML='<div class="empty-follow">外部検索に失敗しました。時間をおいて再度お試しください。</div>'}
+}
+async function addExternalArtist(qid,name,description){
+  if(customArtists.some(x=>x.wikidata_id===qid||x.name.toLowerCase()===name.toLowerCase())){showToast('すでに追加済みです');return}
+  let official_url='';
+  try{
+    const url='https://www.wikidata.org/w/api.php?action=wbgetentities&ids='+encodeURIComponent(qid)+'&props=claims&format=json&origin=*';
+    const res=await fetch(url,{cache:'no-store'});
+    if(res.ok){
+      const data=await res.json();
+      const claims=data.entities?.[qid]?.claims?.P856;
+      official_url=claims?.[0]?.mainsnak?.datavalue?.value||'';
+    }
+  }catch(e){console.error('official site lookup failed',e)}
+  customArtists.push({id:'wikidata:'+qid,wikidata_id:qid,name,description,official_url,status:'pending'});
+  localStorage.setItem('oshinow_custom_artists',JSON.stringify(customArtists));
+  showToast(name+'を追加候補に登録しました');
+  render();
 }
 function saveFollowedGroups(){localStorage.setItem('oshinow_ebidan_groups',JSON.stringify([...selectedEbidanGroups]));localStorage.setItem('oshinow_oshi','ebidan')}
 function eventCard(e){return `<article class="event-card" data-id="${e.id}"><div class="event-top"><div><div class="kind">${e.icon} ${e.type}</div><h4>${e.title}</h4></div><span class="tag ${e.urgency}">${urgencyLabel(e.urgency)}</span></div><div class="meta"><span>◷ ${Number(e.date.slice(5,7))}/${Number(e.date.slice(8))} ${e.time}</span>${e.group_name?`<span>・ ${e.group_name}</span>`:''}</div><div class="action">${e.action} ↗</div></article>`}
@@ -192,6 +223,7 @@ function bind(){
   document.querySelectorAll('[data-follow-remove]').forEach(el=>el.addEventListener('click',()=>{const key=groupKeyForArtistId(el.dataset.followRemove);if(key){selectedEbidanGroups.delete(key);saveFollowedGroups();syncOshiTag();render()}}));
   document.querySelectorAll('[data-custom-remove]').forEach(el=>el.addEventListener('click',()=>{customArtists=customArtists.filter(x=>x.id!==el.dataset.customRemove);localStorage.setItem('oshinow_custom_artists',JSON.stringify(customArtists));render()}));
   const search=document.querySelector('#artistSearch');if(search){renderArtistSearch('');search.addEventListener('input',e=>renderArtistSearch(e.target.value))}
+  document.querySelector('#externalArtistSearch')?.addEventListener('click',()=>searchExternalArtists(document.querySelector('#artistSearch')?.value||''));
   document.querySelector('#customArtistAdd')?.addEventListener('click',()=>{const name=document.querySelector('#customArtistName')?.value.trim();const official_url=document.querySelector('#customArtistUrl')?.value.trim()||'';if(!name){showToast('アーティスト名を入力してください');return}if(ARTIST_CATALOG.some(x=>x.name.toLowerCase()===name.toLowerCase())){showToast('自動監視対応の一覧から追加できます');return}if(customArtists.some(x=>x.name.toLowerCase()===name.toLowerCase())){showToast('すでに追加済みです');return}const id='custom:'+Date.now().toString(36);customArtists.push({id,name,official_url,status:'pending'});localStorage.setItem('oshinow_custom_artists',JSON.stringify(customArtists));showToast(name+'を追加候補に登録しました');render()});
   document.querySelectorAll('[data-display-filter]').forEach(el=>el.addEventListener('click',()=>{const key=el.dataset.displayFilter;if(selectedDisplayFilters.has(key))selectedDisplayFilters.delete(key);else selectedDisplayFilters.add(key);localStorage.setItem('oshinow_display_filters',JSON.stringify([...selectedDisplayFilters]));render()}));
   document.querySelector('#filterAllBtn')?.addEventListener('click',()=>{if(selectedDisplayFilters.size===DISPLAY_FILTERS.length)selectedDisplayFilters.clear();else selectedDisplayFilters=new Set(DISPLAY_FILTERS.map(f=>f.key));localStorage.setItem('oshinow_display_filters',JSON.stringify([...selectedDisplayFilters]));render()});
