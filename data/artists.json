@@ -1,0 +1,96 @@
+{
+  "updated_at": "2026-10-28T21:56:03.082620+09:00",
+  "source": "https://ebidan.jp/feature/artist",
+  "artists": [
+    {
+      "id": "ebidan:bullettrain",
+      "key": "bullettrain",
+      "name": "超特急",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://bullettrain.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:milk",
+      "key": "milk",
+      "name": "M!LK",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://sd-milk.com/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:superdragon",
+      "key": "superdragon",
+      "name": "SUPER★DRAGON",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://super-dragon.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:sakurashimeji",
+      "key": "sakurashimeji",
+      "name": "Sakurashimeji",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://sakurashimeji.com/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:onenonly",
+      "key": "onenonly",
+      "name": "ONE N' ONLY",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://one-n-only.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "genjibu",
+      "key": "genjibu",
+      "name": "原因は自分にある。",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://genjibu.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:buddiis",
+      "key": "buddiis",
+      "name": "BUDDiiS",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://buddiis.com/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:icex",
+      "key": "icex",
+      "name": "ICEx",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://icex.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:lienel",
+      "key": "lienel",
+      "name": "Lienel",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://lienel.jp/",
+      "monitoring": "active"
+    },
+    {
+      "id": "ebidan:iiondo",
+      "key": "iiondo",
+      "name": "iiONDO",
+      "network": "EBiDAN",
+      "provider": "ebidan",
+      "official_url": "https://iiondo.com/",
+      "monitoring": "active"
+    }
+  ]
+}
