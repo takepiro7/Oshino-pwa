@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T08:24:40.878972+09:00",
+  "updated_at": "2026-10-29T11:40:11.597924+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-50000163-2026-10-29-EIKU-MBS-",
@@ -226,6 +226,58 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001295"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001386-2026-10-29-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【ユーキ】フジテレビ「くりぃむトーク！超体験!?グランプリ」",
+      "date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【ユーキ】フジテレビ「くりぃむトーク！超体験!?グランプリ」",
+      "when": "10/29",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001386"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001387-2026-10-29-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【曽野舜太】日本テレビ系「ぐるぐるナインティナイン」",
+      "date": "2026-10-29",
+      "end_date": "2026-10-29",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【曽野舜太】日本テレビ系「ぐるぐるナインティナイン」",
+      "when": "10/29",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001387"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50001224-2026-10-29-NHK-E-NHK-",
@@ -460,6 +512,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001375"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001388-2026-10-30-02-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "日本テレビ「バズリズム02」",
+      "date": "2026-10-30",
+      "end_date": "2026-10-30",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "日本テレビ「バズリズム02」",
+      "when": "10/30",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001388"
     },
     {
       "id": "https-genjibu-jp-news-detail-2529",
