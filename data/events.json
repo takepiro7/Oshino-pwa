@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T15:55:31.340544+09:00",
+  "updated_at": "2026-11-01T23:06:09.673559+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10005342-2026-11-01-NHK-",
@@ -310,28 +310,6 @@
       "url": "https://genjibu.jp/news/detail/2528"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21122463",
-      "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 【曽野舜太】日本テレビ「人生が変わる1分間の深イイ話2時間SP」出演決定！",
-      "date": "2026-11-02",
-      "end_date": "2026-11-02",
-      "time": "21:00",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【曽野舜太】日本テレビ「人生が変わる1分間の深イイ話2時間SP」出演決定！",
-      "when": "11/2 21:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21122463"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-50000393-2026-11-02-QR-",
       "type": "出演",
       "icon": "📻",
@@ -488,26 +466,48 @@
       "url": "https://ebidan.jp/schedule/detail/50001399"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21119859",
-      "type": "予定",
-      "icon": "📌",
-      "title": "M!LK 【PREMIUM MILK限定】「M!LKアンケート2026」アンケートご協力のお願い",
+      "id": "https-ebidan-jp-news-detail-3002539",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "原因は自分にある。 「ラブリーズン」リリース記念フリーライブ 一般発売",
       "date": "2026-11-03",
       "end_date": "2026-11-03",
-      "time": "23:59",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "M!LK",
+      "time": "18:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
       "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
       "group_keys": [],
       "group_names": [],
-      "what": "M!LK 【PREMIUM MILK限定】「M!LKアンケート2026」アンケートご協力のお願い",
-      "when": "11/3 23:59",
-      "todo": "詳細を確認",
+      "what": "原因は自分にある。 「ラブリーズン」リリース記念フリーライブ 一般発売",
+      "when": "11/3 18:00",
+      "todo": "期限までに確認・申込",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21119859"
+      "url": "https://ebidan.jp/news/detail/3002539"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2539",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "「ラブリーズン」リリース記念フリーライブ 一般発売 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-11-03",
+      "end_date": "2026-11-03",
+      "time": "18:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "「ラブリーズン」リリース記念フリーライブ 一般発売 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/3 18:00",
+      "todo": "期限までに確認・申込",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2539"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000175-2026-11-03-2nd-",
@@ -1002,28 +1002,6 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001400"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21123648",
-      "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 【曽野舜太】日本テレビ「news zero」出演決定！",
-      "date": "2026-11-05",
-      "end_date": "2026-11-05",
-      "time": "23:00",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【曽野舜太】日本テレビ「news zero」出演決定！",
-      "when": "11/5 23:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21123648"
     },
     {
       "id": "https-genjibu-jp-news-detail-2535",
@@ -3002,28 +2980,6 @@
       "todo": "公演・出演情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001248"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-2011898",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "SUPER★DRAGON 【楽天ミュージック】SUPER★DRAGON「本能」再生キャンペーン開催！ 渋谷スクランブル交差点大型ビジョン「Rakuten Vision」での放映も決定！",
-      "date": "2026-11-14",
-      "end_date": "2026-11-14",
-      "time": "00:00",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [],
-      "group_names": [],
-      "what": "SUPER★DRAGON 【楽天ミュージック】SUPER★DRAGON「本能」再生キャンペーン開催！ 渋谷スクランブル交差点大型ビジョン「Rakuten Vision」での放映も決定！",
-      "when": "11/14 00:00",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2011898"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006193-2026-11-14-TOKYO-FM-No-BUDDiiS-",
@@ -5148,6 +5104,58 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50000435"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50000925-2026-11-24-TBS-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【山中柔太朗】TBS系火曜ドラマ「いろはの恋は時代をかける」",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【山中柔太朗】TBS系火曜ドラマ「いろはの恋は時代をかける」",
+      "when": "11/24",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50000925"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "超特急 東京ドーム公演",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "超特急 東京ドーム公演",
+      "when": "11/25",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/10005790"
     }
   ]
 }

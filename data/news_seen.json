@@ -2,6 +2,7 @@
   "schema": 2,
   "seen_by_category": {
     "NEWS": [
+      "https://genjibu.jp/news/detail/2539",
       "https://genjibu.jp/news/detail/2538",
       "https://genjibu.jp/news/detail/2535",
       "https://genjibu.jp/news/detail/2534",
@@ -82,6 +83,7 @@
       "https://genjibu.jp/news/detail/2377"
     ],
     "YOUTUBE": [
+      "https://www.youtube.com/shorts/IWxjleVvczg",
       "https://www.youtube.com/shorts/5aQdiXrKi3c",
       "https://www.youtube.com/watch?v=OYKFhXSm8Lo",
       "https://www.youtube.com/shorts/GT1pxwq5OpY",
@@ -150,6 +152,9 @@
       "https://www.youtube.com/shorts/2HAML6rCKeI"
     ],
     "EBIDAN": [
+      "https://ebidan.jp/news/detail/3002539",
+      "https://ebidan.jp/news/detail/21124227",
+      "https://ebidan.jp/news/detail/21123918",
       "https://ebidan.jp/news/detail/21122463",
       "https://ebidan.jp/news/detail/21119859",
       "https://ebidan.jp/news/detail/2011898",
