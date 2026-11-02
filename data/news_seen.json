@@ -2,6 +2,8 @@
   "schema": 2,
   "seen_by_category": {
     "NEWS": [
+      "https://genjibu.jp/news/detail/2537",
+      "https://genjibu.jp/news/detail/2536",
       "https://genjibu.jp/news/detail/2539",
       "https://genjibu.jp/news/detail/2538",
       "https://genjibu.jp/news/detail/2535",
@@ -83,6 +85,7 @@
       "https://genjibu.jp/news/detail/2377"
     ],
     "YOUTUBE": [
+      "https://www.youtube.com/shorts/W_gczb4Uu5w",
       "https://www.youtube.com/shorts/IWxjleVvczg",
       "https://www.youtube.com/shorts/5aQdiXrKi3c",
       "https://www.youtube.com/watch?v=OYKFhXSm8Lo",
@@ -152,6 +155,9 @@
       "https://www.youtube.com/shorts/2HAML6rCKeI"
     ],
     "EBIDAN": [
+      "https://ebidan.jp/news/detail/21123938",
+      "https://ebidan.jp/news/detail/21123679",
+      "https://ebidan.jp/news/detail/1110241",
       "https://ebidan.jp/news/detail/3002539",
       "https://ebidan.jp/news/detail/21124227",
       "https://ebidan.jp/news/detail/21123918",
@@ -291,6 +297,7 @@
       "https://ebidan.jp/schedule/detail/50001300",
       "https://ebidan.jp/schedule/detail/50001378",
       "https://ebidan.jp/schedule/detail/50001399",
+      "https://ebidan.jp/schedule/detail/50001405",
       "https://ebidan.jp/schedule/detail/50000175",
       "https://ebidan.jp/schedule/detail/50000232",
       "https://ebidan.jp/schedule/detail/50000319",
@@ -311,6 +318,7 @@
       "https://ebidan.jp/schedule/detail/50001393",
       "https://ebidan.jp/schedule/detail/50001395",
       "https://ebidan.jp/schedule/detail/50001400",
+      "https://ebidan.jp/schedule/detail/50001407",
       "https://ebidan.jp/schedule/detail/10007000",
       "https://ebidan.jp/schedule/detail/50000588",
       "https://ebidan.jp/schedule/detail/50000720",
@@ -324,6 +332,7 @@
       "https://ebidan.jp/schedule/detail/10005490",
       "https://ebidan.jp/schedule/detail/50000481",
       "https://ebidan.jp/schedule/detail/50001404",
+      "https://ebidan.jp/schedule/detail/50001406",
       "https://ebidan.jp/schedule/detail/10006730",
       "https://ebidan.jp/schedule/detail/10006991",
       "https://ebidan.jp/schedule/detail/10007001",
