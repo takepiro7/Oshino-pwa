@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T10:20:39.262948+09:00",
+  "updated_at": "2026-11-03T17:03:47.467803+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2539",
@@ -360,28 +360,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001416"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21123007",
-      "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 【塩﨑太智】日本テレビ「ZIP!」「DayDay.」電波ジャック決定！",
-      "date": "2026-11-04",
-      "end_date": "2026-11-04",
-      "time": "06:54",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【塩﨑太智】日本テレビ「ZIP!」「DayDay.」電波ジャック決定！",
-      "when": "11/4 06:54",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21123007"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000294-2026-11-04-",
@@ -5144,6 +5122,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001141"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-10006595-2026-11-26-",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "超特急 東京ドーム公演",
+      "date": "2026-11-26",
+      "end_date": "2026-11-26",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "超特急 東京ドーム公演",
+      "when": "11/26",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/10006595"
     }
   ]
 }
