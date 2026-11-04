@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T10:44:00.322445+09:00",
+  "updated_at": "2026-11-04T17:09:04.776152+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-news-detail-9095073",
@@ -282,28 +282,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001409"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21124472",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "BUDDiiS 【大阪公演】「BUDDiiS vol.12 Hall Tour - LiMiT -」ファンクラブブース詳細決定！",
-      "date": "2026-11-05",
-      "end_date": "2026-11-05",
-      "time": "17:30",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [],
-      "group_names": [],
-      "what": "BUDDiiS 【大阪公演】「BUDDiiS vol.12 Hall Tour - LiMiT -」ファンクラブブース詳細決定！",
-      "when": "11/5 17:30",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21124472"
     },
     {
       "id": "https-genjibu-jp-news-detail-2535",
@@ -1538,6 +1516,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001327"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001418-2026-11-08-andBOY-DIGITAL-PHOTO-BOOK-",
+      "type": "予定",
+      "icon": "📌",
+      "title": "【伊藤壮吾】 デジタル写真集「andBOY DIGITAL PHOTO BOOK 伊藤壮吾〈特別版〉」",
+      "date": "2026-11-08",
+      "end_date": "2026-11-08",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
+      "what": "【伊藤壮吾】 デジタル写真集「andBOY DIGITAL PHOTO BOOK 伊藤壮吾〈特別版〉」",
+      "when": "11/8",
+      "todo": "詳細を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001418"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000394-2026-11-09-QR-",
       "type": "出演",
       "icon": "📻",
@@ -1746,6 +1750,32 @@
       "url": "https://ebidan.jp/schedule/detail/50000923"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001419-2026-11-10-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【タカシ】テレビ東京「ありえへん∞世界」",
+      "date": "2026-11-10",
+      "end_date": "2026-11-10",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【タカシ】テレビ東京「ありえへん∞世界」",
+      "when": "11/10",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001419"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2539",
       "type": "締切",
       "icon": "⏰",
@@ -1766,6 +1796,28 @@
       "todo": "期限までに確認・申込",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2539"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-3002541",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "原因は自分にある。 原因は自分にある。5thシングル「ラブリーズン」CDショップ キャンペーン実施",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "time": "終日",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [],
+      "group_names": [],
+      "what": "原因は自分にある。 原因は自分にある。5thシングル「ラブリーズン」CDショップ キャンペーン実施",
+      "when": "11/11",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/3002541"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006995-2026-11-11-HAPPEY-MUSICAL-",
@@ -1950,6 +2002,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001394"
     },
     {
+      "id": "https-genjibu-jp-news-detail-2541",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "原因は自分にある。5thシングル「ラブリーズン」CDショップ キャンペーン実施 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "time": "終日",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "原因は自分にある。5thシングル「ラブリーズン」CDショップ キャンペーン実施 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/11",
+      "todo": "期限までに確認・申込",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2541"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2533",
       "type": "発売",
       "icon": "💿",
@@ -1970,6 +2044,28 @@
       "todo": "発売・購入情報を確認",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2533"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-9095160",
+      "type": "予定",
+      "icon": "📌",
+      "title": "Sakurashimeji 【6スタ14時集合で。】発送物に関するご案内（2026/10/1-2026/10/31 ご継続）",
+      "date": "2026-11-12",
+      "end_date": "2026-11-12",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Sakurashimeji 【6スタ14時集合で。】発送物に関するご案内（2026/10/1-2026/10/31 ご継続）",
+      "when": "11/12",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/9095160"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006996-2026-11-12-HAPPEY-MUSICAL-",
@@ -3086,6 +3182,28 @@
       "url": "https://ebidan.jp/schedule/detail/50000685"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21121303",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "BUDDiiS 【11月4日(水)更新】11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
+      "date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "time": "23:59",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [],
+      "group_names": [],
+      "what": "BUDDiiS 【11月4日(水)更新】11月18日(水)発売のメジャー2ndシングル『無限大LOVE!!!』配信を記念し、プリオーダー＆ダウンロードキャンペーン実施決定！",
+      "when": "11/17 23:59",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121303"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
       "type": "出演",
       "icon": "📻",
@@ -3214,6 +3332,28 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001383"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21121299",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "BUDDiiS 【11月4日(水)更新】「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
+      "date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [],
+      "group_names": [],
+      "what": "BUDDiiS 【11月4日(水)更新】「無限大LOVE!!!」10月23日(金)先行配信スタート！！配信キャンペーン実施決定！",
+      "when": "11/18",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21121299"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006593-2026-11-18-Lienel-6th-Live-Tour-2026-",
@@ -4996,162 +5136,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/10005493"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000484-2026-11-26-M-LK-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
-      "date": "2026-11-26",
-      "end_date": "2026-11-26",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
-      "when": "11/26",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000484"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006733-2026-11-27-CS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
-      "date": "2026-11-27",
-      "end_date": "2026-11-27",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
-      "when": "11/27",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006733"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10007012-2026-11-27-",
-      "type": "出演",
-      "icon": "🎬",
-      "title": "【アロハ】映画「ワンダンス」",
-      "date": "2026-11-27",
-      "end_date": "2026-11-27",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "公開・上映情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【アロハ】映画「ワンダンス」",
-      "when": "11/27",
-      "todo": "公開・上映情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10007012"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000806-2026-11-27-TOKYO-MX-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【吉田仁人／池田彪馬】TOKYO MX金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」",
-      "date": "2026-11-27",
-      "end_date": "2026-11-27",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【吉田仁人／池田彪馬】TOKYO MX金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」",
-      "when": "11/27",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000806"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006195-2026-11-28-TOKYO-FM-No-BUDDiiS-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "TOKYO FM「No BUDDiiS」",
-      "date": "2026-11-28",
-      "end_date": "2026-11-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [
-        "buddiis"
-      ],
-      "group_names": [
-        "BUDDiiS"
-      ],
-      "what": "TOKYO FM「No BUDDiiS」",
-      "when": "11/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006195"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006578-2026-11-28-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "フジテレビ「スパドラ★クエスト」",
-      "date": "2026-11-28",
-      "end_date": "2026-11-28",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [
-        "superdragon"
-      ],
-      "group_names": [
-        "SUPER★DRAGON"
-      ],
-      "what": "フジテレビ「スパドラ★クエスト」",
-      "when": "11/28",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006578"
     }
   ]
 }
