@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T07:52:47.381303+09:00",
+  "updated_at": "2026-11-06T12:15:03.754372+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-news-detail-21125363",
@@ -178,6 +178,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001411"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001440-2026-11-06-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【筒井俊旭】テレビ朝日「全力！アオハル応援団」",
+      "date": "2026-11-06",
+      "end_date": "2026-11-06",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ICEx",
+      "oshi": "ebidan",
+      "group_key": "icex",
+      "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
+      "what": "【筒井俊旭】テレビ朝日「全力！アオハル応援団」",
+      "when": "11/6",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001440"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006433-2026-11-06-BUDDiiS-vol-12-Hall-Tour-LiMiT-",
@@ -5094,6 +5120,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001320"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001441-2026-11-29-in-",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "【タカシ】「きょうのわんこにゃんこ in お台場」",
+      "date": "2026-11-29",
+      "end_date": "2026-11-29",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【タカシ】「きょうのわんこにゃんこ in お台場」",
+      "when": "11/29",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001441"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000397-2026-11-30-QR-",
       "type": "出演",
       "icon": "📻",
@@ -5118,58 +5170,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50000397"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000538-2026-11-30-VS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "「VS.超特急」",
-      "date": "2026-11-30",
-      "end_date": "2026-11-30",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "「VS.超特急」",
-      "when": "11/30",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000538"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000687-2026-11-30-NAOYA-BS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【NAOYA】BS朝日「青と碧」",
-      "date": "2026-11-30",
-      "end_date": "2026-11-30",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【NAOYA】BS朝日「青と碧」",
-      "when": "11/30",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000687"
     }
   ]
 }
