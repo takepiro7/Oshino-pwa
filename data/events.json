@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T02:56:54.453141+09:00",
+  "updated_at": "2026-11-07T07:53:46.176842+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10006192-2026-11-07-TOKYO-FM-No-BUDDiiS-",
@@ -676,28 +676,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001424"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21111850",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "M!LK 【11/6更新】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」カプセルトイ「神奈川・ぴあアリーナMM」受付のお知らせ！",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "12:30",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【11/6更新】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」カプセルトイ「神奈川・ぴあアリーナMM」受付のお知らせ！",
-      "when": "11/9 12:30",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21111850"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-50000394-2026-11-09-QR-",
       "type": "出演",
       "icon": "📻",
@@ -852,28 +830,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001443"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21125301",
-      "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 吉田仁人公式Stationheadアカウント開設＆「愛の形」リリース記念リスニングパーティー開催決定！",
-      "date": "2026-11-10",
-      "end_date": "2026-11-10",
-      "time": "19:00",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 吉田仁人公式Stationheadアカウント開設＆「愛の形」リリース記念リスニングパーティー開催決定！",
-      "when": "11/10 19:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21125301"
     },
     {
       "id": "https-ebidan-jp-news-detail-2011950",
@@ -3778,6 +3734,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001426"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21124926",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "Lienel 高岡ミロ・森田璃空出演｜舞台「花ざかりの君たちへ」 Lien's Lair 会員先行実施決定！",
+      "date": "2026-11-23",
+      "end_date": "2026-11-23",
+      "time": "10:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Lienel 高岡ミロ・森田璃空出演｜舞台「花ざかりの君たちへ」 Lien's Lair 会員先行実施決定！",
+      "when": "11/23 10:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21124926"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000396-2026-11-23-QR-",
       "type": "出演",
       "icon": "📻",
@@ -5150,6 +5128,28 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001384"
+    },
+    {
+      "id": "https-iiondo-com-news-detail-89",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "「iiONDO 1st Fan Meeting」",
+      "date": "2026-12-04",
+      "end_date": "2026-12-04",
+      "time": "14:45",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "iiONDO",
+      "oshi": "ebidan",
+      "group_key": "iiondo",
+      "group_name": "iiONDO",
+      "group_keys": [],
+      "group_names": [],
+      "what": "「iiONDO 1st Fan Meeting」",
+      "when": "12/4 14:45",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://iiondo.com/news/detail/89"
     }
   ]
 }
