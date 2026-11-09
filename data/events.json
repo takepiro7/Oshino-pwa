@@ -1,162 +1,6 @@
 {
-  "updated_at": "2026-11-09T15:02:35.625981+09:00",
+  "updated_at": "2026-11-10T01:06:40.067102+09:00",
   "events": [
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000394-2026-11-09-QR-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【カイ／リョウガ】文化放送「稜海しました！超特急QR」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【カイ／リョウガ】文化放送「稜海しました！超特急QR」",
-      "when": "11/9",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000394"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000535-2026-11-09-VS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "「VS.超特急」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "「VS.超特急」",
-      "when": "11/9",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000535"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000684-2026-11-09-NAOYA-BS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【NAOYA】BS朝日「青と碧」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【NAOYA】BS朝日「青と碧」",
-      "when": "11/9",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000684"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001401-2026-11-09-MEN-S-NON-NO-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【杢代和人】「MEN’S NON-NO 12月号」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【杢代和人】「MEN’S NON-NO 12月号」",
-      "when": "11/9",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001401"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001425-2026-11-09-TBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【山中柔太朗】TBS「岡田准一とロバート秋山の今さらシロー！」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【山中柔太朗】TBS「岡田准一とロバート秋山の今さらシロー！」",
-      "when": "11/9",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001425"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001443-2026-11-09-FM-NACK5-presents-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【リョウガ／ユーキ】FM NACK5「エネクル presents まいにちザキヤマ」",
-      "date": "2026-11-09",
-      "end_date": "2026-11-09",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【リョウガ／ユーキ】FM NACK5「エネクル presents まいにちザキヤマ」",
-      "when": "11/9",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001443"
-    },
     {
       "id": "https-ebidan-jp-schedule-detail-10006994-2026-11-10-HAPPEY-MUSICAL-",
       "type": "イベント",
@@ -312,6 +156,28 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001444"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21126318",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 チケットトレード情報",
+      "date": "2026-11-11",
+      "end_date": "2026-11-11",
+      "time": "18:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 チケットトレード情報",
+      "when": "11/11 18:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21126318"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006995-2026-11-11-HAPPEY-MUSICAL-",
@@ -1082,6 +948,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001248"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001463-2026-11-13-Vol-36-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「メンズユニット Vol.36」",
+      "date": "2026-11-13",
+      "end_date": "2026-11-13",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "「メンズユニット Vol.36」",
+      "when": "11/13",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001463"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10006193-2026-11-14-TOKYO-FM-No-BUDDiiS-",
       "type": "出演",
       "icon": "📻",
@@ -1316,48 +1208,52 @@
       "url": "https://ebidan.jp/schedule/detail/50001315"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21125764",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "M!LK 「愛の形」楽曲シェアキャンペーン実施決定！",
-      "date": "2026-11-15",
-      "end_date": "2026-11-15",
-      "time": "23:59",
+      "id": "https-ebidan-jp-schedule-detail-50001466-2026-11-14-TBS-HOW-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【曽野舜太】TBS系列「いくらかわかる金？〜世の中なんでもHOWマッチ〜」",
+      "date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "time": "終日",
       "urgency": "normal",
-      "action": "参加・応募条件を確認",
+      "action": "放送時間を確認",
       "who": "M!LK",
       "oshi": "ebidan",
       "group_key": "milk",
       "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 「愛の形」楽曲シェアキャンペーン実施決定！",
-      "when": "11/15 23:59",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21125764"
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【曽野舜太】TBS系列「いくらかわかる金？〜世の中なんでもHOWマッチ〜」",
+      "when": "11/14",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001466"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21125762",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "M!LK 吉田仁人「愛の形」ダウンロードキャンペーン実施決定！",
+      "id": "https-ebidan-jp-news-detail-21125556",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "BUDDiiS 「もーりー兄弟のファンミーティングのつづきのつづき」開催決定！",
       "date": "2026-11-15",
       "end_date": "2026-11-15",
-      "time": "23:59",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "M!LK",
+      "time": "21:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "BUDDiiS",
       "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
       "group_keys": [],
       "group_names": [],
-      "what": "M!LK 吉田仁人「愛の形」ダウンロードキャンペーン実施決定！",
-      "when": "11/15 23:59",
-      "todo": "参加・応募条件を確認",
+      "what": "BUDDiiS 「もーりー兄弟のファンミーティングのつづきのつづき」開催決定！",
+      "when": "11/15 21:00",
+      "todo": "期限までに確認・申込",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21125762"
+      "url": "https://ebidan.jp/news/detail/21125556"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005344-2026-11-15-NHK-",
@@ -1748,6 +1644,58 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50000685"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001464-2026-11-16-1OC-Vol-10-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「1OC Vol.10」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "「1OC Vol.10」",
+      "when": "11/16",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001464"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001465-2026-11-16-1OC-Vol-10-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【古川毅／ジャン海渡／飯島颯／伊藤壮吾／田中洸希】「1OC Vol.10」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
+      "what": "【古川毅／ジャン海渡／飯島颯／伊藤壮吾／田中洸希】「1OC Vol.10」",
+      "when": "11/16",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001465"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
@@ -3198,6 +3146,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001343"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21126330",
+      "type": "配信予兆",
+      "icon": "🔴",
+      "title": "M!LK 11月24日(火)結成12周年記念生配信決定！",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "終日",
+      "urgency": "urgent",
+      "action": "Instagram / YouTubeを確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 11月24日(火)結成12周年記念生配信決定！",
+      "when": "11/24",
+      "todo": "Instagram / YouTubeを確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21126330"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
       "type": "誕生日",
       "icon": "🎂",
@@ -4312,6 +4282,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001441"
     },
     {
+      "id": "https-ebidan-jp-news-detail-9095752",
+      "type": "予定",
+      "icon": "📌",
+      "title": "Sakurashimeji 【6スタ14時集合で。】ファンクラブ会員限定「2027年 年賀状」発送について",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": "23:59",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Sakurashimeji 【6スタ14時集合で。】ファンクラブ会員限定「2027年 年賀状」発送について",
+      "when": "11/30 23:59",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/9095752"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000397-2026-11-30-QR-",
       "type": "出演",
       "icon": "📻",
@@ -4658,48 +4650,26 @@
       "url": "https://genjibu.jp/news/detail/2543"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21126203",
+      "id": "https-ebidan-jp-news-detail-1110255",
       "type": "キャンペーン",
       "icon": "🎁",
-      "title": "ICEx 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
+      "title": "超特急 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
       "date": "2027-02-12",
       "end_date": "2027-02-12",
       "time": "終日",
       "urgency": "normal",
       "action": "参加・応募条件を確認",
-      "who": "ICEx",
+      "who": "超特急",
       "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
       "group_keys": [],
       "group_names": [],
-      "what": "ICEx 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
+      "what": "超特急 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
       "when": "2/12",
       "todo": "参加・応募条件を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126203"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-9095709",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "Sakurashimeji 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
-      "date": "2027-02-12",
-      "end_date": "2027-02-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [],
-      "group_names": [],
-      "what": "Sakurashimeji 『EBiDANくじvol.3 ～I feel warm inside when I'm with you.～』の発売が決定！",
-      "when": "2/12",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/9095709"
+      "url": "https://ebidan.jp/news/detail/1110255"
     },
     {
       "id": "https-genjibu-jp-news-detail-2546",
@@ -4722,28 +4692,6 @@
       "todo": "参加・応募条件を確認",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2546"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21126120",
-      "type": "イベント",
-      "icon": "🎟️",
-      "title": "ICEx 筒井俊旭 海外留学に伴うグループ活動についてのお知らせ",
-      "date": "2027-02-13",
-      "end_date": "2027-02-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "日時・参加方法を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 筒井俊旭 海外留学に伴うグループ活動についてのお知らせ",
-      "when": "2/13",
-      "todo": "日時・参加方法を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126120"
     }
   ]
 }
