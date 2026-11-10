@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T09:13:58.112261+09:00",
+  "updated_at": "2026-11-10T16:29:22.670913+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10006994-2026-11-10-HAPPEY-MUSICAL-",
@@ -156,28 +156,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001444"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21126318",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 チケットトレード情報",
-      "date": "2026-11-11",
-      "end_date": "2026-11-11",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [],
-      "group_names": [],
-      "what": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 チケットトレード情報",
-      "when": "11/11 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126318"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006995-2026-11-11-HAPPEY-MUSICAL-",
@@ -818,6 +796,28 @@
       "url": "https://ebidan.jp/schedule/detail/50000482"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21126153",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【塩﨑太智】日本テレビ「金曜ミステリークラブ!!!2時間SP」出演決定！",
+      "date": "2026-11-13",
+      "end_date": "2026-11-13",
+      "time": "19:00",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【塩﨑太智】日本テレビ「金曜ミステリークラブ!!!2時間SP」出演決定！",
+      "when": "11/13 19:00",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21126153"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10006731-2026-11-13-CS-",
       "type": "出演",
       "icon": "📺",
@@ -972,6 +972,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001463"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001469-2026-11-13-TETTA-HAYATO-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【TETTA／HAYATO】読売テレビ「音道楽√」",
+      "date": "2026-11-13",
+      "end_date": "2026-11-13",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【TETTA／HAYATO】読売テレビ「音道楽√」",
+      "when": "11/13",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001469"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006193-2026-11-14-TOKYO-FM-No-BUDDiiS-",
@@ -1696,6 +1722,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001465"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001470-2026-11-16-TBS-CDTV-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "TBS系「CDTVライブ！ライブ！」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "TBS系「CDTVライブ！ライブ！」",
+      "when": "11/16",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001470"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
