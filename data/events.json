@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T07:40:26.774786+09:00",
+  "updated_at": "2026-11-12T12:24:04.168109+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10006996-2026-11-12-HAPPEY-MUSICAL-",
@@ -1168,6 +1168,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001316"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001483-2026-11-15-REI-vol-36-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【REI】「月刊わんこvol.36」",
+      "date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【REI】「月刊わんこvol.36」",
+      "when": "11/15",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001483"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000395-2026-11-16-QR-",
       "type": "出演",
       "icon": "📻",
@@ -1322,6 +1348,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001470"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001481-2026-11-16-MelodiX-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "テレビ東京「プレミアMelodiX！」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
+      "what": "テレビ東京「プレミアMelodiX！」",
+      "when": "11/16",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001481"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
@@ -1730,6 +1782,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001431"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001482-2026-11-18-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【曽野舜太】日本テレビ「ヒルナンデス！」",
+      "date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【曽野舜太】日本テレビ「ヒルナンデス！」",
+      "when": "11/18",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001482"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006594-2026-11-19-Lienel-6th-Live-Tour-2026-",
@@ -2190,6 +2268,58 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001312"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001484-2026-11-20-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【山中柔太朗】「東京カレンダー」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【山中柔太朗】「東京カレンダー」",
+      "when": "11/20",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001484"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001485-2026-11-20-BOYS-FILE-Vol-25-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【芳賀柊斗】「BOYS FILE Vol.25」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "【芳賀柊斗】「BOYS FILE Vol.25」",
+      "when": "11/20",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001485"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10001629-2026-11-21-HAPPY-BiRTHDAY-FUMINORI",
