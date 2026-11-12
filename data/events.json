@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-12T20:40:52.631054+09:00",
+  "updated_at": "2026-11-13T04:12:15.038998+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2551",
       "type": "ライブ",
       "icon": "🎤",
       "title": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
+      "date": "2026-11-13",
+      "end_date": "2026-11-13",
       "time": "10:00",
       "urgency": "normal",
       "action": "会場・開演時刻を確認",
@@ -18,396 +18,10 @@
       "group_keys": [],
       "group_names": [],
       "what": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
-      "when": "11/12 10:00",
+      "when": "11/13 10:00",
       "todo": "会場・開演時刻を確認",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2551"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006996-2026-11-12-HAPPEY-MUSICAL-",
-      "type": "イベント",
-      "icon": "🎟️",
-      "title": "【飯島颯】HAPPEY MUSICAL「えぶりでいホスト」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "公演・出演情報を確認",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [
-        "superdragon"
-      ],
-      "group_names": [
-        "SUPER★DRAGON"
-      ],
-      "what": "【飯島颯】HAPPEY MUSICAL「えぶりでいホスト」",
-      "when": "11/12",
-      "todo": "公演・出演情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006996"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000589-2026-11-12-EBiDAN-TV-DAN-DAN-EBiDAN-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "EBiDAN TV テレビ東京「DAN! DAN! EBiDAN」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "EBiDAN",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "EBiDAN",
-      "group_keys": [],
-      "group_names": [],
-      "what": "EBiDAN TV テレビ東京「DAN! DAN! EBiDAN」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000589"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000721-2026-11-12-MBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【武藤潤】MBSドラマ特区「ふったらどしゃぶり メロウレイン」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【武藤潤】MBSドラマ特区「ふったらどしゃぶり メロウレイン」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000721"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000763-2026-11-12-15-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【アロハ】読売テレビ・日本テレビ系 木曜ドラマ「ダウト -15年目の復讐-」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【アロハ】読売テレビ・日本テレビ系 木曜ドラマ「ダウト -15年目の復讐-」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000763"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000817-2026-11-12-HAYATO-MBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【HAYATO】MBS ドラマフィル「おかえり、初恋。」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【HAYATO】MBS ドラマフィル「おかえり、初恋。」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000817"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000935-2026-11-12-ICEx-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "文化放送「ICEx の愛すべきラジオ」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [
-        "icex"
-      ],
-      "group_names": [
-        "ICEx"
-      ],
-      "what": "文化放送「ICEx の愛すべきラジオ」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000935"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000962-2026-11-12-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "テレビ朝日「ゲンジブハウス」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "テレビ朝日「ゲンジブハウス」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000962"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001056-2026-11-12-TBS-ONE-N-ONLY-TV-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "TBS「ONE N' ONLYのフルアウトTV」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "TBS「ONE N' ONLYのフルアウトTV」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001056"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001247-2026-11-12-",
-      "type": "イベント",
-      "icon": "🎟️",
-      "title": "【芳賀柊斗】「ネコたん！ぷらす～猫町怪異奇譚～」猫町連続爆破事件",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "公演・出演情報を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "【芳賀柊斗】「ネコたん！ぷらす～猫町怪異奇譚～」猫町連続爆破事件",
-      "when": "11/12",
-      "todo": "公演・出演情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001247"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001313-2026-11-12-CYANMAN-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【ハル】「CYANMAN 12月号」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【ハル】「CYANMAN 12月号」",
-      "when": "11/12",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001313"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001314-2026-11-12-HAYATO-CYANMAN-12-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【HAYATO】「CYANMAN 12月号」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【HAYATO】「CYANMAN 12月号」",
-      "when": "11/12",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001314"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001446-2026-11-12-FM-NACK5-presents-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【リョウガ／ユーキ】FM NACK5「エネクル presents まいにちザキヤマ」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【リョウガ／ユーキ】FM NACK5「エネクル presents まいにちザキヤマ」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001446"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001226-2026-11-12-NHK-E-NHK-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【曽野舜太】NHK Eテレ「NHK高校講座 ベーシック英語」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【曽野舜太】NHK Eテレ「NHK高校講座 ベーシック英語」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001226"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10005491-2026-11-12-27",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【佐野勇斗】日本テレビ「ぐるぐるナインティナイン」ゴチになります！27",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【佐野勇斗】日本テレビ「ぐるぐるナインティナイン」ゴチになります！27",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10005491"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000482-2026-11-12-M-LK-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
-      "date": "2026-11-12",
-      "end_date": "2026-11-12",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【吉田仁人】文化放送「M!LK 吉田仁人のレコメン！」",
-      "when": "11/12",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000482"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006731-2026-11-13-CS-",
@@ -2790,6 +2404,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001426"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21127323",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "M!LK RECOFES.2027 グッズ事前通信販売決定！",
+      "date": "2026-11-23",
+      "end_date": "2026-11-23",
+      "time": "22:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK RECOFES.2027 グッズ事前通信販売決定！",
+      "when": "11/23 22:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21127323"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000396-2026-11-23-QR-",
       "type": "出演",
       "icon": "📻",
@@ -2970,28 +2606,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001343"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21126823",
-      "type": "発売",
-      "icon": "💿",
-      "title": "M!LK 【吉田仁人】「⾳楽と⼈ 増刊『ON VOICE Vol.6』」表紙決定！",
-      "date": "2026-11-24",
-      "end_date": "2026-11-24",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売・購入情報を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【吉田仁人】「⾳楽と⼈ 増刊『ON VOICE Vol.6』」表紙決定！",
-      "when": "11/24",
-      "todo": "発売・購入情報を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126823"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
@@ -4500,28 +4114,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "LIVE",
       "url": "https://genjibu.jp/news/detail/2466"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110258",
-      "type": "予定",
-      "icon": "📌",
-      "title": "超特急 MEMBER BLOG更新",
-      "date": "2027-01-02",
-      "end_date": "2027-01-02",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 MEMBER BLOG更新",
-      "when": "1/2",
-      "todo": "詳細を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110258"
     },
     {
       "id": "https-genjibu-jp-news-detail-2525",
