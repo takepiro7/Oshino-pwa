@@ -1,235 +1,71 @@
 {
-  "updated_at": "2026-11-13T16:15:44.091300+09:00",
+  "updated_at": "2026-11-14T00:29:53.757793+09:00",
   "events": [
     {
-      "id": "https-genjibu-jp-news-detail-2551",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "10:00",
+      "id": "https-ebidan-jp-news-detail-3002552",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "原因は自分にある。 +KIRARI『GNJB November SCRATCH 2026』開催決定！",
+      "date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "time": "19:00",
       "urgency": "normal",
-      "action": "会場・開演時刻を確認",
+      "action": "参加・応募条件を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [],
+      "group_names": [],
+      "what": "原因は自分にある。 +KIRARI『GNJB November SCRATCH 2026』開催決定！",
+      "when": "11/14 19:00",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/3002552"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2552",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "+KIRARI『GNJB November SCRATCH 2026』開催決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "time": "19:00",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
       "who": "原因は自分にある。",
       "oshi": "genjibu",
       "group_key": null,
       "group_name": null,
       "group_keys": [],
       "group_names": [],
-      "what": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
-      "when": "11/13 10:00",
-      "todo": "会場・開演時刻を確認",
+      "what": "+KIRARI『GNJB November SCRATCH 2026』開催決定！ 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 潤/杢代 和人/吉澤 要人",
+      "when": "11/14 19:00",
+      "todo": "参加・応募条件を確認",
       "source": "NEWS",
-      "url": "https://genjibu.jp/news/detail/2551"
+      "url": "https://genjibu.jp/news/detail/2552"
     },
     {
-      "id": "https-ebidan-jp-schedule-detail-10006731-2026-11-13-CS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
+      "id": "https-ebidan-jp-news-detail-2011790",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "SUPER★DRAGON Major 2nd Album「STAR」リリースイベント・特典会開催！（11/13更新）",
+      "date": "2026-11-14",
+      "end_date": "2026-11-14",
       "time": "終日",
       "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【ユーキ】 CS日テレプラス「松原タニシと超特急ユーキのいきなりホラー旅」",
-      "when": "11/13",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006731"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006997-2026-11-13-HAPPEY-MUSICAL-",
-      "type": "イベント",
-      "icon": "🎟️",
-      "title": "【飯島颯／柴崎楽】HAPPEY MUSICAL「えぶりでいホスト」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "公演・出演情報を確認",
+      "action": "会場・開演時刻を確認",
       "who": "SUPER★DRAGON",
       "oshi": "ebidan",
       "group_key": "superdragon",
       "group_name": "SUPER★DRAGON",
-      "group_keys": [
-        "superdragon"
-      ],
-      "group_names": [
-        "SUPER★DRAGON"
-      ],
-      "what": "【飯島颯／柴崎楽】HAPPEY MUSICAL「えぶりでいホスト」",
-      "when": "11/13",
-      "todo": "公演・出演情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006997"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000804-2026-11-13-TOKYO-MX-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【吉田仁人／池田彪馬】TOKYO MX金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【吉田仁人／池田彪馬】TOKYO MX金曜ドラマ「溺愛 ～ 実は、最強ヒーロー ～」",
-      "when": "11/13",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000804"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000827-2026-11-13-ALOHA-TAKAMATSU-NYLON-SUPER-VOL-19-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "【アロハ】「ALOHA TAKAMATSU NYLON SUPER VOL.19」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [
-        "bullettrain"
-      ],
-      "group_names": [
-        "超特急"
-      ],
-      "what": "【アロハ】「ALOHA TAKAMATSU NYLON SUPER VOL.19」",
-      "when": "11/13",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000827"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001248-2026-11-13-",
-      "type": "イベント",
-      "icon": "🎟️",
-      "title": "【芳賀柊斗】「ネコたん！ぷらす～猫町怪異奇譚～」猫町連続爆破事件",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "公演・出演情報を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "【芳賀柊斗】「ネコたん！ぷらす～猫町怪異奇譚～」猫町連続爆破事件",
-      "when": "11/13",
-      "todo": "公演・出演情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001248"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001463-2026-11-13-Vol-36-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "「メンズユニット Vol.36」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "「メンズユニット Vol.36」",
-      "when": "11/13",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001463"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001469-2026-11-13-TETTA-HAYATO-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【TETTA／HAYATO】読売テレビ「音道楽√」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "【TETTA／HAYATO】読売テレビ「音道楽√」",
-      "when": "11/13",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001469"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001476-2026-11-13-2-SP-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【塩﨑太智】日本テレビ「金曜ミステリークラブ!!!2時間SP」",
-      "date": "2026-11-13",
-      "end_date": "2026-11-13",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【塩﨑太智】日本テレビ「金曜ミステリークラブ!!!2時間SP」",
-      "when": "11/13",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001476"
+      "group_keys": [],
+      "group_names": [],
+      "what": "SUPER★DRAGON Major 2nd Album「STAR」リリースイベント・特典会開催！（11/13更新）",
+      "when": "11/14",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/2011790"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006193-2026-11-14-TOKYO-FM-No-BUDDiiS-",
@@ -1064,62 +900,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001489"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21126860",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世・山本龍人2次先行受付が決定！",
-      "date": "2026-11-17",
-      "end_date": "2026-11-17",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急 / ICEx",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "超特急 / ICEx",
-      "group_keys": [
-        "bullettrain",
-        "icex"
-      ],
-      "group_names": [
-        "超特急",
-        "ICEx"
-      ],
-      "what": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世・山本龍人2次先行受付が決定！",
-      "when": "11/17 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126860"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110256",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 【夢8会員2次受付】聖剣伝説3 TRIALS of MANA THE STAGE 再演",
-      "date": "2026-11-17",
-      "end_date": "2026-11-17",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急 / ICEx",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "超特急 / ICEx",
-      "group_keys": [
-        "bullettrain",
-        "icex"
-      ],
-      "group_names": [
-        "超特急",
-        "ICEx"
-      ],
-      "what": "超特急 【夢8会員2次受付】聖剣伝説3 TRIALS of MANA THE STAGE 再演",
-      "when": "11/17 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110256"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
       "type": "出演",
       "icon": "📻",
@@ -1790,6 +1570,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001491"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001497-2026-11-19-THE-SP-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【杢代和人】日本テレビ「THE突破ファイル ２時間SP」",
+      "date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "【杢代和人】日本テレビ「THE突破ファイル ２時間SP」",
+      "when": "11/19",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001497"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50001227-2026-11-19-NHK-E-NHK-",
@@ -2516,26 +2322,26 @@
       "url": "https://ebidan.jp/schedule/detail/50001426"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21127323",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "M!LK RECOFES.2027 グッズ事前通信販売決定！",
+      "id": "https-ebidan-jp-news-detail-21126812",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "ICEx Fifth Concert Tour 2027 ''NICOx LAND'' 最新チケット情報",
       "date": "2026-11-23",
       "end_date": "2026-11-23",
-      "time": "22:00",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "M!LK",
+      "time": "19:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "ICEx",
       "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
+      "group_key": "icex",
+      "group_name": "ICEx",
       "group_keys": [],
       "group_names": [],
-      "what": "M!LK RECOFES.2027 グッズ事前通信販売決定！",
-      "when": "11/23 22:00",
-      "todo": "会場・開演時刻を確認",
+      "what": "ICEx Fifth Concert Tour 2027 ''NICOx LAND'' 最新チケット情報",
+      "when": "11/23 19:00",
+      "todo": "期限までに確認・申込",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21127323"
+      "url": "https://ebidan.jp/news/detail/21126812"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000396-2026-11-23-QR-",
@@ -3110,28 +2916,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001141"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21127220",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 『ICExオフィシャルカレンダー2027.4-2028.3 』 2027年2月23日に発売が決定!",
-      "date": "2026-11-26",
-      "end_date": "2026-11-26",
-      "time": "19:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 『ICExオフィシャルカレンダー2027.4-2028.3 』 2027年2月23日に発売が決定!",
-      "when": "11/26 19:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21127220"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10006595-2026-11-26-",
       "type": "ライブ",
       "icon": "🎤",
@@ -3674,6 +3458,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001449"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001496-2026-11-28-2026-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "日本テレビ系「ベストアーティスト2026」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "日本テレビ系「ベストアーティスト2026」",
+      "when": "11/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001496"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2547",
       "type": "締切",
       "icon": "⏰",
@@ -4082,6 +3892,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001475"
     },
     {
+      "id": "https-ebidan-jp-news-detail-21127591",
+      "type": "出演",
+      "icon": "📺",
+      "title": "ICEx 【 Fancy Club POPUP supported by A'GEM/9 - MODEL：筒井俊旭(ICEx) 】",
+      "date": "2026-12-02",
+      "end_date": "2026-12-02",
+      "time": "10:00",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "ICEx",
+      "oshi": "ebidan",
+      "group_key": "icex",
+      "group_name": "ICEx",
+      "group_keys": [],
+      "group_names": [],
+      "what": "ICEx 【 Fancy Club POPUP supported by A'GEM/9 - MODEL：筒井俊旭(ICEx) 】",
+      "when": "12/2 10:00",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21127591"
+    },
+    {
       "id": "https-iiondo-com-news-detail-89",
       "type": "締切",
       "icon": "⏰",
@@ -4344,6 +4176,28 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
+    },
+    {
+      "id": "https-genjibu-jp-news-detail-2551",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
+      "date": "2027-02-10",
+      "end_date": "2027-02-10",
+      "time": "10:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "＜EBiDAN スペシャルブック＆Blu-rayの2作品発売記念＞＠Loppi・HMV限定 EBiDANオリジナルグッズ発売決定 2026年11月13日(金)10:00より予約受付開始 大倉 空人/小泉 光咲/桜木 雅哉/長野 凌大/武藤 ",
+      "when": "2/10 10:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "NEWS",
+      "url": "https://genjibu.jp/news/detail/2551"
     },
     {
       "id": "https-genjibu-jp-news-detail-2543",
