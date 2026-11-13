@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T09:33:10.880596+09:00",
+  "updated_at": "2026-11-13T16:15:44.091300+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2551",
@@ -230,28 +230,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001476"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110259",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 BULLET TRAIN 1st DOME LIVE Signal ステージプラン確定機材席開放一般発売 実施決定！",
-      "date": "2026-11-14",
-      "end_date": "2026-11-14",
-      "time": "10:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 BULLET TRAIN 1st DOME LIVE Signal ステージプラン確定機材席開放一般発売 実施決定！",
-      "when": "11/14 10:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110259"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006193-2026-11-14-TOKYO-FM-No-BUDDiiS-",
@@ -852,6 +830,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001483"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001488-2026-11-15-MBS-TBS-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【山中柔太朗】MBS/TBS系全国ネット「日曜日の初耳学」",
+      "date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【山中柔太朗】MBS/TBS系全国ネット「日曜日の初耳学」",
+      "when": "11/15",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001488"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000395-2026-11-16-QR-",
       "type": "出演",
       "icon": "📻",
@@ -1032,6 +1036,88 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001481"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001489-2026-11-16-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【塩﨑太智】テレビ朝日系「くりぃむナンタラ」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【塩﨑太智】テレビ朝日系「くりぃむナンタラ」",
+      "when": "11/16",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001489"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21126860",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世・山本龍人2次先行受付が決定！",
+      "date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急 / ICEx",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": "超特急 / ICEx",
+      "group_keys": [
+        "bullettrain",
+        "icex"
+      ],
+      "group_names": [
+        "超特急",
+        "ICEx"
+      ],
+      "what": "ICEx 『聖剣伝説3 TRIALS of MANA THE STAGE 再演』ICEx COOLer BOX阿久根温世・山本龍人2次先行受付が決定！",
+      "when": "11/17 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21126860"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110256",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 【夢8会員2次受付】聖剣伝説3 TRIALS of MANA THE STAGE 再演",
+      "date": "2026-11-17",
+      "end_date": "2026-11-17",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急 / ICEx",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": "超特急 / ICEx",
+      "group_keys": [
+        "bullettrain",
+        "icex"
+      ],
+      "group_names": [
+        "超特急",
+        "ICEx"
+      ],
+      "what": "超特急 【夢8会員2次受付】聖剣伝説3 TRIALS of MANA THE STAGE 再演",
+      "when": "11/17 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110256"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
@@ -1678,6 +1764,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001402"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001491-2026-11-19-STAR-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【ユーキ／タカシ／シューヤ】フジテレビ系「STAR」",
+      "date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【ユーキ／タカシ／シューヤ】フジテレビ系「STAR」",
+      "when": "11/19",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001491"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50001227-2026-11-19-NHK-E-NHK-",
@@ -2608,6 +2720,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001343"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001492-2026-11-23-CS-1-ONE-N-ONLY-Merry-XmaSWAG-2026-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "CSテレ朝チャンネル1「ONE N’ ONLY『Merry XmaSWAG 2026 〜メガホリ〜』」",
+      "date": "2026-11-23",
+      "end_date": "2026-11-23",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "CSテレ朝チャンネル1「ONE N’ ONLY『Merry XmaSWAG 2026 〜メガホリ〜』」",
+      "when": "11/23",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001492"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
       "type": "誕生日",
       "icon": "🎂",
@@ -2814,6 +2952,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001436"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001490-2026-11-24-ON-VOICE-Vol-6-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【吉田仁人】「⾳楽と⼈ 増刊『ON VOICE Vol.6』」",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【吉田仁人】「⾳楽と⼈ 増刊『ON VOICE Vol.6』」",
+      "when": "11/24",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001490"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -4116,6 +4280,50 @@
       "url": "https://genjibu.jp/news/detail/2466"
     },
     {
+      "id": "https-genjibu-jp-news-detail-2553",
+      "type": "出演",
+      "icon": "📺",
+      "title": "2026.12.31 TV 【EBiDAN】第77回 NHK紅白歌合戦",
+      "date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "genjibu",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "2026.12.31 TV 【EBiDAN】第77回 NHK紅白歌合戦",
+      "when": "12/31",
+      "todo": "放送・配信時間を確認",
+      "source": "MEDIA",
+      "url": "https://genjibu.jp/news/detail/2553"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-50001493",
+      "type": "出演",
+      "icon": "📺",
+      "title": "EBiDAN 「第77回NHK紅白歌合戦」初出場決定！",
+      "date": "2026-12-31",
+      "end_date": "2026-12-31",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "EBiDAN",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": null,
+      "group_keys": [],
+      "group_names": [],
+      "what": "EBiDAN 「第77回NHK紅白歌合戦」初出場決定！",
+      "when": "12/31",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/50001493"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2525",
       "type": "出演",
       "icon": "📺",
@@ -4136,28 +4344,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21126394",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "ICEx 『ICEx オフィシャルカレンダー2027.4-2028.3』発売記念イベント",
-      "date": "2027-02-04",
-      "end_date": "2027-02-04",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "ICEx",
-      "oshi": "ebidan",
-      "group_key": "icex",
-      "group_name": "ICEx",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ICEx 『ICEx オフィシャルカレンダー2027.4-2028.3』発売記念イベント",
-      "when": "2/4",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21126394"
     },
     {
       "id": "https-genjibu-jp-news-detail-2543",
