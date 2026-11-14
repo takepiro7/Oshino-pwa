@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T10:44:55.661995+09:00",
+  "updated_at": "2026-11-14T17:07:25.068883+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-news-detail-3002552",
@@ -2322,6 +2322,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001426"
     },
     {
+      "id": "https-ebidan-jp-news-detail-9096350",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "Sakurashimeji 「Sakurashimeji ZeppTour+ 2027」最新チケット情報",
+      "date": "2026-11-23",
+      "end_date": "2026-11-23",
+      "time": "14:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Sakurashimeji 「Sakurashimeji ZeppTour+ 2027」最新チケット情報",
+      "when": "11/23 14:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/9096350"
+    },
+    {
       "id": "https-ebidan-jp-news-detail-21126812",
       "type": "締切",
       "icon": "⏰",
@@ -4132,28 +4154,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2553"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-50001493",
-      "type": "出演",
-      "icon": "📺",
-      "title": "EBiDAN 「第77回NHK紅白歌合戦」初出場決定！",
-      "date": "2026-12-31",
-      "end_date": "2026-12-31",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "EBiDAN",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": null,
-      "group_keys": [],
-      "group_names": [],
-      "what": "EBiDAN 「第77回NHK紅白歌合戦」初出場決定！",
-      "when": "12/31",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/50001493"
     },
     {
       "id": "https-genjibu-jp-news-detail-2525",
