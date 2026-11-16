@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T07:04:27.234788+09:00",
+  "updated_at": "2026-11-16T10:58:22.590090+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-50000395-2026-11-16-QR-",
@@ -208,6 +208,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001489"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001498-2026-11-16-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
+      "date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【カイ／タカシ／アロハ】日本テレビ系「ヒルナンデス！」",
+      "when": "11/16",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001498"
     },
     {
       "id": "https-ebidan-jp-news-detail-21128085",
@@ -1208,6 +1234,58 @@
       "url": "https://ebidan.jp/schedule/detail/50001485"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001499-2026-11-20-02-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "日本テレビ「バズリズム02」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "日本テレビ「バズリズム02」",
+      "when": "11/20",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001499"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001500-2026-11-20-BOYS-FILE-Vol-25-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【田中雅功】「BOYS FILE Vol.25」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "Sakurashimeji",
+      "oshi": "ebidan",
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
+      "what": "【田中雅功】「BOYS FILE Vol.25」",
+      "when": "11/20",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001500"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10001629-2026-11-21-HAPPY-BiRTHDAY-FUMINORI",
       "type": "誕生日",
       "icon": "🎂",
@@ -1878,32 +1956,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001343"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001492-2026-11-23-CS-1-ONE-N-ONLY-Merry-XmaSWAG-2026-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "CSテレ朝チャンネル1「ONE N’ ONLY『Merry XmaSWAG 2026 〜メガホリ〜』」",
-      "date": "2026-11-23",
-      "end_date": "2026-11-23",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [
-        "onenonly"
-      ],
-      "group_names": [
-        "ONE N' ONLY"
-      ],
-      "what": "CSテレ朝チャンネル1「ONE N’ ONLY『Merry XmaSWAG 2026 〜メガホリ〜』」",
-      "when": "11/23",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001492"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
