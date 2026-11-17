@@ -102,6 +102,7 @@
       "https://genjibu.jp/news/detail/2377"
     ],
     "YOUTUBE": [
+      "https://www.youtube.com/shorts/WWG582l8K0U",
       "https://www.youtube.com/shorts/pzzEwkAcBXY",
       "https://www.youtube.com/shorts/nuCWtI_7M1M",
       "https://www.youtube.com/watch?v=07hKJoEvqVQ",
@@ -190,6 +191,9 @@
       "https://www.youtube.com/shorts/2HAML6rCKeI"
     ],
     "EBIDAN": [
+      "https://ebidan.jp/news/detail/21128598",
+      "https://ebidan.jp/news/detail/21128487",
+      "https://ebidan.jp/news/detail/1110267",
       "https://ebidan.jp/news/detail/21127541",
       "https://ebidan.jp/news/detail/1110265",
       "https://ebidan.jp/news/detail/9096520",
@@ -446,6 +450,8 @@
       "https://ebidan.jp/schedule/detail/50001341",
       "https://ebidan.jp/schedule/detail/50001431",
       "https://ebidan.jp/schedule/detail/50001482",
+      "https://ebidan.jp/schedule/detail/50001505",
+      "https://ebidan.jp/schedule/detail/50001506",
       "https://ebidan.jp/schedule/detail/10006594",
       "https://ebidan.jp/schedule/detail/50000590",
       "https://ebidan.jp/schedule/detail/50000722",
@@ -470,6 +476,9 @@
       "https://ebidan.jp/schedule/detail/50001485",
       "https://ebidan.jp/schedule/detail/50001499",
       "https://ebidan.jp/schedule/detail/50001500",
+      "https://ebidan.jp/schedule/detail/50001507",
+      "https://ebidan.jp/schedule/detail/50001509",
+      "https://ebidan.jp/schedule/detail/50001511",
       "https://ebidan.jp/schedule/detail/10001629",
       "https://ebidan.jp/schedule/detail/10005645",
       "https://ebidan.jp/schedule/detail/10006194",
@@ -477,6 +486,9 @@
       "https://ebidan.jp/schedule/detail/50000707",
       "https://ebidan.jp/schedule/detail/50000747",
       "https://ebidan.jp/schedule/detail/50001199",
+      "https://ebidan.jp/schedule/detail/50001508",
+      "https://ebidan.jp/schedule/detail/50001510",
+      "https://ebidan.jp/schedule/detail/50001510",
       "https://ebidan.jp/schedule/detail/10005345",
       "https://ebidan.jp/schedule/detail/10006125",
       "https://ebidan.jp/schedule/detail/50000373",
@@ -505,11 +517,14 @@
       "https://ebidan.jp/schedule/detail/50001435",
       "https://ebidan.jp/schedule/detail/50001436",
       "https://ebidan.jp/schedule/detail/50001490",
+      "https://ebidan.jp/schedule/detail/50001512",
+      "https://ebidan.jp/schedule/detail/50001513",
       "https://ebidan.jp/schedule/detail/10005790",
       "https://ebidan.jp/schedule/detail/50000297",
       "https://ebidan.jp/schedule/detail/50000358",
       "https://ebidan.jp/schedule/detail/50001107",
       "https://ebidan.jp/schedule/detail/50001141",
+      "https://ebidan.jp/schedule/detail/50001514",
       "https://ebidan.jp/schedule/detail/10006595",
       "https://ebidan.jp/schedule/detail/50000591",
       "https://ebidan.jp/schedule/detail/50000723",
@@ -533,6 +548,7 @@
       "https://ebidan.jp/schedule/detail/50001319",
       "https://ebidan.jp/schedule/detail/50001449",
       "https://ebidan.jp/schedule/detail/50001496",
+      "https://ebidan.jp/schedule/detail/50001515",
       "https://ebidan.jp/schedule/detail/10005346",
       "https://ebidan.jp/schedule/detail/10006126",
       "https://ebidan.jp/schedule/detail/50000622",
@@ -547,7 +563,10 @@
       "https://ebidan.jp/schedule/detail/50000687",
       "https://ebidan.jp/schedule/detail/50001384",
       "https://ebidan.jp/schedule/detail/50001475",
-      "https://ebidan.jp/schedule/detail/50001504"
+      "https://ebidan.jp/schedule/detail/50001504",
+      "https://ebidan.jp/schedule/detail/50001516",
+      "https://ebidan.jp/schedule/detail/50001517",
+      "https://ebidan.jp/schedule/detail/50001517"
     ]
   }
 }

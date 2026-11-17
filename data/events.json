@@ -1,28 +1,6 @@
 {
-  "updated_at": "2026-11-17T11:39:05.306968+09:00",
+  "updated_at": "2026-11-17T20:10:10.284094+09:00",
   "events": [
-    {
-      "id": "https-ebidan-jp-news-detail-21127614",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」オフィシャルグッズ＆生写真セット 【11/21(土)、22(日)神奈川・ぴあアリーナMM公演】会場販売＆整理券配布のお知らせ",
-      "date": "2026-11-17",
-      "end_date": "2026-11-17",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」オフィシャルグッズ＆生写真セット 【11/21(土)、22(日)神奈川・ぴあアリーナMM公演】会場販売＆整理券配布のお知らせ",
-      "when": "11/17 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21127614"
-    },
     {
       "id": "https-ebidan-jp-schedule-detail-50000321-2026-11-17-FM-ONE-N-ONLY-",
       "type": "出演",
@@ -178,6 +156,28 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001477"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110267",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」初日・1曲目予想企画スタート！",
+      "date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "time": "00:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」初日・1曲目予想企画スタート！",
+      "when": "11/18 00:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110267"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006593-2026-11-18-Lienel-6th-Live-Tour-2026-",
@@ -412,6 +412,80 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001482"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001505-2026-11-18-FUMINORI-DayDay-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【FUMINORI】日本テレビ「DayDay.」",
+      "date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
+      "what": "【FUMINORI】日本テレビ「DayDay.」",
+      "when": "11/18",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001505"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001506-2026-11-18-MBS-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【武藤潤】MBS「水野真紀の魔法のレストラン」",
+      "date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "【武藤潤】MBS「水野真紀の魔法のレストラン」",
+      "when": "11/18",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001506"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21128598",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 当日券販売情報！",
+      "date": "2026-11-19",
+      "end_date": "2026-11-19",
+      "time": "15:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」東京公演 当日券販売情報！",
+      "when": "11/19 15:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21128598"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006594-2026-11-19-Lienel-6th-Live-Tour-2026-",
@@ -1030,6 +1104,84 @@
       "url": "https://ebidan.jp/schedule/detail/50001500"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001507-2026-11-20-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "フジテレビ系「ノンストップ！」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "フジテレビ系「ノンストップ！」",
+      "when": "11/20",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001507"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001509-2026-11-20-JFN-syudou-",
+      "type": "出演",
+      "icon": "📻",
+      "title": "【小泉光咲／吉澤要人】JFN系列「syudou・プロデュース・スーパー・エディション」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "【小泉光咲／吉澤要人】JFN系列「syudou・プロデュース・スーパー・エディション」",
+      "when": "11/20",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001509"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001511-2026-11-20-FUMINORI-",
+      "type": "出演",
+      "icon": "📻",
+      "title": "【FUMINORI】文化放送「ミキの深夜でんぱ！」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
+      "what": "【FUMINORI】文化放送「ミキの深夜でんぱ！」",
+      "when": "11/20",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001511"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10001629-2026-11-21-HAPPY-BiRTHDAY-FUMINORI",
       "type": "誕生日",
       "icon": "🎂",
@@ -1210,6 +1362,58 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001199"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001508-2026-11-21-NHK-E-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【マサヒロ】NHK Eテレ「沼にハマってきいてみた」",
+      "date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【マサヒロ】NHK Eテレ「沼にハマってきいてみた」",
+      "when": "11/21",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001508"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001510-2026-11-21-FUMINORI-SBI-GROUP-presents-TGC-2026-",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "【小泉光咲／FUMINORI】 「SBI GROUP presents TGC 富山 2026」",
+      "date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "【小泉光咲／FUMINORI】 「SBI GROUP presents TGC 富山 2026」",
+      "when": "11/21",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001510"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005345-2026-11-22-NHK-",
@@ -1936,48 +2140,56 @@
       "url": "https://ebidan.jp/schedule/detail/50001490"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110266",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 超特急「BULLET TRAIN 1st DOME LIVE Signal」チケットトレード情報",
-      "date": "2026-11-25",
-      "end_date": "2026-11-25",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
+      "id": "https-ebidan-jp-schedule-detail-50001512-2026-11-24-ON-VOICE-Vol-6-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「音楽と人 増刊 『ON VOICE Vol.6』」",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "Sakurashimeji",
       "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 超特急「BULLET TRAIN 1st DOME LIVE Signal」チケットトレード情報",
-      "when": "11/25 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110266"
+      "group_key": "sakurashimeji",
+      "group_name": "Sakurashimeji",
+      "group_keys": [
+        "sakurashimeji"
+      ],
+      "group_names": [
+        "Sakurashimeji"
+      ],
+      "what": "「音楽と人 増刊 『ON VOICE Vol.6』」",
+      "when": "11/24",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001512"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110261",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」チケットトレード情報",
-      "date": "2026-11-25",
-      "end_date": "2026-11-25",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
+      "id": "https-ebidan-jp-schedule-detail-50001513-2026-11-24-EIKU-HAYATO-ON-VOICE-Vol-6-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【EIKU／HAYATO】「音楽と人 増刊 『ON VOICE Vol.6』」",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "ONE N' ONLY",
       "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」チケットトレード情報",
-      "when": "11/25 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110261"
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【EIKU／HAYATO】「音楽と人 増刊 『ON VOICE Vol.6』」",
+      "when": "11/24",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001513"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -2108,6 +2320,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001141"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001514-2026-11-25-anan-2521-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「anan 2521号」",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "「anan 2521号」",
+      "when": "11/25",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001514"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006595-2026-11-26-",
@@ -2678,6 +2916,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001496"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001515-2026-11-28-",
+      "type": "出演",
+      "icon": "🎬",
+      "title": "【アロハ】映画「ワンダンス」公開記念舞台挨拶",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "公開・上映情報を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【アロハ】映画「ワンダンス」公開記念舞台挨拶",
+      "when": "11/28",
+      "todo": "公開・上映情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001515"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2547",
       "type": "締切",
       "icon": "⏰",
@@ -3130,6 +3394,58 @@
       "url": "https://ebidan.jp/schedule/detail/50001504"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001516-2026-11-30-FINEBOYS-plus-Share5-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【タカシ】「FINEBOYS +plus Share5」",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【タカシ】「FINEBOYS +plus Share5」",
+      "when": "11/30",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001516"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001517-2026-11-30-FUMINORI-FINEBOYS-plus-Share5-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【小泉光咲／FUMINORI】「FINEBOYS +plus Share5」",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "【小泉光咲／FUMINORI】「FINEBOYS +plus Share5」",
+      "when": "11/30",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001517"
+    },
+    {
       "id": "https-iiondo-com-news-detail-89",
       "type": "締切",
       "icon": "⏰",
@@ -3348,6 +3664,28 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2553"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21128487",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "Lienel 「Lienel New Year Party 〜あけおめ2027〜」SOLD OUT！",
+      "date": "2027-01-09",
+      "end_date": "2027-01-09",
+      "time": "14:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "Lienel",
+      "oshi": "ebidan",
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [],
+      "group_names": [],
+      "what": "Lienel 「Lienel New Year Party 〜あけおめ2027〜」SOLD OUT！",
+      "when": "1/9 14:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21128487"
     },
     {
       "id": "https-genjibu-jp-news-detail-2525",
