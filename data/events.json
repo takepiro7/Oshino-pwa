@@ -1,314 +1,6 @@
 {
-  "updated_at": "2026-11-18T19:10:54.071477+09:00",
+  "updated_at": "2026-11-19T03:54:12.333057+09:00",
   "events": [
-    {
-      "id": "https-ebidan-jp-schedule-detail-10006593-2026-11-18-Lienel-6th-Live-Tour-2026-",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "【東京】Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [
-        "lienel"
-      ],
-      "group_names": [
-        "Lienel"
-      ],
-      "what": "【東京】Lienel 6th Live Tour 2026「ロマンティック・シンドローーム!!!!!!」",
-      "when": "11/18",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/10006593"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000296-2026-11-18-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【杢代和人】水曜プラチナイト「仮面教師～妻を亡くしたその日から」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【杢代和人】水曜プラチナイト「仮面教師～妻を亡くしたその日から」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000296"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50000357-2026-11-18-GERA-Sakurashimeji-",
-      "type": "予定",
-      "icon": "📌",
-      "title": "ラジオアプリGERA「Sakurashimejiの花修行」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "ラジオアプリGERA「Sakurashimejiの花修行」",
-      "when": "11/18",
-      "todo": "詳細を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50000357"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001106-2026-11-18-MBS-A-",
-      "type": "出演",
-      "icon": "📻",
-      "title": "【田中雅功】MBSラジオ「ヤングタウンA水曜日」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [
-        "sakurashimeji"
-      ],
-      "group_names": [
-        "Sakurashimeji"
-      ],
-      "what": "【田中雅功】MBSラジオ「ヤングタウンA水曜日」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001106"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001140-2026-11-18-TBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【塩﨑太智】TBS「よるのブランチ」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【塩﨑太智】TBS「よるのブランチ」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001140"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001310-2026-11-18-Quick-Japan-Monologue-01-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "「Quick Japan Monologue #01」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "「Quick Japan Monologue #01」",
-      "when": "11/18",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001310"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001341-2026-11-18-2nd-LOVE-",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "【千葉】メジャー2ndシングル「無限大LOVE!!!」リリースイベント",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [
-        "buddiis"
-      ],
-      "group_names": [
-        "BUDDiiS"
-      ],
-      "what": "【千葉】メジャー2ndシングル「無限大LOVE!!!」リリースイベント",
-      "when": "11/18",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001341"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001431-2026-11-18-TVLIFE-12-4-",
-      "type": "発売",
-      "icon": "📖",
-      "title": "「TVLIFE 12/4号」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売情報を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [
-        "buddiis"
-      ],
-      "group_names": [
-        "BUDDiiS"
-      ],
-      "what": "「TVLIFE 12/4号」",
-      "when": "11/18",
-      "todo": "発売情報を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001431"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001482-2026-11-18-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【曽野舜太】日本テレビ「ヒルナンデス！」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [
-        "milk"
-      ],
-      "group_names": [
-        "M!LK"
-      ],
-      "what": "【曽野舜太】日本テレビ「ヒルナンデス！」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001482"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001505-2026-11-18-FUMINORI-DayDay-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【FUMINORI】日本テレビ「DayDay.」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [
-        "buddiis"
-      ],
-      "group_names": [
-        "BUDDiiS"
-      ],
-      "what": "【FUMINORI】日本テレビ「DayDay.」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001505"
-    },
-    {
-      "id": "https-ebidan-jp-schedule-detail-50001506-2026-11-18-MBS-",
-      "type": "出演",
-      "icon": "📺",
-      "title": "【武藤潤】MBS「水野真紀の魔法のレストラン」",
-      "date": "2026-11-18",
-      "end_date": "2026-11-18",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "放送時間を確認",
-      "who": "原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": "genjibu",
-      "group_name": "原因は自分にある。",
-      "group_keys": [
-        "genjibu"
-      ],
-      "group_names": [
-        "原因は自分にある。"
-      ],
-      "what": "【武藤潤】MBS「水野真紀の魔法のレストラン」",
-      "when": "11/18",
-      "todo": "放送時間を確認",
-      "source": "EBIDAN_SCHEDULE",
-      "url": "https://ebidan.jp/schedule/detail/50001506"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-9096709",
-      "type": "発売",
-      "icon": "💿",
-      "title": "Sakurashimeji 2nd EP「あなたの声になれたら」リリース記念！Stationheadリスニングパーティー開催が決定！",
-      "date": "2026-11-19",
-      "end_date": "2026-11-19",
-      "time": "18:30",
-      "urgency": "normal",
-      "action": "発売・購入情報を確認",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [],
-      "group_names": [],
-      "what": "Sakurashimeji 2nd EP「あなたの声になれたら」リリース記念！Stationheadリスニングパーティー開催が決定！",
-      "when": "11/19 18:30",
-      "todo": "発売・購入情報を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/9096709"
-    },
     {
       "id": "https-ebidan-jp-schedule-detail-10006594-2026-11-19-Lienel-6th-Live-Tour-2026-",
       "type": "ライブ",
@@ -1728,28 +1420,6 @@
       "url": "https://ebidan.jp/schedule/detail/50001343"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21128499",
-      "type": "配信予兆",
-      "icon": "🔴",
-      "title": "ONE N' ONLY SWAG会員限定「TETTA 29th BIRTHDAY生配信」決定！",
-      "date": "2026-11-24",
-      "end_date": "2026-11-24",
-      "time": "23:00",
-      "urgency": "urgent",
-      "action": "Instagram / YouTubeを確認",
-      "who": "ONE N' ONLY",
-      "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ONE N' ONLY SWAG会員限定「TETTA 29th BIRTHDAY生配信」決定！",
-      "when": "11/24 23:00",
-      "todo": "Instagram / YouTubeを確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21128499"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
       "type": "誕生日",
       "icon": "🎂",
@@ -2034,6 +1704,50 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001513"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110268",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」開催記念“新規入会＆お友達紹介”キャンペーン実施決定！",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "00:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」開催記念“新規入会＆お友達紹介”キャンペーン実施決定！",
+      "when": "11/25 00:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110268"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110269",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」来場特典プレゼント決定！",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "09:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」来場特典プレゼント決定！",
+      "when": "11/25 09:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110269"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -3290,28 +3004,6 @@
       "url": "https://iiondo.com/news/detail/89"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21128579",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "M!LK 「好きすぎて滅！(X’mas Remix)」CD販売決定！",
-      "date": "2026-12-04",
-      "end_date": "2026-12-04",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 「好きすぎて滅！(X’mas Remix)」CD販売決定！",
-      "when": "12/4 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21128579"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2507",
       "type": "出演",
       "icon": "📺",
@@ -3466,28 +3158,6 @@
       "url": "https://genjibu.jp/news/detail/2465"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21128426",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "M!LK 「!LLU-M!LK」オフィシャルグッズ 事前通販決定！",
-      "date": "2026-12-25",
-      "end_date": "2026-12-25",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 「!LLU-M!LK」オフィシャルグッズ 事前通販決定！",
-      "when": "12/25",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21128426"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2466",
       "type": "ライブ",
       "icon": "🎤",
@@ -3532,6 +3202,28 @@
       "url": "https://genjibu.jp/news/detail/2553"
     },
     {
+      "id": "https-ebidan-jp-news-detail-1110271",
+      "type": "予定",
+      "icon": "📌",
+      "title": "超特急 MEMBER BLOG更新",
+      "date": "2027-01-02",
+      "end_date": "2027-01-02",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 MEMBER BLOG更新",
+      "when": "1/2",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110271"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2525",
       "type": "出演",
       "icon": "📺",
@@ -3552,6 +3244,28 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-2012007",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "SUPER★DRAGON LIVE TOUR 2027「house」ツアーロゴ&キービジュアル解禁！",
+      "date": "2027-02-06",
+      "end_date": "2027-02-06",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "group_keys": [],
+      "group_names": [],
+      "what": "SUPER★DRAGON LIVE TOUR 2027「house」ツアーロゴ&キービジュアル解禁！",
+      "when": "2/6",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/2012007"
     },
     {
       "id": "https-genjibu-jp-news-detail-2551",
