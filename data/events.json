@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T09:59:03.683889+09:00",
+  "updated_at": "2026-11-19T17:37:51.400148+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10006594-2026-11-19-Lienel-6th-Live-Tour-2026-",
@@ -410,6 +410,28 @@
       "url": "https://genjibu.jp/news/detail/2506"
     },
     {
+      "id": "https-ebidan-jp-news-detail-1110270",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 「Signal BULLET TRAIN 1st DOME LIVE」Promotion event連動〈新規入会〉キャンペーン実施決定！",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 「Signal BULLET TRAIN 1st DOME LIVE」Promotion event連動〈新規入会〉キャンペーン実施決定！",
+      "when": "11/20",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110270"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10001647-2026-11-20-HAPPY-BiRTHDAY-MORRIE",
       "type": "誕生日",
       "icon": "🎂",
@@ -696,6 +718,54 @@
       "url": "https://ebidan.jp/schedule/detail/50001511"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001520-2026-11-20-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【中村旺太郎／八神遼介】テレビ朝日「全力！アオハル応援団」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ICEx",
+      "oshi": "ebidan",
+      "group_key": "icex",
+      "group_name": "ICEx",
+      "group_keys": [
+        "icex"
+      ],
+      "group_names": [
+        "ICEx"
+      ],
+      "what": "【中村旺太郎／八神遼介】テレビ朝日「全力！アオハル応援団」",
+      "when": "11/20",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001520"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21128815",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "M!LK 【神奈川】【11月21日・22日 ぴあアリーナMM公演】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」会場限定オンラインラッキードロー実施のお知らせ",
+      "date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "time": "12:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【神奈川】【11月21日・22日 ぴあアリーナMM公演】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」会場限定オンラインラッキードロー実施のお知らせ",
+      "when": "11/21・22 12:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21128815"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10001629-2026-11-21-HAPPY-BiRTHDAY-FUMINORI",
       "type": "誕生日",
       "icon": "🎂",
@@ -928,6 +998,32 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001510"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001521-2026-11-21-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【塩﨑太智】フジテレビ「ミキティダイニング」",
+      "date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【塩﨑太智】フジテレビ「ミキティダイニング」",
+      "when": "11/21",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001521"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005345-2026-11-22-NHK-",
@@ -1684,26 +1780,26 @@
       "url": "https://ebidan.jp/schedule/detail/50001513"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110269",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」来場特典プレゼント決定！",
+      "id": "https-ebidan-jp-news-detail-21128906",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【曽野舜太・山中柔太朗】TBS系「ニノなのに」出演決定！",
       "date": "2026-11-25",
       "end_date": "2026-11-25",
-      "time": "09:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
+      "time": "20:54",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
       "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
+      "group_key": "milk",
+      "group_name": "M!LK",
       "group_keys": [],
       "group_names": [],
-      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」来場特典プレゼント決定！",
-      "when": "11/25 09:00",
-      "todo": "期限までに確認・申込",
+      "what": "M!LK 【曽野舜太・山中柔太朗】TBS系「ニノなのに」出演決定！",
+      "when": "11/25 20:54",
+      "todo": "放送・配信時間を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110269"
+      "url": "https://ebidan.jp/news/detail/21128906"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -3004,6 +3100,28 @@
       "url": "https://genjibu.jp/news/detail/2540"
     },
     {
+      "id": "https-ebidan-jp-news-detail-1110273",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "超特急 【SUPERSTAR EBiDAN】 「BULLET TRAIN 1st DOME LIVE Signal」開催記念！ゲーム内イベントのお知らせ",
+      "date": "2026-12-10",
+      "end_date": "2026-12-10",
+      "time": "14:00",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 【SUPERSTAR EBiDAN】 「BULLET TRAIN 1st DOME LIVE Signal」開催記念！ゲーム内イベントのお知らせ",
+      "when": "12/10 14:00",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110273"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2419",
       "type": "締切",
       "icon": "⏰",
@@ -3092,34 +3210,6 @@
       "url": "https://genjibu.jp/news/detail/2464"
     },
     {
-      "id": "https-ebidan-jp-news-detail-2012016",
-      "type": "出演",
-      "icon": "📺",
-      "title": "SUPER★DRAGON 【田中洸希】フジテレビ（関東ローカル） 『女優失格』出演決定！",
-      "date": "2026-12-21",
-      "end_date": "2026-12-21",
-      "time": "00:00",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "SUPER★DRAGON / 原因は自分にある。",
-      "oshi": "ebidan",
-      "group_key": null,
-      "group_name": "SUPER★DRAGON / 原因は自分にある。",
-      "group_keys": [
-        "superdragon",
-        "genjibu"
-      ],
-      "group_names": [
-        "SUPER★DRAGON",
-        "原因は自分にある。"
-      ],
-      "what": "SUPER★DRAGON 【田中洸希】フジテレビ（関東ローカル） 『女優失格』出演決定！",
-      "when": "12/21 00:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2012016"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2465",
       "type": "ライブ",
       "icon": "🎤",
@@ -3186,28 +3276,6 @@
       "url": "https://genjibu.jp/news/detail/2553"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110271",
-      "type": "予定",
-      "icon": "📌",
-      "title": "超特急 MEMBER BLOG更新",
-      "date": "2027-01-02",
-      "end_date": "2027-01-02",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "詳細を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 MEMBER BLOG更新",
-      "when": "1/2",
-      "todo": "詳細を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110271"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2525",
       "type": "出演",
       "icon": "📺",
@@ -3228,28 +3296,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-2012007",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "SUPER★DRAGON LIVE TOUR 2027「house」ツアーロゴ&キービジュアル解禁！",
-      "date": "2027-02-06",
-      "end_date": "2027-02-06",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [],
-      "group_names": [],
-      "what": "SUPER★DRAGON LIVE TOUR 2027「house」ツアーロゴ&キービジュアル解禁！",
-      "when": "2/6",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2012007"
     },
     {
       "id": "https-genjibu-jp-news-detail-2551",
@@ -3294,6 +3340,28 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2543"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21113245",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "M!LK 11/19更新【ぴあアリーナMM公演 追記】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」ファンクラブブースのお知らせ",
+      "date": "2027-02-14",
+      "end_date": "2027-02-14",
+      "time": "23:59",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 11/19更新【ぴあアリーナMM公演 追記】M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」ファンクラブブースのお知らせ",
+      "when": "2/14 23:59",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21113245"
     }
   ]
 }
