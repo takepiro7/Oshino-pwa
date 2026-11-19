@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T03:54:12.333057+09:00",
+  "updated_at": "2026-11-19T09:59:03.683889+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10006594-2026-11-19-Lienel-6th-Live-Tour-2026-",
@@ -694,28 +694,6 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001511"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21128187",
-      "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 【塩﨑太智】フジテレビ「ミキティダイニング」出演決定！",
-      "date": "2026-11-21",
-      "end_date": "2026-11-21",
-      "time": "11:00",
-      "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
-      "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【塩﨑太智】フジテレビ「ミキティダイニング」出演決定！",
-      "when": "11/21 11:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21128187"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10001629-2026-11-21-HAPPY-BiRTHDAY-FUMINORI",
@@ -1704,28 +1682,6 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001513"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110268",
-      "type": "ライブ",
-      "icon": "🎤",
-      "title": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」開催記念“新規入会＆お友達紹介”キャンペーン実施決定！",
-      "date": "2026-11-25",
-      "end_date": "2026-11-25",
-      "time": "00:00",
-      "urgency": "normal",
-      "action": "会場・開演時刻を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 「BULLET TRAIN 1st DOME LIVE Signal」開催記念“新規入会＆お友達紹介”キャンペーン実施決定！",
-      "when": "11/25 00:00",
-      "todo": "会場・開演時刻を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110268"
     },
     {
       "id": "https-ebidan-jp-news-detail-1110269",
@@ -3134,6 +3090,34 @@
       "todo": "会場・開演時刻を確認",
       "source": "LIVE",
       "url": "https://genjibu.jp/news/detail/2464"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-2012016",
+      "type": "出演",
+      "icon": "📺",
+      "title": "SUPER★DRAGON 【田中洸希】フジテレビ（関東ローカル） 『女優失格』出演決定！",
+      "date": "2026-12-21",
+      "end_date": "2026-12-21",
+      "time": "00:00",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "SUPER★DRAGON / 原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": null,
+      "group_name": "SUPER★DRAGON / 原因は自分にある。",
+      "group_keys": [
+        "superdragon",
+        "genjibu"
+      ],
+      "group_names": [
+        "SUPER★DRAGON",
+        "原因は自分にある。"
+      ],
+      "what": "SUPER★DRAGON 【田中洸希】フジテレビ（関東ローカル） 『女優失格』出演決定！",
+      "when": "12/21 00:00",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/2012016"
     },
     {
       "id": "https-genjibu-jp-news-detail-2465",
