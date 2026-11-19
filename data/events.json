@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T02:38:47.465991+09:00",
+  "updated_at": "2026-11-20T08:50:55.353318+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2506",
@@ -2986,6 +2986,28 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN",
       "url": "https://ebidan.jp/news/detail/21128429"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21129338",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【曽野舜太】映画『不可抗力の I LOVE YOU』出演決定！",
+      "date": "2027-03-05",
+      "end_date": "2027-03-05",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【曽野舜太】映画『不可抗力の I LOVE YOU』出演決定！",
+      "when": "3/5",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21129338"
     }
   ]
 }
