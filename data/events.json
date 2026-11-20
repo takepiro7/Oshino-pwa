@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T08:50:55.353318+09:00",
+  "updated_at": "2026-11-20T15:02:21.432811+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2506",
@@ -362,6 +362,54 @@
       "url": "https://ebidan.jp/schedule/detail/50001532"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001604-2026-11-20-2027-1-SPECIAL-EDITION-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「美的 2027年1月号 SPECIAL EDITION」",
+      "date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "「美的 2027年1月号 SPECIAL EDITION」",
+      "when": "11/20",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001604"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21129302",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」【ぴあアリーナMM公演】直前機材席開放販売情報",
+      "date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "time": "10:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK ARENA TOUR 2026-2027「シャカリキレボリューション」【ぴあアリーナMM公演】直前機材席開放販売情報",
+      "when": "11/21 10:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21129302"
+    },
+    {
       "id": "https-ebidan-jp-news-detail-21127323",
       "type": "ライブ",
       "icon": "🎤",
@@ -642,6 +690,28 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001521"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21129466",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜神奈川・ぴあアリーナMM公演＞本人確認事前認証のご案内",
+      "date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK ARENA TOUR 2026-2027 「シャカリキレボリューション」＜神奈川・ぴあアリーナMM公演＞本人確認事前認証のご案内",
+      "when": "11/22 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21129466"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005345-2026-11-22-NHK-",
@@ -1552,6 +1622,32 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001514"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001533-2026-11-25-TBS-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【曽野舜太／山中柔太朗】TBS系「ニノなのに」",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【曽野舜太／山中柔太朗】TBS系「ニノなのに」",
+      "when": "11/25",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001533"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006595-2026-11-26-",
@@ -2674,28 +2770,6 @@
       "url": "https://genjibu.jp/news/detail/2507"
     },
     {
-      "id": "https-ebidan-jp-news-detail-2011938",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "SUPER★DRAGON Major 2nd Album「STAR」楽天ブックスにてオンライン予約抽選会開催！(※11/19更新)",
-      "date": "2026-12-08",
-      "end_date": "2026-12-08",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [],
-      "group_names": [],
-      "what": "SUPER★DRAGON Major 2nd Album「STAR」楽天ブックスにてオンライン予約抽選会開催！(※11/19更新)",
-      "when": "12/8",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2011938"
-    },
-    {
       "id": "https-genjibu-jp-news-detail-2540",
       "type": "出演",
       "icon": "📺",
@@ -2716,28 +2790,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2540"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-21128828",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "Lienel 7th Live Tour 2027「TOKI×MEKI=SERENADE」開催決定 ！！",
-      "date": "2026-12-12",
-      "end_date": "2026-12-12",
-      "time": "20:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "Lienel",
-      "oshi": "ebidan",
-      "group_key": "lienel",
-      "group_name": "Lienel",
-      "group_keys": [],
-      "group_names": [],
-      "what": "Lienel 7th Live Tour 2027「TOKI×MEKI=SERENADE」開催決定 ！！",
-      "when": "12/12 20:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21128828"
     },
     {
       "id": "https-genjibu-jp-news-detail-2419",
