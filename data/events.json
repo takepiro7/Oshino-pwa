@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T03:39:47.573648+09:00",
+  "updated_at": "2026-11-23T08:51:35.139442+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2554",
@@ -1000,28 +1000,6 @@
       "url": "https://ebidan.jp/schedule/detail/50000484"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21129908",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "BUDDiiS 【FC会員限定】BUDDiiS「FUMINORI 32nd BIRTHDAY GOODS」の販売が決定!!!",
-      "date": "2026-11-27",
-      "end_date": "2026-11-27",
-      "time": "18:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "BUDDiiS",
-      "oshi": "ebidan",
-      "group_key": "buddiis",
-      "group_name": "BUDDiiS",
-      "group_keys": [],
-      "group_names": [],
-      "what": "BUDDiiS 【FC会員限定】BUDDiiS「FUMINORI 32nd BIRTHDAY GOODS」の販売が決定!!!",
-      "when": "11/27 18:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21129908"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10006733-2026-11-27-CS-",
       "type": "出演",
       "icon": "📺",
@@ -1990,6 +1968,28 @@
       "todo": "会場・開演時刻を確認",
       "source": "LIVE",
       "url": "https://genjibu.jp/news/detail/2464"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21128995",
+      "type": "出演",
+      "icon": "📺",
+      "title": "M!LK 【塩﨑太智】TBS「SASUKE」出演決定！",
+      "date": "2026-12-23",
+      "end_date": "2026-12-23",
+      "time": "18:00",
+      "urgency": "normal",
+      "action": "放送・配信時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK 【塩﨑太智】TBS「SASUKE」出演決定！",
+      "when": "12/23 18:00",
+      "todo": "放送・配信時間を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21128995"
     },
     {
       "id": "https-genjibu-jp-news-detail-2465",
