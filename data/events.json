@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T12:17:11.706382+09:00",
+  "updated_at": "2026-11-22T20:40:39.475312+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10005345-2026-11-22-NHK-",
@@ -1386,28 +1386,6 @@
       "url": "https://ebidan.jp/schedule/detail/50000806"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110275",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 日本テレビ「ベストアーティスト2026」」観覧募集！",
-      "date": "2026-11-28",
-      "end_date": "2026-11-28",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 日本テレビ「ベストアーティスト2026」」観覧募集！",
-      "when": "11/28",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110275"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10006195-2026-11-28-TOKYO-FM-No-BUDDiiS-",
       "type": "出演",
       "icon": "📻",
@@ -2386,6 +2364,28 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2525"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21130097",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "ONE N' ONLY メジャー2ndアルバム「MEGA GOLDEN」 “スペシャル特典会” 、“オンラインイベント”詳細のご案内",
+      "date": "2027-01-10",
+      "end_date": "2027-01-10",
+      "time": "14:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [],
+      "group_names": [],
+      "what": "ONE N' ONLY メジャー2ndアルバム「MEGA GOLDEN」 “スペシャル特典会” 、“オンラインイベント”詳細のご案内",
+      "when": "1/10 14:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21130097"
     },
     {
       "id": "https-genjibu-jp-news-detail-2551",
