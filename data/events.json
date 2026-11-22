@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T08:13:51.167923+09:00",
+  "updated_at": "2026-11-22T12:17:11.706382+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10005345-2026-11-22-NHK-",
@@ -1940,28 +1940,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001441"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-9097194",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "Sakurashimeji Sakurashimejiの忘年会ライブ「きのこりあんの集い Vol.11」最新チケット情報",
-      "date": "2026-11-30",
-      "end_date": "2026-11-30",
-      "time": "14:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "Sakurashimeji",
-      "oshi": "ebidan",
-      "group_key": "sakurashimeji",
-      "group_name": "Sakurashimeji",
-      "group_keys": [],
-      "group_names": [],
-      "what": "Sakurashimeji Sakurashimejiの忘年会ライブ「きのこりあんの集い Vol.11」最新チケット情報",
-      "when": "11/30 14:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/9097194"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000397-2026-11-30-QR-",
