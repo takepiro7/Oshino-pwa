@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T08:51:35.139442+09:00",
+  "updated_at": "2026-11-23T15:09:39.785266+09:00",
   "events": [
     {
       "id": "https-genjibu-jp-news-detail-2554",
@@ -226,6 +226,28 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001343"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110248",
+      "type": "予定",
+      "icon": "📌",
+      "title": "超特急 タクヤ誕生日企画「タクヤ祭！！！！！！！！」開催決定！",
+      "date": "2026-11-24",
+      "end_date": "2026-11-24",
+      "time": "00:00",
+      "urgency": "normal",
+      "action": "詳細を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 タクヤ誕生日企画「タクヤ祭！！！！！！！！」開催決定！",
+      "when": "11/24 00:00",
+      "todo": "詳細を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110248"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
@@ -512,28 +534,6 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001513"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-2012043",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "SUPER★DRAGON Major 2nd Album「STAR」11月29日(日)開催リリースイベント＠ららぽーと名古屋みなとアクルス（愛知）にて開催リリースイベントLINEアプリを使用した『CD購入整理券』『優先観覧エリア入場整理券』",
-      "date": "2026-11-25",
-      "end_date": "2026-11-25",
-      "time": "20:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [],
-      "group_names": [],
-      "what": "SUPER★DRAGON Major 2nd Album「STAR」11月29日(日)開催リリースイベント＠ららぽーと名古屋みなとアクルス（愛知）にて開催リリースイベントLINEアプリを使用した『CD購入整理券』『優先観覧エリア入場整理券』",
-      "when": "11/25 20:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2012043"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -1356,28 +1356,6 @@
       "url": "https://genjibu.jp/news/detail/2548"
     },
     {
-      "id": "https-ebidan-jp-news-detail-2012040",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "SUPER★DRAGON 11/29(日)開催リリースイベント＠ららぽーと名古屋みなとアクルス（愛知）参加方法・特典会内容についてのご案内",
-      "date": "2026-11-29",
-      "end_date": "2026-11-29",
-      "time": "終日",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "SUPER★DRAGON",
-      "oshi": "ebidan",
-      "group_key": "superdragon",
-      "group_name": "SUPER★DRAGON",
-      "group_keys": [],
-      "group_names": [],
-      "what": "SUPER★DRAGON 11/29(日)開催リリースイベント＠ららぽーと名古屋みなとアクルス（愛知）参加方法・特典会内容についてのご案内",
-      "when": "11/29",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/2012040"
-    },
-    {
       "id": "https-ebidan-jp-schedule-detail-10005346-2026-11-29-NHK-",
       "type": "出演",
       "icon": "📺",
@@ -1814,6 +1792,28 @@
       "todo": "発売情報を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001517"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21130176",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "ONE N' ONLY 「TETTA 29th BIRTHDAY SCRATCH」開催決定！",
+      "date": "2026-12-01",
+      "end_date": "2026-12-01",
+      "time": "19:00",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [],
+      "group_names": [],
+      "what": "ONE N' ONLY 「TETTA 29th BIRTHDAY SCRATCH」開催決定！",
+      "when": "12/1 19:00",
+      "todo": "参加・応募条件を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21130176"
     },
     {
       "id": "https-iiondo-com-news-detail-89",
