@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T03:06:27.102304+09:00",
+  "updated_at": "2026-11-24T12:56:57.698727+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
@@ -492,6 +492,32 @@
       "url": "https://ebidan.jp/schedule/detail/50001533"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001609-2026-11-25-HAYATO-NAOYA-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【HAYATO／NAOYA】日本テレビ系「ヒルナンデス！」",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【HAYATO／NAOYA】日本テレビ系「ヒルナンデス！」",
+      "when": "11/25",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001609"
+    },
+    {
       "id": "https-ebidan-jp-news-detail-21129538",
       "type": "出演",
       "icon": "📺",
@@ -742,6 +768,32 @@
       "todo": "放送時間を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001228"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001608-2026-11-26-2-SP-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【曽野舜太】テレビ朝日「林修の今知りたいでしょ！ 2時間SP」",
+      "date": "2026-11-26",
+      "end_date": "2026-11-26",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [
+        "milk"
+      ],
+      "group_names": [
+        "M!LK"
+      ],
+      "what": "【曽野舜太】テレビ朝日「林修の今知りたいでしょ！ 2時間SP」",
+      "when": "11/26",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001608"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005493-2026-11-26-27",
@@ -1108,6 +1160,110 @@
       "url": "https://ebidan.jp/schedule/detail/50001515"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001610-2026-11-28-TETTA-NAOYA-TBS-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【TETTA／NAOYA】TBS系「王様のブランチ」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【TETTA／NAOYA】TBS系「王様のブランチ」",
+      "when": "11/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001610"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001611-2026-11-28-EIKU-21-UP-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "【EIKU】新潟テレビ21「まるどりっ！UP」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "【EIKU】新潟テレビ21「まるどりっ！UP」",
+      "when": "11/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001611"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001612-2026-11-28-NHK-Venue101-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "NHK「Venue101」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "原因は自分にある。",
+      "oshi": "ebidan",
+      "group_key": "genjibu",
+      "group_name": "原因は自分にある。",
+      "group_keys": [
+        "genjibu"
+      ],
+      "group_names": [
+        "原因は自分にある。"
+      ],
+      "what": "NHK「Venue101」",
+      "when": "11/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001612"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001613-2026-11-28-MUSIC-FAIR-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "フジテレビ「MUSIC FAIR」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "放送時間を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
+      "what": "フジテレビ「MUSIC FAIR」",
+      "when": "11/28",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001613"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2547",
       "type": "締切",
       "icon": "⏰",
@@ -1386,6 +1542,28 @@
       "url": "https://ebidan.jp/schedule/detail/50001441"
     },
     {
+      "id": "https-ebidan-jp-news-detail-1110281",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "超特急 超特急「TAKUYA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": "12:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 超特急「TAKUYA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
+      "when": "11/30 12:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110281"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-50000397-2026-11-30-QR-",
       "type": "出演",
       "icon": "📻",
@@ -1590,26 +1768,30 @@
       "url": "https://ebidan.jp/schedule/detail/50001517"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21130176",
-      "type": "キャンペーン",
-      "icon": "🎁",
-      "title": "ONE N' ONLY 「TETTA 29th BIRTHDAY SCRATCH」開催決定！",
-      "date": "2026-12-01",
-      "end_date": "2026-12-01",
-      "time": "19:00",
+      "id": "https-ebidan-jp-schedule-detail-50001614-2026-11-30-MelodiX-",
+      "type": "出演",
+      "icon": "📺",
+      "title": "テレビ東京「プレミアMelodiX！」",
+      "date": "2026-11-30",
+      "end_date": "2026-11-30",
+      "time": "終日",
       "urgency": "normal",
-      "action": "参加・応募条件を確認",
-      "who": "ONE N' ONLY",
+      "action": "放送時間を確認",
+      "who": "BUDDiiS",
       "oshi": "ebidan",
-      "group_key": "onenonly",
-      "group_name": "ONE N' ONLY",
-      "group_keys": [],
-      "group_names": [],
-      "what": "ONE N' ONLY 「TETTA 29th BIRTHDAY SCRATCH」開催決定！",
-      "when": "12/1 19:00",
-      "todo": "参加・応募条件を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21130176"
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
+      "what": "テレビ東京「プレミアMelodiX！」",
+      "when": "11/30",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001614"
     },
     {
       "id": "https-iiondo-com-news-detail-89",
