@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T12:56:57.698727+09:00",
+  "updated_at": "2026-11-24T23:40:40.211175+09:00",
   "events": [
     {
       "id": "https-ebidan-jp-schedule-detail-10000643-2026-11-24-HAPPY-BiRTHDAY-",
@@ -288,26 +288,48 @@
       "url": "https://ebidan.jp/schedule/detail/50001513"
     },
     {
-      "id": "https-ebidan-jp-news-detail-1110280",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 BULLET TRAIN 1st DOME LIVE Signal 直前機材席開放一般発売 実施決定！",
+      "id": "https-ebidan-jp-news-detail-1110272",
+      "type": "キャンペーン",
+      "icon": "🎁",
+      "title": "超特急 【夢8 × +KIRARI】「Signal」開催記念！夢8×+KIRARI W会員限定 Special Scratch開催",
       "date": "2026-11-25",
       "end_date": "2026-11-25",
-      "time": "10:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
+      "time": "01:11",
+      "urgency": "normal",
+      "action": "参加・応募条件を確認",
       "who": "超特急",
       "oshi": "ebidan",
       "group_key": "bullettrain",
       "group_name": "超特急",
       "group_keys": [],
       "group_names": [],
-      "what": "超特急 BULLET TRAIN 1st DOME LIVE Signal 直前機材席開放一般発売 実施決定！",
-      "when": "11/25 10:00",
-      "todo": "期限までに確認・申込",
+      "what": "超特急 【夢8 × +KIRARI】「Signal」開催記念！夢8×+KIRARI W会員限定 Special Scratch開催",
+      "when": "11/25 01:11",
+      "todo": "参加・応募条件を確認",
       "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110280"
+      "url": "https://ebidan.jp/news/detail/1110272"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-1110284",
+      "type": "ライブ",
+      "icon": "🎤",
+      "title": "超特急 デジタルスタンプラリー実施のお知らせ！",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "会場・開演時刻を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [],
+      "group_names": [],
+      "what": "超特急 デジタルスタンプラリー実施のお知らせ！",
+      "when": "11/25",
+      "todo": "会場・開演時刻を確認",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/1110284"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005790-2026-11-25-",
@@ -518,26 +540,30 @@
       "url": "https://ebidan.jp/schedule/detail/50001609"
     },
     {
-      "id": "https-ebidan-jp-news-detail-21129538",
+      "id": "https-ebidan-jp-schedule-detail-50001620-2026-11-25-TBS-",
       "type": "出演",
-      "icon": "📺",
-      "title": "M!LK 【曽野舜太】テレビ朝日「林修の今知りたいでしょ！ 2時間SP」出演決定！",
-      "date": "2026-11-26",
-      "end_date": "2026-11-26",
-      "time": "19:00",
+      "icon": "📻",
+      "title": "【森田璃空／芳賀柊斗】TBSラジオ「パンサー向井の#ふらっと」",
+      "date": "2026-11-25",
+      "end_date": "2026-11-25",
+      "time": "終日",
       "urgency": "normal",
-      "action": "放送・配信時間を確認",
-      "who": "M!LK",
+      "action": "放送時間を確認",
+      "who": "Lienel",
       "oshi": "ebidan",
-      "group_key": "milk",
-      "group_name": "M!LK",
-      "group_keys": [],
-      "group_names": [],
-      "what": "M!LK 【曽野舜太】テレビ朝日「林修の今知りたいでしょ！ 2時間SP」出演決定！",
-      "when": "11/26 19:00",
-      "todo": "放送・配信時間を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/21129538"
+      "group_key": "lienel",
+      "group_name": "Lienel",
+      "group_keys": [
+        "lienel"
+      ],
+      "group_names": [
+        "Lienel"
+      ],
+      "what": "【森田璃空／芳賀柊斗】TBSラジオ「パンサー向井の#ふらっと」",
+      "when": "11/25",
+      "todo": "放送時間を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001620"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10006595-2026-11-26-",
@@ -926,6 +952,58 @@
       "url": "https://ebidan.jp/schedule/detail/50000806"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001621-2026-11-27-B-PASS-2027-1-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【田中洸希／松村和哉】 「B-PASS 2027年1月号」",
+      "date": "2026-11-27",
+      "end_date": "2026-11-27",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
+      "what": "【田中洸希／松村和哉】 「B-PASS 2027年1月号」",
+      "when": "11/27",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001621"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001622-2026-11-27-B-PASS-2027-1-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「B-PASS 2027年1月号」",
+      "date": "2026-11-27",
+      "end_date": "2026-11-27",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "「B-PASS 2027年1月号」",
+      "when": "11/27",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001622"
+    },
+    {
       "id": "https-ebidan-jp-schedule-detail-10006195-2026-11-28-TOKYO-FM-No-BUDDiiS-",
       "type": "出演",
       "icon": "📻",
@@ -1264,6 +1342,110 @@
       "url": "https://ebidan.jp/schedule/detail/50001613"
     },
     {
+      "id": "https-ebidan-jp-schedule-detail-50001623-2026-11-28-Scene-19-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "「別冊カドカワScene 19」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "ONE N' ONLY",
+      "oshi": "ebidan",
+      "group_key": "onenonly",
+      "group_name": "ONE N' ONLY",
+      "group_keys": [
+        "onenonly"
+      ],
+      "group_names": [
+        "ONE N' ONLY"
+      ],
+      "what": "「別冊カドカワScene 19」",
+      "when": "11/28",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001623"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001624-2026-11-28-Scene-19-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【ハル】「別冊カドカワScene 19」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "超特急",
+      "oshi": "ebidan",
+      "group_key": "bullettrain",
+      "group_name": "超特急",
+      "group_keys": [
+        "bullettrain"
+      ],
+      "group_names": [
+        "超特急"
+      ],
+      "what": "【ハル】「別冊カドカワScene 19」",
+      "when": "11/28",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001624"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001625-2026-11-28-Scene-19-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【田中洸希／柴崎楽】「別冊カドカワScene 19」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "SUPER★DRAGON",
+      "oshi": "ebidan",
+      "group_key": "superdragon",
+      "group_name": "SUPER★DRAGON",
+      "group_keys": [
+        "superdragon"
+      ],
+      "group_names": [
+        "SUPER★DRAGON"
+      ],
+      "what": "【田中洸希／柴崎楽】「別冊カドカワScene 19」",
+      "when": "11/28",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001625"
+    },
+    {
+      "id": "https-ebidan-jp-schedule-detail-50001626-2026-11-28-FUMINORI-TAKUYA-Scene-19-",
+      "type": "発売",
+      "icon": "📖",
+      "title": "【FUMINORI／TAKUYA】「別冊カドカワScene 19」",
+      "date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "time": "終日",
+      "urgency": "normal",
+      "action": "発売情報を確認",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [
+        "buddiis"
+      ],
+      "group_names": [
+        "BUDDiiS"
+      ],
+      "what": "【FUMINORI／TAKUYA】「別冊カドカワScene 19」",
+      "when": "11/28",
+      "todo": "発売情報を確認",
+      "source": "EBIDAN_SCHEDULE",
+      "url": "https://ebidan.jp/schedule/detail/50001626"
+    },
+    {
       "id": "https-genjibu-jp-news-detail-2547",
       "type": "締切",
       "icon": "⏰",
@@ -1306,6 +1488,28 @@
       "todo": "期限までに確認・申込",
       "source": "NEWS",
       "url": "https://genjibu.jp/news/detail/2548"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21130318",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "BUDDiiS 【もーりーしゅーと】「もーりー兄弟のファンミーティングのつづきのつづき」BUDDiiSLAND会員先行",
+      "date": "2026-11-29",
+      "end_date": "2026-11-29",
+      "time": "21:00",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "BUDDiiS",
+      "oshi": "ebidan",
+      "group_key": "buddiis",
+      "group_name": "BUDDiiS",
+      "group_keys": [],
+      "group_names": [],
+      "what": "BUDDiiS 【もーりーしゅーと】「もーりー兄弟のファンミーティングのつづきのつづき」BUDDiiSLAND会員先行",
+      "when": "11/29 21:00",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21130318"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-10005346-2026-11-29-NHK-",
@@ -1540,28 +1744,6 @@
       "todo": "会場・開演時刻を確認",
       "source": "EBIDAN_SCHEDULE",
       "url": "https://ebidan.jp/schedule/detail/50001441"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110281",
-      "type": "締切",
-      "icon": "⏰",
-      "title": "超特急 超特急「TAKUYA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
-      "date": "2026-11-30",
-      "end_date": "2026-11-30",
-      "time": "12:00",
-      "urgency": "important",
-      "action": "期限までに確認・申込",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 超特急「TAKUYA 32nd Anniversary SPECIAL GOODS」&生写真・ミニフォトセットの受注販売が決定！",
-      "when": "11/30 12:00",
-      "todo": "期限までに確認・申込",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110281"
     },
     {
       "id": "https-ebidan-jp-schedule-detail-50000397-2026-11-30-QR-",
@@ -1814,6 +1996,28 @@
       "todo": "期限までに確認・申込",
       "source": "EBIDAN",
       "url": "https://iiondo.com/news/detail/89"
+    },
+    {
+      "id": "https-ebidan-jp-news-detail-21130968",
+      "type": "締切",
+      "icon": "⏰",
+      "title": "M!LK ARENA TOUR 2027「シャカリキレボリューションDX」開催決定！",
+      "date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "time": "21:45",
+      "urgency": "important",
+      "action": "期限までに確認・申込",
+      "who": "M!LK",
+      "oshi": "ebidan",
+      "group_key": "milk",
+      "group_name": "M!LK",
+      "group_keys": [],
+      "group_names": [],
+      "what": "M!LK ARENA TOUR 2027「シャカリキレボリューションDX」開催決定！",
+      "when": "12/6 21:45",
+      "todo": "期限までに確認・申込",
+      "source": "EBIDAN",
+      "url": "https://ebidan.jp/news/detail/21130968"
     },
     {
       "id": "https-genjibu-jp-news-detail-2507",
@@ -2144,28 +2348,6 @@
       "todo": "放送・配信時間を確認",
       "source": "MEDIA",
       "url": "https://genjibu.jp/news/detail/2543"
-    },
-    {
-      "id": "https-ebidan-jp-news-detail-1110276",
-      "type": "発売",
-      "icon": "💿",
-      "title": "超特急 2027年インターハイ 大会公式応援ソングを担当することが決定！",
-      "date": "2027-07-22",
-      "end_date": "2027-07-22",
-      "time": "終日",
-      "urgency": "normal",
-      "action": "発売・購入情報を確認",
-      "who": "超特急",
-      "oshi": "ebidan",
-      "group_key": "bullettrain",
-      "group_name": "超特急",
-      "group_keys": [],
-      "group_names": [],
-      "what": "超特急 2027年インターハイ 大会公式応援ソングを担当することが決定！",
-      "when": "7/22",
-      "todo": "発売・購入情報を確認",
-      "source": "EBIDAN",
-      "url": "https://ebidan.jp/news/detail/1110276"
     }
   ]
 }
