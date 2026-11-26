@@ -2,6 +2,8 @@
   "schema": 2,
   "seen_by_category": {
     "NEWS": [
+      "https://genjibu.jp/news/detail/2560",
+      "https://genjibu.jp/news/detail/2559",
       "https://genjibu.jp/news/detail/2556",
       "https://genjibu.jp/news/detail/2555",
       "https://genjibu.jp/news/detail/2554",
@@ -84,6 +86,8 @@
       "https://genjibu.jp/news/detail/2466"
     ],
     "MEDIA": [
+      "https://genjibu.jp/news/detail/2560",
+      "https://genjibu.jp/news/detail/2559",
       "https://genjibu.jp/news/detail/2553",
       "https://genjibu.jp/news/detail/2543",
       "https://genjibu.jp/news/detail/2540",
@@ -106,6 +110,7 @@
       "https://genjibu.jp/news/detail/2377"
     ],
     "YOUTUBE": [
+      "https://www.youtube.com/shorts/3SPMGiwsnNA",
       "https://www.youtube.com/shorts/gC5SN34sVeQ",
       "https://www.youtube.com/shorts/s4LVPGee-3s",
       "https://www.youtube.com/shorts/dTqNBn42rPo",
@@ -202,6 +207,7 @@
       "https://www.youtube.com/shorts/2HAML6rCKeI"
     ],
     "EBIDAN": [
+      "https://ebidan.jp/news/detail/21128561",
       "https://ebidan.jp/news/detail/21132016",
       "https://ebidan.jp/news/detail/21131899",
       "https://ebidan.jp/news/detail/21131815",
@@ -519,6 +525,7 @@
       "https://ebidan.jp/schedule/detail/50000806",
       "https://ebidan.jp/schedule/detail/50001621",
       "https://ebidan.jp/schedule/detail/50001622",
+      "https://ebidan.jp/schedule/detail/50001641",
       "https://ebidan.jp/schedule/detail/10006195",
       "https://ebidan.jp/schedule/detail/10006578",
       "https://ebidan.jp/schedule/detail/50000708",
@@ -545,6 +552,7 @@
       "https://ebidan.jp/schedule/detail/50000799",
       "https://ebidan.jp/schedule/detail/50001320",
       "https://ebidan.jp/schedule/detail/50001441",
+      "https://ebidan.jp/schedule/detail/50001639",
       "https://ebidan.jp/schedule/detail/50000397",
       "https://ebidan.jp/schedule/detail/50000538",
       "https://ebidan.jp/schedule/detail/50000687",
